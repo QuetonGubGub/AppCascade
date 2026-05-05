@@ -37,9 +37,6 @@ p {
     padding-top: 5px;
 }
 
-a {
-    color : black
-}
 
 /* Square Buttons */
 .btnSqr {
@@ -136,6 +133,7 @@ a {
 
 .libraryBtnSpecie img {
     width: 50%;
+    height: 50%;
     aspect-ratio: 1 / 1;
     border-style: solid;
     border-color: black;
@@ -149,6 +147,7 @@ a {
     border-color: black;
     border-style: solid;
     box-shadow: 4px 4px black;
+    color: black;
     transition: 0.25s;
 }
 
