@@ -1,0 +1,157 @@
+/*//////////////////////
+/       Atlantis       /
+/    Style ToolBox     /
+/ 2026 - Expedition 33 /
+//////////////////////*/
+
+/* Variables */
+:root {
+    --bleuClair: #7CAAE3;
+    --bleuFonce: #38679F;
+    --vertVar: #AECC54;
+    --jauneVar: #F6C345;
+
+    --bigPadding : 10px 40px;
+    --smallPadding : 5px 10px;
+}
+
+/* Custom font */
+@font-face {
+    font-family: 'DIN'; /*a name to be used later*/
+    font-weight: bold;
+    src: url('DIN Condensed.ttf'); /*URL to font*/
+}
+
+/* Basic stuff */
+* {
+    margin : 0px
+}
+
+body {
+    font-family: 'DIN';
+}
+
+p {
+    font-family: 'DIN';
+    font-size: large;
+    padding-top: 5px;
+}
+
+/* Square Buttons */
+.btnSqr {
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btnSqrColor_blue {
+    padding: var(--bigPadding);
+    background-color: var(--bleuClair);
+}
+
+.btnSqrColor_grn {
+    padding: var(--smallPadding);
+    background-color: var(--vertVar);
+}
+
+.btnSqr img {
+    width: 25px;
+    padding-right: 10px;
+}
+
+/* Round buttons*/
+.btnCircl {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+.btnCirclColor_ylw {
+    background-color: var(--jauneVar);
+}
+
+.btnCirclColor_ylw img {
+    width: 25px;
+}
+
+.btnCirclColor_grn {
+    background-color: var(--vertVar);
+}
+
+.btnCirclColor_grn img {
+    width: 40px;
+}
+
+.btnLang {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: var(--vertVar);
+}
+
+/* Map plates */
+.mapPlate {
+    margin: 5px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: var(--jauneVar);
+    text-align: center;
+}
+
+.mapPlate img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    border-color: black;
+    border-bottom-style: solid;
+}
+
+.mapPlate p {
+    padding: 2px;
+    font-size: 1.30em;
+}
+
+/* Library */
+.libraryBtnSpecie {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--vertVar);
+    color: white;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.libraryBtnSpecie img {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 50px;
+}
+
+/* Neobrutalist shadow */
+.nbShadow {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 4px 4px black;
+    transition: 0.25s;
+}
+
+.nbShadow:hover {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    transition: 0.25s;
+}
