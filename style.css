@@ -37,6 +37,10 @@ p {
     padding-top: 5px;
 }
 
+a {
+    color : black
+}
+
 /* Square Buttons */
 .btnSqr {
     margin: 5px;
@@ -127,7 +131,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    /*gap: 10px;*/
 }
 
 .libraryBtnSpecie img {
