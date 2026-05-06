@@ -31,12 +31,52 @@ body {
     font-family: 'DIN';
 }
 
+main {
+    padding-top: 170px;
+}
+
 p {
     font-family: 'DIN';
     font-size: large;
     padding-top: 5px;
 }
 
+/* Header */
+header img {
+    position: absolute;
+}
+
+#headerContent {
+    position: absolute;
+    z-index: 1000;
+}
+
+#headerContent button {
+    width: 40px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#headerContent h1 {
+    width: 245px;
+    position: absolute;
+    left: 140px;
+    top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#waveBlue {
+    z-index: 500;
+    top: -2px;
+    left: -2px;
+}
+
+#waveGreen {
+    right: 0px;
+    top: -25px;
+}
 
 /* Square Buttons */
 .btnSqr {
@@ -128,12 +168,11 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*gap: 10px;*/
+    gap: 10px;
 }
 
 .libraryBtnSpecie img {
     width: 50%;
-    height: 50%;
     aspect-ratio: 1 / 1;
     border-style: solid;
     border-color: black;
@@ -147,7 +186,6 @@ p {
     border-color: black;
     border-style: solid;
     box-shadow: 4px 4px black;
-    color: black;
     transition: 0.25s;
 }
 
