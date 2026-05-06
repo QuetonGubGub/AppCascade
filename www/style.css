@@ -1,0 +1,11 @@
+:root {
+    --fond: #FFF5E0;
+    --vertVar: #AECC54;
+    --jauneVar: #F6C345;
+    --bleuClair: #7CAAE3;
+    --blauFonce: #38679F;
+}
+
+body{
+    background-color: var(--fond);
+}
