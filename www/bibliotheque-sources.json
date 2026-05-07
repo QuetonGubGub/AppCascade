@@ -1,0 +1,43 @@
+{
+    "mammifere": {
+        "pipistrelle" : {
+            "image-espece-animale" : "../img/bibliotheque/pipistrelle-1.jpg",
+            "nom-espece-animale": "Pipistrelle",
+            "description-espece-animale" : "Ceci est une pipistrelle !"
+            },
+        
+        "rhinolophe" : {
+            "image-espece-animale" : "../img/bibliotheque/rhinolophe-1.png",
+            "nom-espece-animale": "Rhinolophe",
+            "description-espece-animale" : ""
+            }
+    },
+
+    "oiseau": {
+        "martin-pecheur" : {
+            "image-espece-animale" : "#",
+            "nom-espece-animale": "Martin pêcheur",
+            "description-espece-animale" : ""
+            },
+        
+        "bergeronnette-grise" : {
+            "image-espece-animale" : "#",
+            "nom-espece-animale": "Bergeronnette grise",
+            "description-espece-animale" : ""
+            }
+    },
+
+    "poisson": {
+        "brochet" : {
+            "image-espece-animale" : "#",
+            "nom-espece-animale": "Brochet",
+            "description-espece-animale" : ""
+            },
+        
+        "sandre" : {
+            "image-espece-animale" : "#",
+            "nom-espece-animale": "Sandre",
+            "description-espece-animale" : ""
+            }
+    }
+}
