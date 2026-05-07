@@ -2,42 +2,115 @@
     "mammifere": {
         "pipistrelle" : {
             "image-espece-animale" : "../img/bibliotheque/pipistrelle-1.jpg",
-            "nom-espece-animale": "Pipistrelle",
-            "description-espece-animale" : "Ceci est une pipistrelle !"
+            "nom-espece-animale": "Pipistrelle commune",
+            "description-espece-animale" : "Description"
+            },
+
+        "murin" : {
+            "image-espece-animale" : "../img/bibliotheque/murin-1.png",
+            "nom-espece-animale": "Murin à oreilles échancrées",
+            "description-espece-animale" : "Description"
             },
         
-        "rhinolophe" : {
-            "image-espece-animale" : "../img/bibliotheque/rhinolophe-1.png",
-            "nom-espece-animale": "Rhinolophe",
-            "description-espece-animale" : ""
+        "grand-rhinolophe" : {
+            "image-espece-animale" : "../img/bibliotheque/grand-rhinolophe-1.png",
+            "nom-espece-animale": "Grand rhinolophe",
+            "description-espece-animale" : "Description"
+            },
+        
+        "petit-rhinolophe" : {
+            "image-espece-animale" : "../img/bibliotheque/petit-rhinolophe-1.png",
+            "nom-espece-animale": "Petit rhinolophe",
+            "description-espece-animale" : "Description"
+            },
+           
+        "chevreuil" : {
+            "image-espece-animale" : "../img/bibliotheque/chevreuil-1.png",
+            "nom-espece-animale": "Chevreuil européen",
+            "description-espece-animale" : "Description"
+            },
+
+        "lievre" : {
+            "image-espece-animale" : "../img/bibliotheque/lievre-1.png",
+            "nom-espece-animale": "Lièvre d'Europe",
+            "description-espece-animale" : "Description"
+            },
+
+        "sanglier" : {
+            "image-espece-animale" : "../img/bibliotheque/sanglier-1.png",
+            "nom-espece-animale": "Sanglier",
+            "description-espece-animale" : "Description"
             }
+
     },
 
     "oiseau": {
-        "martin-pecheur" : {
-            "image-espece-animale" : "#",
-            "nom-espece-animale": "Martin pêcheur",
-            "description-espece-animale" : ""
+
+        "fauvette-pitchou" : {
+            "image-espece-animale" : "../img/bibliotheque/fauvette-pitchou-1.png",
+            "nom-espece-animale": "Fauvette pitchou",
+            "description-espece-animale" : "Description"
+            },
+
+        "chardonneret" : {
+            "image-espece-animale" : "../img/bibliotheque/chardonneret-1.png",
+            "nom-espece-animale": "Chardonneret élégant",
+            "description-espece-animale" : "Description"
             },
         
-        "bergeronnette-grise" : {
-            "image-espece-animale" : "#",
-            "nom-espece-animale": "Bergeronnette grise",
-            "description-espece-animale" : ""
+        "circaete" : {
+            "image-espece-animale" : "../img/bibliotheque/circaete-1.png",
+            "nom-espece-animale": "Circaète Jean-le-Blanc",
+            "description-espece-animale" : "Description"
+            },
+
+        "corneille" : {
+            "image-espece-animale" : "../img/bibliotheque/corneille-1.png",
+            "nom-espece-animale": "Corneille noire",
+            "description-espece-animale" : "Description"
+            },
+
+        
+        "coucou" : {
+            "image-espece-animale" : "../img/bibliotheque/coucou-1.png",
+            "nom-espece-animale": "Coucou gris",
+            "description-espece-animale" : "Description"
+            },
+
+        
+        "faucon" : {
+            "image-espece-animale" : "../img/bibliotheque/faucon-1.png",
+            "nom-espece-animale": "Faucon hobereau",
+            "description-espece-animale" : "Description"
+            },
+
+        
+        "guepier" : {
+            "image-espece-animale" : "../img/bibliotheque/guepier-1.png",
+            "nom-espece-animale": "Guêpier d'Europe",
+            "description-espece-animale" : "Description"
+            },
+
+        
+        "huppe" : {
+            "image-espece-animale" : "../img/bibliotheque/huppe-1.png",
+            "nom-espece-animale": "Huppe fasciée",
+            "description-espece-animale" : "Description"
             }
+        
     },
 
     "poisson": {
         "brochet" : {
-            "image-espece-animale" : "#",
+            "image-espece-animale" : "../img/bibliotheque/brochet-1.png",
             "nom-espece-animale": "Brochet",
-            "description-espece-animale" : ""
+            "description-espece-animale" : "Description"
             },
         
         "sandre" : {
-            "image-espece-animale" : "#",
+            "image-espece-animale" : "../img/bibliotheque/sandre-1.png",
             "nom-espece-animale": "Sandre",
-            "description-espece-animale" : ""
+            "description-espece-animale" : "Description"
             }
     }
 }
