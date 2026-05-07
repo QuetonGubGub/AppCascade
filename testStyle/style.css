@@ -10,6 +10,7 @@
     --bleuFonce: #38679F;
     --vertVar: #AECC54;
     --jauneVar: #F6C345;
+    --blanc: #FFF5E0;
 
     --bigPadding : 10px 40px;
     --smallPadding : 5px 10px;
@@ -29,10 +30,12 @@
 
 body {
     font-family: 'DIN';
+    background-color: var(--blanc);
 }
 
 main {
     padding-top: 170px;
+    padding-bottom: 50px;
 }
 
 p {
@@ -42,26 +45,28 @@ p {
 }
 
 /* Header */
-header img {
+#headerBackground img {
     position: absolute;
 }
 
 #headerContent {
     position: absolute;
     z-index: 1000;
+    width: 100%;
 }
 
 #headerContent button {
     width: 40px;
     position: absolute;
-    top: 15px;
+    top: 30px;
     left: 10px;
 }
 
 #headerContent h1 {
     width: 245px;
     position: absolute;
-    left: 140px;
+    /*left: 140px;*/
+    right: 5px;
     top: 55px;
     text-align: center;
     color: white;
@@ -78,12 +83,26 @@ header img {
     top: -25px;
 }
 
+/* Footer */
+#footerBackground img {
+    position: absolute;
+}
+
+#waveCyanDown {
+    z-index: 500;
+}
+
+#waveBlueDown {
+    right: 0px;
+}
+
 /* Square Buttons */
 .btnSqr {
     margin: 5px;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    color : black;
 }
 
 .btnSqrColor_blue {
@@ -131,6 +150,7 @@ header img {
     margin: 5px;
     border-radius: 50px;
     background-color: var(--vertVar);
+    color : black;
 }
 
 /* Map plates */
@@ -173,6 +193,7 @@ header img {
 
 .libraryBtnSpecie img {
     width: 50%;
+    height: 50%;
     aspect-ratio: 1 / 1;
     border-style: solid;
     border-color: black;
