@@ -83,6 +83,23 @@ p {
     top: -25px;
 }
 
+/* Text blocks */
+#blockIntro {
+    background-image: url(./img/blockIntro.png);
+    height: 444px;
+    padding: 70px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#blockWave {
+    background-image: url(./img/blockWave.png);
+    height: 450px;
+    padding: 70px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /* Footer */
 #footerBackground img {
     position: absolute;
