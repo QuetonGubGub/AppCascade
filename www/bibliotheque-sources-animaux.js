@@ -9,5 +9,8 @@ fetch("bibliotheque-sources.json")
 
     document.getElementById("image-espece-animale").src = animal["image-espece-animale"];
     document.getElementById("nom-espece-animale").textContent = animal["nom-espece-animale"];
+    document.getElementById("liste-rouge").textContent = animal["liste-rouge"];
+    document.getElementById("esperance-vie").textContent = animal["esperance-vie"];
+    document.getElementById("regime-alimentaire").textContent = animal["regime-alimentaire"];
     document.getElementById("description-espece-animale").textContent = animal["description-espece-animale"];
   });

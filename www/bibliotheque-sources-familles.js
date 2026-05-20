@@ -14,17 +14,24 @@ fetch("bibliotheque-sources.json")
     const animaux = data[famille];
 
     for (let espece in animaux) {
-      const animal = animaux[espece];
 
-      const clone = template.cloneNode(true);
-      clone.style.display = "block";
-      clone.removeAttribute("id");
+    const animal = animaux[espece];
 
-      clone.querySelector(".image-espece-animale").src = animal["image-espece-animale"];
-      clone.querySelector(".nom-espece-animale").textContent = animal["nom-espece-animale"];
-      clone.querySelector(".lien-espece-animale").href = `bibliotheque-animal.html?famille=${famille}&nom=${espece}`;
+    section.innerHTML += `
+    <div class="nbShadow libraryBtnSpecie">
+        <a class="lien-espece-animale"
+           href="bibliotheque-animal.html?famille=${famille}&nom=${espece}">
 
-      section.appendChild(clone);
-    }
+            <img class="image-espece-animale"
+                 src="${animal["image-espece-animale"]}">
+
+            <p class="nom-espece-animale">
+                ${animal["nom-espece-animale"]}
+            </p>
+
+        </a>
+    </div>
+    `;
+}
     document.getElementById("nom-famille").textContent = famille;
   });
