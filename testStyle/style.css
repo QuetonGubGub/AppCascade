@@ -23,6 +23,11 @@
     src: url('DIN Condensed.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('Inter.ttf'); /*URL to font*/
+}
+
 /* Basic stuff */
 * {
     margin : 0px
@@ -84,20 +89,25 @@ p {
 }
 
 /* Text blocks */
-#blockIntro {
-    background-image: url(./img/blockIntro.png);
-    height: 444px;
+.textBlock {
     padding: 70px 10px 0;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#blockWave {
+.textBlock p {
+    font-family: 'Inter';
+}
+
+#intro {
+    background-image: url(./img/blockIntro.png);
+    height: 444px;
+
+}
+
+#wave {
     background-image: url(./img/blockWave.png);
     height: 450px;
-    padding: 70px 10px 0;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 /* Footer */
