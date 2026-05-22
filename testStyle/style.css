@@ -23,6 +23,11 @@
     src: url('DIN Condensed.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('Inter.ttf'); /*URL to font*/
+}
+
 /* Basic stuff */
 * {
     margin : 0px
@@ -60,7 +65,6 @@ p {
     position: absolute;
     top: 30px;
     left: 10px;
-    z-index: 600;
 }
 
 #headerContent h1 {
@@ -71,7 +75,6 @@ p {
     top: 55px;
     text-align: center;
     color: white;
-    z-index: 600;
 }
 
 #waveBlue {
@@ -83,6 +86,28 @@ p {
 #waveGreen {
     right: 0px;
     top: -25px;
+}
+
+/* Text blocks */
+.textBlock {
+    padding: 70px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.textBlock p {
+    font-family: 'Inter';
+}
+
+#intro {
+    background-image: url(./img/blockIntro.png);
+    height: 444px;
+
+}
+
+#wave {
+    background-image: url(./img/blockWave.png);
+    height: 450px;
 }
 
 /* Footer */
