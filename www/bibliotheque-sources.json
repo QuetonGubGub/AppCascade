@@ -1,7 +1,7 @@
 {
     "mammifere": {
         "pipistrelle" : {
-            "image-espece-animale" : "../img/bibliotheque/pipistrelle-commune/pipistrelle-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/pipistrelle-commune/pipistrelle-1.jpg",
             "nom-espece-animale": "Pipistrelle commune",
             "liste-rouge": "NT",
             "liste-rouge-couleur": "#93d14f",
@@ -9,14 +9,14 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "La pipistrelle est une petite chauve-souris pas plus grande que 5 cm, d'envergure maximum 24 cm et pesant maximum 8 g. Elle vit généralement en colonie, la période de reproduction se déroule vers la fin de l’été et elle peut donner jusqu’à 1 petit (ou 2 dans des cas très rares). A Sillans-la-Cascade, elle s'abrite dans les cavités de la cascade et sort la nuit pour chasser les insectes dans les champs non loin.",
             "carousel": [
-                "../img/bibliotheque/pipistrelle-commune/pipistrelle-2.jpg",
-                "../img/bibliotheque/pipistrelle-commune/pipistrelle-3.jpg",
-                "../img/bibliotheque/pipistrelle-commune/pipistrelle-4.webp"
+                "img/bibliotheque/pipistrelle-commune/pipistrelle-2.jpg",
+                "img/bibliotheque/pipistrelle-commune/pipistrelle-3.jpg",
+                "img/bibliotheque/pipistrelle-commune/pipistrelle-4.webp"
                 ]
             },
 
         "murin" : {
-            "image-espece-animale" : "../img/bibliotheque/murin-a-oreilles-echancrees/murin-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/murin-a-oreilles-echancrees/murin-1.jpg",
             "nom-espece-animale": "Murin à oreilles échancrées",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -24,13 +24,13 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "Le murin à oreilles échancrées est une petite chauve-souris pas plus grande que 5,5 cm, d'envergure maximum 28 cm et pesant maximum 15 g. Il vit parfois en colonie nombreuse (grégaire), la période de reproduction se déroule vers l’automne et il ne peut donner qu’un petit. A Sillans-la-Cascade, il s'abrite dans les cavités de la cascade et sort la nuit pour chasser les insectes dans les champs non loin.",
             "carousel": [
-                "../img/bibliotheque/murin-a-oreilles-echancrees/murin-2.jpg",
-                "../img/bibliotheque/murin-a-oreilles-echancrees/murin-3.jpg"
+                "img/bibliotheque/murin-a-oreilles-echancrees/murin-2.jpg",
+                "img/bibliotheque/murin-a-oreilles-echancrees/murin-3.jpg"
                 ]
             },
         
         "grand-rhinolophe" : {
-            "image-espece-animale" : "../img/bibliotheque/grand-rhinolophe/grand-rhinolophe-1.png",
+            "image-espece-animale" : "img/bibliotheque/grand-rhinolophe/grand-rhinolophe-1.png",
             "nom-espece-animale": "Grand rhinolophe",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -38,13 +38,13 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "Le grand rhinolophe est une chauve-souris pas plus grande que 7,1 cm, d'envergure maximum 40 cm et pesant maximum 34 g. Le plus souvent, il chasse seule, mais il vit en colonie en particulier pour la reproduction et l’hivernage. Sa période de reproduction se déroule vers l’automne et elle ne peut donner qu’un petit. A Sillans-la-Cascade, il s'abrite dans les cavités de la cascade et sort la nuit pour chasser les insectes dans les champs non loin.",
             "carousel": [
-                "../img/bibliotheque/grand-rhinolophe/grand-rhinolophe-2.jpg",
-                "../img/bibliotheque/grand-rhinolophe/grand-rhinolophe-3.webp"
+                "img/bibliotheque/grand-rhinolophe/grand-rhinolophe-2.jpg",
+                "img/bibliotheque/grand-rhinolophe/grand-rhinolophe-3.webp"
                 ]
             },
         
         "petit-rhinolophe" : {
-            "image-espece-animale" : "../img/bibliotheque/petit-rhinolophe/petit-rhinolophe-1.png",
+            "image-espece-animale" : "img/bibliotheque/petit-rhinolophe/petit-rhinolophe-1.png",
             "nom-espece-animale": "Petit rhinolophe",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -52,12 +52,12 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "Le petit rhinolophe est une petite chauve-souris pas plus grande que 4,5 cm, d'envergure maximum 25 cm et pesant maximum 34 g. Le plus souvent, il chasse seul, mais il vit en colonie en particulier pour la reproduction et l’hivernage. Sa période de reproduction se déroule vers l’automne et elle ne peut donner qu’un petit. A Sillans-la-Cascade, il s'abrite dans les cavités de la cascade et sort la nuit pour chasser les insectes dans les champs non loin.",
             "carousel": [
-                "../img/bibliotheque/petit-rhinolophe/petit-rhinolophe-2.jpg"
+                "img/bibliotheque/petit-rhinolophe/petit-rhinolophe-2.jpg"
                 ]
             },
            
         "chevreuil" : {
-            "image-espece-animale" : "../img/bibliotheque/chevreuil-europeen/chevreuil-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/chevreuil-europeen/chevreuil-1.jpg",
             "nom-espece-animale": "Chevreuil européen",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -65,14 +65,14 @@
             "regime-alimentaire" : "Herbivore",
             "description-espece-animale" : "Le chevreuil européen est un cervidé mesurant maximum 135 cm de long et 80 cm de large (au garrot), il ne pèse pas plus de 34 kg. C’est un animal souvent solitaire ou en petits groupes familiaux qu’on appelle des hardes. Les troupes de 10 à 15 têtes se forment seulement en automne / hiver. La période de reproduction se déroule vers juillet-août et la femelle peut donner jusqu’à 2 faons (3 dans de rare cas).",
             "carousel": [
-                "../img/bibliotheque/chevreuil-europeen/chevreuil-2.jpg",
-                "../img/bibliotheque/chevreuil-europeen/chevreuil-3.jpg",
-                "../img/bibliotheque/chevreuil-europeen/chevreuil-4.jpg"
+                "img/bibliotheque/chevreuil-europeen/chevreuil-2.jpg",
+                "img/bibliotheque/chevreuil-europeen/chevreuil-3.jpg",
+                "img/bibliotheque/chevreuil-europeen/chevreuil-4.jpg"
                 ]
             },
 
         "lievre" : {
-            "image-espece-animale" : "../img/bibliotheque/lievre-europe/lievre-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/lievre-europe/lievre-1.jpg",
             "nom-espece-animale": "Lièvre d'Europe",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -80,14 +80,14 @@
             "regime-alimentaire" : "Herbivore",
             "description-espece-animale" : "Le lièvre d’Europe est un rongeur mesurant maximum 70 cm, il ne pèse pas plus de 7 kg. C’est un animal plutôt solitaire, mais il peut parfois vivre en petit groupe pour se nourrir. La période de reproduction est longue, elle se déroule de janvier à septembre, la femelle peut donner jusqu’à 3 levrauts mais il peut y avoir plusieurs portées durant l’année.",
             "carousel": [
-                "../img/bibliotheque/lievre-europe/lievre-2.jpg",
-                "../img/bibliotheque/lievre-europe/lievre-3.jpg",
-                "../img/bibliotheque/lievre-europe/lievre-4.jpg"
+                "img/bibliotheque/lievre-europe/lievre-2.jpg",
+                "img/bibliotheque/lievre-europe/lievre-3.jpg",
+                "img/bibliotheque/lievre-europe/lievre-4.jpg"
                 ]
             },
 
         "sanglier" : {
-            "image-espece-animale" : "../img/bibliotheque/sanglier/sanglier-1.png",
+            "image-espece-animale" : "img/bibliotheque/sanglier/sanglier-1.png",
             "nom-espece-animale": "Sanglier",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -95,9 +95,9 @@
             "regime-alimentaire" : "Omnivore",
             "description-espece-animale" : "Le sanglier est un suidé ou porcin mesurant maximum 1,8 m de long et 110 cm de large (au garrot), en moyenne il ne pèse pas plus de 110 kg, mais il arrive parfois d’avoir des poids supérieurs comme 160 kg. Les femelles et les jeunes vivent en groupe, on appelle ça des compagnies, mais les mâles adultes sont souvent solitaires. La période de reproduction se déroule généralement en novembre / janvier, la femelle donne naissance à généralement maximum 6 marcassins, mais des portées de 12 marcassins ont déjà été observées  !",
             "carousel": [
-                "../img/bibliotheque/sanglier/sanglier-2.jpg",
-                "../img/bibliotheque/sanglier/sanglier-3.jpg",
-                "../img/bibliotheque/sanglier/sanglier-4.jpg"
+                "img/bibliotheque/sanglier/sanglier-2.jpg",
+                "img/bibliotheque/sanglier/sanglier-3.jpg",
+                "img/bibliotheque/sanglier/sanglier-4.jpg"
                 ]
             }
 
@@ -106,7 +106,7 @@
     "oiseau": {
 
         "fauvette-pitchou" : {
-            "image-espece-animale" : "../img/bibliotheque/fauvette-pitchou/fauvette-pitchou-1.png",
+            "image-espece-animale" : "img/bibliotheque/fauvette-pitchou/fauvette-pitchou-1.png",
             "nom-espece-animale": "Fauvette pitchou",
             "liste-rouge": "EN",
             "liste-rouge-couleur": "#ffc000",
@@ -114,13 +114,13 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "La fauvette pitchou est un petit passereau pas plus grand que 13 cm, d'envergure maximum 18 cm et pesant maximum 12 g. Elle vit le plus souvent des cas en couples territoriaux et présente un dimorphisme sexuel assez voyant. Le mâle possède quelques couleurs rougeâtre sur son plumage avec des yeux rouges, tandis que la femelle possède un plumage plus neutre dans les tons gris-bris. La période de reproduction se déroule d’avril à juillet et la ponte ne comporte pas plus de 5 œufs. Généralement, elle a 2 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/fauvette-pitchou/fauvette-pitchou-2.jpg",
-                "../img/bibliotheque/fauvette-pitchou/fauvette-pitchou-3.webp"
+                "img/bibliotheque/fauvette-pitchou/fauvette-pitchou-2.jpg",
+                "img/bibliotheque/fauvette-pitchou/fauvette-pitchou-3.webp"
                 ]
             },
 
         "chardonneret" : {
-            "image-espece-animale" : "../img/bibliotheque/chardonneret-elegant/chardonneret-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/chardonneret-elegant/chardonneret-1.jpg",
             "nom-espece-animale": "Chardonneret élégant",
             "liste-rouge": "VU",
             "liste-rouge-couleur": "#ffff00",
@@ -128,14 +128,14 @@
             "regime-alimentaire" : "Granivore",
             "description-espece-animale" : "Le chardonneret élégant est un petit passereau pas plus grand que 13,5 cm, d'envergure maximum 25 cm et pesant maximum 19 g. C’est un oiseau grégaire hors reproduction, il vit fréquemment en petit groupe. La période de reproduction se déroule d’avril à août, la ponte ne comporte pas plus de 6 œufs. Généralement, il a 1 à 2 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/chardonneret-elegant/chardonneret-2.jpg",
-                "../img/bibliotheque/chardonneret-elegant/chardonneret-3.jpg",
-                "../img/bibliotheque/chardonneret-elegant/chardonneret-4.jpg"
+                "img/bibliotheque/chardonneret-elegant/chardonneret-2.jpg",
+                "img/bibliotheque/chardonneret-elegant/chardonneret-3.jpg",
+                "img/bibliotheque/chardonneret-elegant/chardonneret-4.jpg"
                 ]
             },
         
         "circaete" : {
-            "image-espece-animale" : "../img/bibliotheque/circaete-jean-le-blanc/circaete-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/circaete-jean-le-blanc/circaete-1.jpg",
             "nom-espece-animale": "Circaète Jean-le-Blanc",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -143,13 +143,13 @@
             "regime-alimentaire" : "Carnivore",
             "description-espece-animale" : "Le circaète Jean-le-Blanc est un rapace mesurant jusqu’à 70 cm, d'envergure maximum 185 cm et pesant maximum 2,3 kg. C’est un oiseau vivant en solitaire ou en couple, il est d’ailleurs migrateur passant l’hiver en Afrique pour revenir en Europe vers début mars. De ce fait, sa période de reproduction se déroule de mars à juillet avec 1 seul œuf par ponte.",
             "carousel": [
-                "../img/bibliotheque/circaete-jean-le-blanc/circaete-2.webp",
-                "../img/bibliotheque/circaete-jean-le-blanc/circaete-3.webp"
+                "img/bibliotheque/circaete-jean-le-blanc/circaete-2.webp",
+                "img/bibliotheque/circaete-jean-le-blanc/circaete-3.webp"
                 ]
             },
 
         "corneille" : {
-            "image-espece-animale" : "../img/bibliotheque/corneille-noire/corneille-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/corneille-noire/corneille-1.jpg",
             "nom-espece-animale": "Corneille noire",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -157,15 +157,15 @@
             "regime-alimentaire" : "Omnivore",
             "description-espece-animale" : "La corneille noire est un passereau mesurant jusqu’à 51 cm, d'envergure maximum 100 cm et pesant maximum 650 g. Elle vit généralement en couples territoriaux ou en groupes. C’est un oiseau d’une grande intelligence, elle a déjà été observée en train de déposer des noix sur une route, laissant les voitures les écraser et les ouvrir pour elle. Sa période de reproduction se déroule de mars à mai, chaque ponte peut posséder jusqu’à 6 œufs.",
             "carousel": [
-                "../img/bibliotheque/corneille-noire/corneille-2.jpg",
-                "../img/bibliotheque/corneille-noire/corneille-3.jpg",
-                "../img/bibliotheque/corneille-noire/corneille-4.jpg"
+                "img/bibliotheque/corneille-noire/corneille-2.jpg",
+                "img/bibliotheque/corneille-noire/corneille-3.jpg",
+                "img/bibliotheque/corneille-noire/corneille-4.jpg"
                 ]
             },
 
         
         "coucou" : {
-            "image-espece-animale" : "../img/bibliotheque/coucou-gris/coucou-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/coucou-gris/coucou-1.jpg",
             "nom-espece-animale": "Coucou gris",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -173,14 +173,14 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "Le coucou gris est un oiseau mesurant jusqu’à 36 cm, d'envergure maximum 65 cm et pesant maximum 130 g. Généralement, le coucou gris vit en solitaire et non en groupe. C’est un oiseau qui pratique le parasitisme de couvée, c’est-à-dire qu’il pond ses œufs dans le nid d’autres oiseaux, que ce soit de la même espèce ou non. Sa période de reproduction se déroule de mai à juillet pouvant avoir jusqu’à 25 œufs par ponte répartis dans plusieurs nids différents.",
             "carousel": [
-                "../img/bibliotheque/coucou-gris/coucou-2.webp",
-                "../img/bibliotheque/coucou-gris/coucou-3.webp"
+                "img/bibliotheque/coucou-gris/coucou-2.webp",
+                "img/bibliotheque/coucou-gris/coucou-3.webp"
                 ]
             },
 
         
         "faucon" : {
-            "image-espece-animale" : "../img/bibliotheque/faucon-hobereau/faucon-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/faucon-hobereau/faucon-1.jpg",
             "nom-espece-animale": "Faucon hobereau",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -188,14 +188,14 @@
             "regime-alimentaire" : "Carnivore",
             "description-espece-animale" : "Le faucon hobereau est un rapace diurne mesurant jusqu’à 36 cm, d'envergure maximum 84 cm et pesant maximum 340 kg. C’est un oiseau vivant en solitaire ou en couple, il est d’ailleurs migrateur passant l’hiver en Afrique du Nord et Europe du Sud pour revenir en Europe vers avril. De ce fait, sa période de reproduction se déroule de mai à juillet avec jusqu’à 4 œufs par ponte.",
             "carousel": [
-                "../img/bibliotheque/faucon-hobereau/faucon-2.jpg",
-                "../img/bibliotheque/faucon-hobereau/faucon-3.jpg"
+                "img/bibliotheque/faucon-hobereau/faucon-2.jpg",
+                "img/bibliotheque/faucon-hobereau/faucon-3.jpg"
                 ]
             },
 
         
         "guepier" : {
-            "image-espece-animale" : "../img/bibliotheque/guepier-europe/guepier-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/guepier-europe/guepier-1.jpg",
             "nom-espece-animale": "Guêpier d'Europe",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -203,15 +203,15 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "Le guêpier d’Europe est un petit oiseau coloré pas plus grand que 29 cm, d'envergure maximum 49 cm et pesant maximum 70 kg. C’est un oiseau extrêmement sociable, il vit en colonie. Son nom vient du fait qu’il se nourrit surtout de guêpes, abeilles et frelons ainsi que d’autres insectes du même ordre. Sa période de reproduction se déroule de mai à juillet, la ponte peut comporter jusqu’à 7 œufs.",
             "carousel": [
-                "../img/bibliotheque/guepier-europe/guepier-2.jpg",
-                "../img/bibliotheque/guepier-europe/guepier-3.jpg",
-                "../img/bibliotheque/guepier-europe/guepier-4.jpg"
+                "img/bibliotheque/guepier-europe/guepier-2.jpg",
+                "img/bibliotheque/guepier-europe/guepier-3.jpg",
+                "img/bibliotheque/guepier-europe/guepier-4.jpg"
                 ]
             },
 
         
         "huppe" : {
-            "image-espece-animale" : "../img/bibliotheque/huppe-fasciee/huppe-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/huppe-fasciee/huppe-1.jpg",
             "nom-espece-animale": "Huppe fasciée",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -219,14 +219,14 @@
             "regime-alimentaire" : "Insectivore",
             "description-espece-animale" : "La huppe fasciée est un oiseau mesurant jusqu’à 32 cm, d'envergure maximum 46 cm et pesant maximum 89g. Elle vit le plus souvent en solitaire ou bien en couple. Sa période de reproduction se déroule  d’avril à juin, chaque ponte peut atteindre jusqu’à 8 œufs, et parfois, elle peut avoir jusqu’à 2 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/huppe-fasciee/huppe-2.jpg",
-                "../img/bibliotheque/huppe-fasciee/huppe-3.jpg",
-                "../img/bibliotheque/huppe-fasciee/huppe-4.jpg"
+                "img/bibliotheque/huppe-fasciee/huppe-2.jpg",
+                "img/bibliotheque/huppe-fasciee/huppe-3.jpg",
+                "img/bibliotheque/huppe-fasciee/huppe-4.jpg"
                 ]
             },
 
         "serin" : {
-            "image-espece-animale" : "../img/bibliotheque/serin-cini/serin-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/serin-cini/serin-1.jpg",
             "nom-espece-animale": "Serin cini",
             "liste-rouge": "VU",
             "liste-rouge-couleur": "#ffff00",
@@ -234,13 +234,13 @@
             "regime-alimentaire" : "Granivore",
             "description-espece-animale" : "Le serin cini est un petit passereau pas plus grand que 12 cm, d'envergure maximum 22 cm et pesant maximum 15 g. Il est très sociable hors reproduction et vit en petit groupe. Il aime particulièrement vivre dans les villes et villages, à proximité des installations humaines comme les jardins et les parcs. Sa période de reproduction se déroule d’avril à août, les pontes peuvent atteindre jusqu’à 5 œufs et souvent, il y a 2 à 3 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/serin-cini/serin-2.jpg",
-                "../img/bibliotheque/serin-cini/serin-3.webp"
+                "img/bibliotheque/serin-cini/serin-2.jpg",
+                "img/bibliotheque/serin-cini/serin-3.webp"
                 ]
             },
         
         "tourterelle" : {
-            "image-espece-animale" : "../img/bibliotheque/tourterelle-des-bois/tourterelle-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/tourterelle-des-bois/tourterelle-1.jpg",
             "nom-espece-animale": "Tourterelle des bois",
             "liste-rouge": "VU",
             "liste-rouge-couleur": "#ffff00",
@@ -248,14 +248,14 @@
             "regime-alimentaire" : "Granivore",
             "description-espece-animale" : "La tourterelle des bois est un oiseau mesurant jusqu’à 28 cm, d'envergure maximum 55 cm et pesant maximum 180 g. Généralement, elle vit en couple ou dans des petits groupes migrateurs, elle est d’ailleurs le seul colombidé (famille des colombes, pigeons, tourterelles...)  migrateur à longue distance d’Europe. Sa période de reproduction se déroule de mai à juillet avec 2 œufs par ponte, et souvent 1 à 2 couvées par an. Malheureusement, elle est en fort déclin.",
             "carousel": [
-                "../img/bibliotheque/tourterelle-des-bois/tourterelle-2.jpg",
-                "../img/bibliotheque/tourterelle-des-bois/tourterelle-3.jpg",
-                "../img/bibliotheque/tourterelle-des-bois/tourterelle-4.jpg"
+                "img/bibliotheque/tourterelle-des-bois/tourterelle-2.jpg",
+                "img/bibliotheque/tourterelle-des-bois/tourterelle-3.jpg",
+                "img/bibliotheque/tourterelle-des-bois/tourterelle-4.jpg"
                 ]
             },
 
         "verdier" : {
-            "image-espece-animale" : "../img/bibliotheque/verdier-europe/verdier-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/verdier-europe/verdier-1.jpg",
             "nom-espece-animale": "Verdier d'Europe",
             "liste-rouge": "VU",
             "liste-rouge-couleur": "#ffff00",
@@ -263,14 +263,14 @@
             "regime-alimentaire" : "Granivore",
             "description-espece-animale" : "Le verdier d’Europe est un petit passereau pas plus grand que 16 cm, d'envergure maximum 28 cm et pesant maximum 35 g. Hors nidification, c’est un oiseau qui est assez grégaire, il est aussi partiellement migrateur. On remarque un dimorphisme sexuel où le mâle a un plumage plus jaune que la femelle. Sa période de reproduction se déroule d’avril à août, avec jusqu’à 6 œufs par ponte et fréquemment 2 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/verdier-europe/verdier-2.jpg",
-                "../img/bibliotheque/verdier-europe/verdier-3.jpg",
-                "../img/bibliotheque/verdier-europe/verdier-4.jpg"
+                "img/bibliotheque/verdier-europe/verdier-2.jpg",
+                "img/bibliotheque/verdier-europe/verdier-3.jpg",
+                "img/bibliotheque/verdier-europe/verdier-4.jpg"
                 ]
             },
 
         "alouette" : {
-            "image-espece-animale" : "../img/bibliotheque/alouette-lulu/alouette-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/alouette-lulu/alouette-1.jpg",
             "nom-espece-animale": "Alouette lulu",
             "liste-rouge": "LC",
             "liste-rouge-couleur": "#00b04f",
@@ -278,8 +278,8 @@
             "regime-alimentaire" : "Omnivore",
             "description-espece-animale" : "L’alouette lulu est un petit passereau mesurant jusqu’à 15 cm, d'envergure maximum 36 cm et pesant maximum 35 g. Elle chante souvent en vol stationnaire au-dessus des landes et clairières. Par ailleurs, contrairement aux autres alouettes, elle possède une queue assez courte. Sa période de reproduction se déroule de mars à juillet avec jusqu’à 5 œufs par ponte et parfois 2 couvées par an.",
             "carousel": [
-                "../img/bibliotheque/alouette-lulu/alouette-2.webp",
-                "../img/bibliotheque/alouette-lulu/alouette-3.webp"
+                "img/bibliotheque/alouette-lulu/alouette-2.webp",
+                "img/bibliotheque/alouette-lulu/alouette-3.webp"
                 ]
             }
         
