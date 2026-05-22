@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'App Cascade - Bibliothèque</title>
+    <link rel="stylesheet" href="../testStyle/style.css">
+</head>
+<body>
+
+        <!-- Section En-tête -->
+    <header>
+        <div id="headerContent">
+            <button class="nbShadow btnCircl btnCirclColor_ylw"><a onclick="window.history.back()"><img src="../testStyle/img/back-btn.png"></a></button>
+            <h2 id="nom-espece-animale"></h2>
+            <img id="image-espece-animale" class="image-principale-animale" src="#" alt="Image de profil de l'animal">
+        <div id="liste-rouge-couleur">
+            <p id="liste-rouge"></p>
+        </div>
+            <div id="headerBackground">
+                <img src="../testStyle/img/vagueBleu.svg" id="waveBlue">
+                <img src="../testStyle/img/vagueVerte.svg" id="waveGreen">
+            </div>
+        </div>
+    </header>
+>
+    </div>
+    <div id="bloc-text">
+        <div>
+            <h3>Peut vivre jusqu'à <span id="esperance-vie"></span> ans</h3>
+            <h3>Régime alimentaire : <span id="regime-alimentaire"></span></h3>
+        </div>
+        <p id="description-espece-animale"></p>
+    </div>
+    <section id="gallery">
+        <div class="gallery-container">
+            <button class="prev"><img alt="bouton de carousel gauche" src="../img/bibliotheque/carousel-fleche-g.png"></button>
+            <div id="galleryTrack"></div>
+            <button class="next"><img alt="bouton de carousel droit" src="../img/bibliotheque/carousel-fleche-d.png"></button>
+        </div>
+    </section>
+        <div id="lightbox">
+        <img id="lightboxImg">
+    </div>
+    <h3 id="vu">L'avez-vous vu ?</h3>
+</body>
+<script src="bibliotheque-sources-animaux.js"></script>
+</html>
