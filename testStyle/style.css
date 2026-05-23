@@ -1,15 +1,10 @@
-/*//////////////////////
-/       Atlantis       /
-/    Style ToolBox     /
-/ 2026 - Expedition 33 /
-//////////////////////*/
-
 /* Variables */
 :root {
     --bleuClair: #7CAAE3;
     --bleuFonce: #38679F;
     --vertVar: #AECC54;
     --jauneVar: #F6C345;
+    --blanc: #FFF5E0;
 
     --bigPadding : 10px 40px;
     --smallPadding : 5px 10px;
@@ -22,6 +17,11 @@
     src: url('DIN Condensed.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('Inter.ttf'); /*URL to font*/
+}
+
 /* Basic stuff */
 * {
     margin : 0px
@@ -29,6 +29,12 @@
 
 body {
     font-family: 'DIN';
+    background-color: var(--blanc);
+}
+
+main {
+    padding-top: 170px;
+    padding-bottom: 50px;
 }
 
 p {
@@ -37,6 +43,79 @@ p {
     padding-top: 5px;
 }
 
+/* Header */
+#headerBackground img {
+    position: absolute;
+}
+
+#headerContent {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+#headerContent button {
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#headerContent h1 {
+    width: 245px;
+    position: absolute;
+    /*left: 140px;*/
+    right: 5px;
+    top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#waveBlue {
+    z-index: 500;
+    top: -2px;
+    left: -2px;
+}
+
+#waveGreen {
+    right: 0px;
+    top: -25px;
+}
+
+/* Text blocks */
+.textBlock {
+    padding: 70px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.textBlock p {
+    font-family: 'Inter';
+}
+
+#intro {
+    background-image: url(./img/blockIntro.png);
+    height: 444px;
+
+}
+
+#wave {
+    background-image: url(./img/blockWave.png);
+    height: 450px;
+}
+
+/* Footer */
+#footerBackground img {
+    position: absolute;
+}
+
+#waveCyanDown {
+    z-index: 500;
+}
+
+#waveBlueDown {
+    right: 0px;
+}
 
 /* Square Buttons */
 .btnSqr {
@@ -44,6 +123,7 @@ p {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    color : black;
 }
 
 .btnSqrColor_blue {
@@ -91,6 +171,7 @@ p {
     margin: 5px;
     border-radius: 50px;
     background-color: var(--vertVar);
+    color : black;
 }
 
 /* Map plates */
@@ -128,7 +209,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*gap: 10px;*/
+    gap: 10px;
 }
 
 .libraryBtnSpecie img {
@@ -147,7 +228,6 @@ p {
     border-color: black;
     border-style: solid;
     box-shadow: 4px 4px black;
-    color: black;
     transition: 0.25s;
 }
 
