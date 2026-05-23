@@ -43,7 +43,7 @@ main {
     padding-bottom: 50px;
 }
 
-p {
+p, a {
     font-family: 'DIN';
     font-size: large;
     padding-top: 5px;
@@ -69,14 +69,26 @@ p {
 }
 
 #headerContent h1 {
+    font-size: 26px;
     z-index: 5;
-    width: 245px;
+    width: 100%;
     position: absolute;
-    right: 5px;
-    top: 55px;
-    text-align: center;
+    right: 30px;
+    top: 65px;
+    text-align: right;
     color: white;
 }
+
+    #titre2-preparer {
+        font-size: 20px;
+        z-index: 5;
+        width: 100%;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        text-align: right;
+        color: white;
+    }
 
 #waveBlue {
     z-index: 1;
@@ -201,6 +213,19 @@ p {
     padding: 2px;
     font-size: 1.30em;
 }
+
+/* Preparation */
+#boutons-preparer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    #boutons-preparer>button>a {
+        text-decoration-line: none;
+        color: black;
+    }
+
 
 /* Library */
 #headerContent>#nom-espece-animale {
@@ -404,6 +429,11 @@ p {
 #vu {
     text-align: center;
     margin-block: 10px;
+}
+
+/*Mascotte*/
+.img-mascotte {
+    width: 100px;
 }
 
 /* Neobrutalist shadow */
