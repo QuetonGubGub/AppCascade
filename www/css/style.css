@@ -248,7 +248,7 @@ p, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
     .check-equipement>i {
         font-size: 24px;
@@ -258,7 +258,7 @@ p, a {
     border: solid black 3px;
     padding: 5px;
     border-radius: 5px;
-    width: 200px;
+    width: 220px;
 }
     .equipement>p {
         font-size: 14px;
