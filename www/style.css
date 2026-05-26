@@ -19,6 +19,60 @@
     margin : 0px
 }
 
+#headerBackground img {
+    position: absolute;
+}
+
+#headerContent {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+#headerContent button {
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#headerContent h1 {
+    width: 245px;
+    position: absolute;
+    /*left: 140px;*/
+    right: 5px;
+    top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#waveBlue {
+    z-index: 500;
+    top: -2px;
+    left: -2px;
+}
+
+#waveGreen {
+    right: 0px;
+    top: -25px;
+}
+
+.btnCircl {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+.btnCirclColor_ylw {
+    background-color: var(--jauneVar);
+}
+
+.btnCirclColor_ylw img {
+    width: 25px;
+}
+
 body{
     background-color: var(--fond);
     font-family: 'DIN';
@@ -26,6 +80,42 @@ body{
 
 p{
     font-family: 'DIN';
+}
+
+.info-box{
+    position: absolute;
+    background:var(--jauneVar);
+    border-radius:5px;
+    padding:10px 12px;
+    width: auto;
+}
+
+.info-box ul{
+    padding-left:22px;
+}
+
+.info-box li{
+    font-size:18px;
+}
+
+.manger{
+    left:16px;
+    top:452px;
+}
+
+.boire{
+    right:12px;
+    top:520px;
+}
+
+.animaux{
+    left:16px;
+    top:600px;
+}
+
+.interet{
+    right:12px;
+    top:690px;
 }
 
 .btnLang {
@@ -87,6 +177,7 @@ p{
 .img-container{
     position:relative;
     display: inline-block;
+    background-color: var(--jauneVar);
 }
 
 .overlay-text1{
