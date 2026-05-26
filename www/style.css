@@ -15,6 +15,10 @@
     src: url('DIN Condensed.ttf'); /*URL to font*/
 }
 
+* {
+    margin : 0px
+}
+
 body{
     background-color: var(--fond);
     font-family: 'DIN';
@@ -29,6 +33,7 @@ p{
     margin: 5px;
     border-radius: 50px;
     background-color: var(--vertVar);
+    font-size: 16px;
 }
 
 .btnSqr {
@@ -71,7 +76,7 @@ p{
     transition: 0.25s;
 }
 
-.map{
+#textBlock{
     background-color: var(--jauneVar);
     display: flex;
     justify-content: center;
