@@ -154,25 +154,27 @@
         }
 
         /* --- 5. Bouton d'action --- */
-        .btn-jaune {
+.btn-jaune {
             position: absolute;
-            bottom: -35px; 
+            bottom: 0; /* Se cale sur la ligne du bas du conteneur... */
+            transform: translateY(50%); /* ...et descend de 50% de sa propre hauteur pour être à cheval ! */
             z-index: 6;
             
-            width: 240px; 
-            height: 75px; 
+            /* Dimensions fidèles au bouton d'origine */
+            width: 260px; 
+            height: 80px; 
+            
             background-color: #F0B83A; 
             border: 3px solid black;
             
             /* Ovale déformée */
             border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
             
-            /* L'ombre décalée vers le bas et la droite comme sur le dessin */
+            /* L'ombre décalée vers le bas et la droite */
             box-shadow: 4px 6px 0px 0px black;
             
             color: black;
             text-decoration: none;
-            /* On force une police bien épaisse pour le texte du bouton */
             font-family: 'Arial Black', Impact, sans-serif;
             font-weight: 900;
             font-size: 16px;
@@ -188,8 +190,8 @@
         }
 
         .btn-jaune:active {
-            /* L'effet de clic */
-            transform: translate(2px, 3px);
+            /* On garde le décalage de 50% pour la position, et on y ajoute les pixels du clic ! */
+            transform: translate(2px, calc(50% + 3px));
             box-shadow: 2px 3px 0px 0px black;
         }
 
