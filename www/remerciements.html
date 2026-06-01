@@ -5,19 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merci !</title>
     <link rel="stylesheet" href="css/style.css">
-    <!--
-    Penser à désactiver :
-    BODY :
-    display: flex;
-    justify-content: center;
-
-    HEADER :
-    tout.
-
-    FOOTER il faut aussi tout désactiver sauf :
-    height: 12vh;
-    width: 100%;
-    -->
+    <link rel="stylesheet" href="css/remerciements.css">
 </head>
 <body>
     <header>
@@ -31,16 +19,6 @@
         </div>
     </header>
     <main id="thankPage">
-        <!--
-        main {
-            text-align: center;
-            padding-left: 30px;
-            padding-right: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            }
-        -->
         <div class="nbShadow opinionBox" style="background-color: var(--jauneVar);border-radius: 8px; padding: 5px; margin-bottom: 15px;">
             <p>Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.</p>
             <h3>Vous avez contribué à la protection du site !</h3>
@@ -57,14 +35,6 @@
             
             Je me demande ce que les bouttons sont censé vraiment faire, est ce qu'ils envoient un truc à un serveur
             ou est ce que c'est juste un placebo ?
-            -->
-            <!--
-            opinionBox {
-                padding: 10px;
-                margin: 10px 0;
-                border-radius: 5px;
-                margin: 10px;
-            }
             -->
             <!-- Il faut aussi que je mette les images -->
             <button onclick="opinion('5')"><img src="" alt="Très satisfait"></button>
@@ -97,8 +67,8 @@
             <a href="#">Mentions légales</a>
         </div>
         <div id="footerBackground">
-            <img src="img/vagueCyanBas.svg" id="waveCyanDown">
-            <img src="img/vagueBleuBas.svg" id="waveBlueDown">
+            <img src="img/general/vagueCyanBas.svg" id="waveCyanDown">
+            <img src="img/general/vagueBleuBas.svg" id="waveBlueDown">
         </div>
     </footer>
 </body>
