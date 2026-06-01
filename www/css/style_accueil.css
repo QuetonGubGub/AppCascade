@@ -215,7 +215,7 @@
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
             text-transform: uppercase;
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             font-weight: bold;
         }
 
@@ -223,5 +223,5 @@
             height: 4.5vh; 
             width: auto;
             max-width: 120px;
-            maring-bottom: 60px;
+            maring-bottom: 50px;
         }
