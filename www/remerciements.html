@@ -1,12 +1,105 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merci !</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+    Penser à désactiver :
+    BODY :
+    display: flex;
+    justify-content: center;
+
+    HEADER :
+    tout.
+
+    FOOTER il faut aussi tout désactiver sauf :
+    height: 12vh;
+    width: 100%;
+    -->
 </head>
 <body>
-    
+    <header>
+        <div id="headerContent">
+            <button class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/book-solid-full.svg"></button>
+            <h1>MERCI !</h1>
+        </div>
+        <div id="headerBackground">
+            <img src="img/general/vagueBleu.svg" id="waveBlue">
+            <img src="img/general/vagueVerte.svg" id="waveGreen">
+        </div>
+    </header>
+    <main id="thankPage">
+        <!--
+        main {
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        -->
+        <div class="nbShadow opinionBox" style="background-color: var(--jauneVar);border-radius: 8px; padding: 5px; margin-bottom: 15px;">
+            <p>Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.</p>
+            <h3>Vous avez contribué à la protection du site !</h3>
+        </div>
+        <img src="img/mascotte/Mascotte.png" alt="Frisby est fière de vous !">
+
+       <p>On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête. </p>
+       
+       <div class="nbShadow" style="background-color: var(--bleuClair);">
+        <p>Qu'en avez-vous pensé ?</p>
+        <div id="opinionBox">
+            <!--
+            JS
+            
+            Je me demande ce que les bouttons sont censé vraiment faire, est ce qu'ils envoient un truc à un serveur
+            ou est ce que c'est juste un placebo ?
+            -->
+            <!--
+            opinionBox {
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                margin: 10px;
+            }
+            -->
+            <!-- Il faut aussi que je mette les images -->
+            <button onclick="opinion('5')"><img src="" alt="Très satisfait"></button>
+            <button onclick="opinion('4')"><img src="" alt="Satisfait"></button>
+            <button onclick="opinion('3')"><img src="" alt="Mixe"></button>
+            <button onclick="opinion('2')"><img src="" alt="Peu satisfait"></button>
+            <button onclick="opinion('1')"><img src="" alt="Pas satisfait"></button>
+        </div>
+       </div>
+        <p>Vous en voulez plus ?</p>
+        <a href="">
+            <button class="nbShadow btnSqr btnSqrColor_grn" style="margin: 10px;"><p>JE VAIS AU VILLAGE !</p></button>
+        </a>
+    </main>
+    <footer>
+        <div id="footerContentA">
+            Contact :
+            <br>
+            Tél. : 04 94 04 63 04
+            <br>
+            Mail : communication@sillans-la-cascade.fr
+            <br><br>
+            2 rue du château
+            <br>
+            83690 Sillans-la-Cascade
+        </div>
+        <div id="footerContentB">
+            <a href="#">Politique de confidentialité</a>
+            <br>
+            <a href="#">Mentions légales</a>
+        </div>
+        <div id="footerBackground">
+            <img src="img/vagueCyanBas.svg" id="waveCyanDown">
+            <img src="img/vagueBleuBas.svg" id="waveBlueDown">
+        </div>
+    </footer>
 </body>
 </html>
