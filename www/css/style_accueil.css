@@ -154,49 +154,41 @@
         }
 
         /* --- 5. Bouton d'action --- */
-        .btn-jaune {
+.btn-jaune {
             position: absolute;
-            bottom: -15px;
+            bottom: 0; /* Se cale sur la ligne du bas du conteneur... */
+            transform: translateY(50%); /* ...et descend de 50% de sa propre hauteur pour être à cheval ! */
             z-index: 6;
             
-            /* Dimensions fixes pour afficher l'image correctement */
-            width: 240px; 
-            height: 85px; 
+            /* Dimensions réduites */
+            width: 150px; 
+            height: 60px; 
             
-            /* L'image de fond remplace le CSS */
-            background-image: url('Bouton.png'); 
-            background-size: 100% 100%; /* Étire légèrement pour remplir le cadre */
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: transparent; 
+            background-color: #F0B83A; 
+            border: 3px solid black;
             
-            /* On supprime les anciennes bordures et ombres CSS */
-            border: none;
-            box-shadow: none;
+            /* Ovale déformée */
+            border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
             
-            /* Styles du texte conservés */
+            /* L'ombre décalée vers le bas et la droite */
+            box-shadow: 4px 6px 0px 0px black;
+            
             color: black;
             text-decoration: none;
+            font-family: 'DIN Condensed', Impact, sans-serif;
             font-weight: 900;
-            font-size: 16px;
+            font-size: 15px; /* Légèrement réduit pour bien s'adapter à la nouvelle taille */
             text-align: center;
             line-height: 1.15;
+            letter-spacing: 0.5px;
             
-            /* Flexbox pour centrer parfaitement le texte à l'intérieur de l'image */
             display: flex;
             justify-content: center;
             align-items: center;
             
-            /* Léger décalage pour compenser visuellement l'ombre noire de l'image 
-               et bien centrer le texte dans la partie jaune */
-            padding-bottom: 5px; 
-            padding-right: 5px;
+            transition: transform 0.1s, box-shadow 0.1s;
         }
 
-        .btn-jaune:active {
-            /* L'effet de clic est conservé */
-            transform: translateY(2px);
-        }
 
         .btn-jaune:active {
             transform: translateY(calc(50% + 2px));
