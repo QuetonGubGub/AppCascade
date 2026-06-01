@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>L'App Cascade</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_accueil.css">
 </head>
 
-<body>
+<body class="app-mobile-container">
 
-    <!-- Section En-tête (Logo) -->
-    <header>
-        <img src="img/general/logo-departement-var.png" alt="L'App Cascade">
-    </header>
+        <header>
+            <img src="img/general/logo-app-cascade.png" alt="L'App Cascade" class="logo-app">
+        </header>
 
-    <!-- Section Principale (Contenu avec image de fond) -->
-    <main>
-        <section>
-            <h1>ATTENTION</h1>
+        <main class="section-cascade">
+            <img src="img/general/Fond.png" alt="Image de la cascade" class="fond-cascade">
             
-            <!-- Mascotte qui parle -->
-            <div class="groupe-accueil">
-                <img src="img/general/fond-cascade.png" alt="Image de la cascade">
-                <img src="img/mascotte/mascotte-question.png" alt="Mascotte guide">
-                <blockquote>
-                    Téléchargez l’application pour une expérience optimale, 
-                    sur ce site il n’y a <strong>pas de réseau</strong> !
-                </blockquote>
+            <h1 class="titre-attention">ATTENTION</h1>
+            
+            <div class="zone-dialogue">
+                <div class="conteneur-bulle">
+                    <img src="img/general/Bulle.png" alt="Bulle de dialogue" class="image-bulle-fond">
+                    <div class="texte-sur-bulle">
+                        Téléchargez l’application pour une expérience optimale, sur ce site il n’y a <span class="souligne">pas de réseau</span> !
+                    </div>
+                </div>
+                
+                <img src="img/mascotte/Mascotte.png" alt="Mascotte guide" class="mascotte">
             </div>
 
-            <!-- Bouton d'action principal -->
-            <div class="telecharger-donnees">
-                <a href="#" role="button">TÉLÉCHARGER LES DONNÉES</a>
-            </div>
-        </section>
-    </main>
+            <a href="#" class="btn-jaune">
+                TÉLÉCHARGER<br>LES DONNÉES
+            </a>
+        </main>
 
-    <!-- Section Bas de page (Liens et Footer) -->
-    <footer>
-        <div class="sans-telecharger">
-            <a href="#">CONTINUER SANS TELECHARGER</a>
-        </div>
-        
-        <div class="logo-departement">
-            <img src="img/general/logo-departement-var.png" alt="Logo département du Var">
-        </div>
-    </footer>
+        <footer>
+            <a href="#" class="lien-continuer">CONTINUER SANS TÉLÉCHARGER</a>
+            <img src="img/general/logo-departement-var.png" alt="Logo département du Var" class="logo-departement">
+        </footer>
 
 </body>
 </html>

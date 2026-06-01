@@ -1,0 +1,230 @@
+/* PAGE ACCUEIL TELECHARGER DONNES */
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url('./css/DIN Condensed.ttf') format('ttf');
+}
+
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #FAF3E3; 
+            font-family: 'DIN Condensed', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Conteneur principal */
+        .app-mobile-container {
+            width: 100%;
+            max-width: 430px; 
+            height: 100dvh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3vh 0; 
+            position: relative;
+        }
+
+        /* Haut de page */
+        header {
+            flex-shrink: 0; 
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo-app {
+            height: 100%;
+            width: auto;
+            max-width: 240px;
+            object-fit: contain;
+        }
+
+        /* Section au centre */
+        .section-cascade {
+            position: relative;
+            flex-grow: 1; 
+            width: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 0; 
+        }
+
+        .fond-cascade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Taille standard sans grossissement ni déformation */
+            object-position: center; 
+            z-index: 1;
+            margin-top: 
+        }
+
+        .titre-attention {
+            position: relative;
+            z-index: 2;
+            font-family: 'DIN Condensed', sans-serif;
+            font-size: 30px; 
+            font-weight: 900;
+            color: white;
+            letter-spacing: 1.5px;
+            text-shadow: 
+                /* Contour */
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000,
+                
+                 /* Ombre portée */
+                2px 2px 0px #000, 
+                4px 4px 0px #000; 
+                
+            margin-top: 100px; 
+        }
+
+        .zone-dialogue {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        /* Bulle */
+        .conteneur-bulle {
+            position: relative;
+            width: 220px;
+            height: 90px;
+            margin-left: 85px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 4;
+        }
+
+        .image-bulle-fond {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+            object-fit: fill; 
+        }
+
+        .texte-sur-bulle {
+            position: relative;
+            z-index: 2; 
+            text-align: center;
+            font-family: 'DIN Condensed', sans-serif;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #000;
+            padding: 2px 15px 18px 15px; 
+        }
+
+        .souligne {
+            text-decoration: underline;
+        }
+
+        .mascotte {
+            position: absolute;
+            left: 5%;
+            bottom: -2vh; 
+            height: 45%; 
+            width: auto;
+            max-width: 50%;
+            object-fit: contain;
+            transform-origin: bottom left;
+            z-index: 5; /* Passe devant l'image et la bulle */
+            margin-bottom: 120px;
+            margin-left: -25px;
+        }
+
+        /* --- 5. Bouton d'action --- */
+        .btn-jaune {
+            position: absolute;
+            bottom: 0; /* Se cale sur la ligne du bas du conteneur... */
+            transform: translateY(50%); /* ...et descend de 50% de sa propre hauteur pour être à cheval ! */
+            z-index: 6;
+            
+            /* Dimensions réduites */
+            width: 120px; 
+            height: 55px; 
+            
+            background-color: #F0B83A; 
+            border: 3px solid black;
+            
+            /* Ovale déformée */
+            border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+            
+            /* L'ombre décalée vers le bas et la droite */
+            box-shadow: 4px 6px 0px 0px black;
+            
+            color: black;
+            text-decoration: none;
+            font-family: 'DIN Condensed', Impact, sans-serif;
+            font-weight: 900;
+            font-size: 13px; /* Légèrement réduit pour bien s'adapter à la nouvelle taille */
+            text-align: center;
+            line-height: 1.15;
+            letter-spacing: 0.5px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 0.1s, box-shadow 0.1s;
+
+            margin-bottom: 200px;
+            margin-left: 95px;
+        }
+
+
+        .btn-jaune:active {
+            transform: translateY(calc(50% + 2px));
+            box-shadow: 0px 2px 0px 0px black;
+        }
+
+        /* Bas de page */
+        footer {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 12vh; 
+            width: 100%;
+        }
+
+        .lien-continuer {
+            color: black;
+            font-size: clamp(10px, 1.8vh, 12px);
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: bold;position: relative;
+            z-index: 11; 
+            cursor: pointer;
+        }
+
+        .logo-departement {
+            height: 4.5vh; 
+            width: auto;
+            max-width: 120px;
+            margin-bottom: 50px;
+        }

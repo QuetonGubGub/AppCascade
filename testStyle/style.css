@@ -111,6 +111,31 @@ p {
 }
 
 /* Footer */
+#footerContentA {
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    font-size: small;
+    text-align: left;
+}
+
+#footerContentB {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: medium;
+    text-align: right;
+}
+
+#footerContentB a {
+    color: white;
+}
+
+#footerContentB br {
+    margin: 5px;
+}
+
 #footerBackground img {
     position: absolute;
 }
@@ -246,6 +271,10 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.libraryBtnSpecie img {
+    width: 100%;
 }
 
 #bibliotheque-famille{
