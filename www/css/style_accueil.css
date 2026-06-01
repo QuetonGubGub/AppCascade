@@ -154,7 +154,7 @@
         }
 
         /* --- 5. Bouton d'action --- */
-.btn-jaune {
+        .btn-jaune {
             position: absolute;
             bottom: 0; /* Se cale sur la ligne du bas du conteneur... */
             transform: translateY(50%); /* ...et descend de 50% de sa propre hauteur pour être à cheval ! */
@@ -177,7 +177,7 @@
             text-decoration: none;
             font-family: 'DIN Condensed', Impact, sans-serif;
             font-weight: 900;
-            font-size: 15px; /* Légèrement réduit pour bien s'adapter à la nouvelle taille */
+            font-size: 10px; /* Légèrement réduit pour bien s'adapter à la nouvelle taille */
             text-align: center;
             line-height: 1.15;
             letter-spacing: 0.5px;
@@ -187,6 +187,8 @@
             align-items: center;
             
             transition: transform 0.1s, box-shadow 0.1s;
+
+            margin-bottom: 150px;
         }
 
 
