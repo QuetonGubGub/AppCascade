@@ -46,7 +46,7 @@ main {
     padding-bottom: 50px;
 }
 
-p {
+p, a {
     font-family: 'DIN';
     font-size: large;
     padding-top: 5px;
@@ -64,22 +64,36 @@ p {
 }
 
 #headerContent button {
+    display: flex;
+    align-items: center;
     z-index: 5;
-    width: 40px;
     position: absolute;
     top: 30px;
     left: 10px;
+    padding-inline: 10px;
 }
 
 #headerContent h1 {
+    font-size: 26px;
     z-index: 5;
-    width: 245px;
+    width: 100%;
     position: absolute;
-    right: 5px;
-    top: 55px;
-    text-align: center;
+    right: 30px;
+    top: 65px;
+    text-align: right;
     color: white;
 }
+
+    #titre2-preparer {
+        font-size: 20px;
+        z-index: 5;
+        width: 100%;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        text-align: right;
+        color: white;
+    }
 
 #waveBlue {
     z-index: 1;
@@ -104,13 +118,13 @@ p {
 }
 
 #intro {
-    background-image: url(./img/blockIntro.png);
+    background-image: url(../img/general/blockIntro.png);
     height: 444px;
 
 }
 
 #wave {
-    background-image: url(./img/blockWave.png);
+    background-image: url(../img/general/blockWave.png);
     height: 450px;
 }
 
@@ -184,229 +198,13 @@ p {
     color : black;
 }
 
-/* Map plates */
-.mapPlate {
-    margin: 5px;
-    width: 40%;
-    border-radius: 10px;
-    background-color: var(--jauneVar);
-    text-align: center;
+/*Mascotte*/
+.img-mascotte {
+    width: 100px;
 }
 
-.mapPlate img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-    border-color: black;
-    border-bottom-style: solid;
-}
-
-.mapPlate p {
-    padding: 2px;
-    font-size: 1.30em;
-}
-
-/* Library */
-#headerContent>#nom-espece-animale {
-    max-width: 150px;
-    position: absolute;
-    right: 100px;
-    top: 45px;
-    text-align: right;
-    color: white;
-    z-index: 600;
-}
-
-#section-especes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding-top: 10em;
-    margin-bottom: 50px;
-}
-
-#titre-famille>h2 {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 55px;
-    top: 90px;
-    text-align: center;
-    color: white;
-    z-index: 600;
-}
-
-.libraryBtnSpecie {
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: var(--vertVar);
-    color: white;
-    font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#bibliotheque-famille{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    margin-inline: 15px;  
-}
-
-.famille-animal{
-    background-color:#AECC54;
-    border-radius: 10px;
-}
-
-.famille-animal>a {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    text-decoration-line: none;
-    padding: 10px;
-    color: white;
-    font-size: 16px;
-}
-
-    .div-image-animal{
-        border-radius: 100%;
-        border: solid black 3px;
-        background-color: #7CAAE3;
-    }
-
-    .famille-animal-img{
-        width: 60px;
-        height: 60px;
-        padding: 10px;
-        object-fit: contain;
-    }
-
-.image-espece-animale, #image-espece-animale {
-    width: 80px;
-    height: 80px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 100%;
-    object-fit: cover;
-}
-
-.lien-espece-animale {
-    text-decoration-line: none;
-    color: white;
-}
-
-.image-principale-animale {
-    position: absolute;
-    z-index: 500;
-    right: 10px;
-    top: 30px;
-}
-
-#liste-rouge-couleur {
-    position: absolute;
-    z-index: 550;
-    right: 10px;
-    top: 90px;
-    border-radius: 100%;
-    border: 2px solid black;
-    padding-inline: 6px;
-}
-
-#bloc-text {
-    margin-top: 140px;
-    margin-inline: 30px;
-}
-
-    #bloc-text>div {
-        margin-bottom: 10px;
-    }
-
-    #bloc-text>div>h3 {
-        text-decoration-line: underline;
-    }
-
-/*CAROUSEL*/
-.gallery-container {
-    display: flex;
-    overflow: hidden;
-    margin-top: 40px;
-    width: 100%;
-    padding-block: 15px;
-    box-sizing: border-box;
-}
-
-#galleryTrack {
-    display: flex;
-    transition: transform 0.4s ease;
-}
-
-#galleryTrack img {
-    width: calc(100% - 40px);
-    margin: 0 20px;
-    flex-shrink: 0;
-
-    border-radius: 5px;
-    object-fit: cover;
-
-    border: 2px solid black;
-    box-shadow: 4px 4px black;
-
-    transition: 0.25s;
-}
-
-.prev, .next {
-    z-index: 50;
-    border: none;
-    background: var(--blanc);
-    margin-block: -5px;
-}
-
-    #lightbox {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.85);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    #lightbox img {
-        max-width: 90%;
-        max-height: 90%;
-        border-radius: 12px;
-        box-shadow: 0 0 30px rgba(0,0,0,0.6);
-        animation: zoomIn 0.3s ease;
-        cursor: zoom-out;
-    }
-
-    @keyframes zoomIn {
-        from {
-            transform: scale(0.9);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes translate {
-        0% {transform : translateY(0);}
-        50% {transform : translateY(3px);}
-        100% {transform : translateY(0);}
-    }
-
-#vu {
-    text-align: center;
-    margin-block: 10px;
+.img-invert {
+    transform: scale(-1, 1);
 }
 
 /* Neobrutalist shadow */

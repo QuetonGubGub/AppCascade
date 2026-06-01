@@ -1,0 +1,92 @@
+/* Preparation */
+#comment-preparer {
+    display: flex;
+    position: relative;
+    margin-inline: 10px;
+    gap: 10px;
+}
+
+#mascotte-dialogue-1 {
+    position: absolute;
+    top: -20px;
+    left: 7em;
+    font-size: 16px;
+    max-width: 200px;
+}
+#bulle-1 {
+    position: absolute;
+    top: 20px;
+    left: 6.5em;
+}
+
+#liste-equipements {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.check-equipement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+    .check-equipement>i {
+        font-size: 24px;
+    }
+
+.equipement {
+    border: solid black 3px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 220px;
+}
+    .equipement>p {
+        font-size: 14px;
+    }
+
+.nom-equipement {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+    .nom-equipement>h3 {
+        font-size: 18px;
+    }
+    .icon-equipement {
+        height: 24px;
+    }
+
+#eviter-preparer {
+    display: flex;
+    position: relative;
+    margin-inline: 10px;
+    margin-block: 6em 3em;
+    justify-content: end;
+    gap: 10px;
+}
+
+#mascotte-dialogue-2 {
+    position: absolute;
+    top: -4em;
+    left: 1em;
+    font-size: 16px;
+    max-width: 250px;
+}
+#bulle-2 {
+    position: absolute;
+    bottom: 8.5em;
+    right: 6em;
+}
+
+#boutons-preparer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    #boutons-preparer>button>a {
+        text-decoration-line: none;
+        color: black;
+    }
