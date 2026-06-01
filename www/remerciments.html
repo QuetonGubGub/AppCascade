@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlantis StyleToolBox</title>
+    <title>Merci !</title>
     <link rel="stylesheet" href="css/style.css">
     <!--
     Penser à désactiver :
@@ -51,23 +51,28 @@
        <div class="nbShadow" style="background-color: var(--bleuClair);">
         <p>Qu'en avez-vous pensé ?</p>
         <div id="opinionBox">
-            <!-- Il faut implémenter le JS -->
+            <!--
+            JS
+            
+            Je me demande ce que les bouttons sont censé vraiment faire, est ce qu'ils envoient un truc à un serveur
+            ou est ce que c'est juste un placebo ?
+            -->
             <!--
             opinionBox {
                 padding: 10px;
+                margin: 10px 0;
                 border-radius: 5px;
             }
             -->
             <!-- Il faut aussi que je mette les images -->
-            <img src="" alt="Très satisfait">
-            <img src="" alt="Satisfait">
-            <img src="" alt="Mixe">
-            <img src="" alt="Peu satisfait">
-            <img src="" alt="Pas satisfait">
+            <button onclick="opinion('5')"><img src="" alt="Très satisfait"></button>
+            <button onclick="opinion('4')"><img src="" alt="Satisfait"></button>
+            <button onclick="opinion('3')"><img src="" alt="Mixe"></button>
+            <button onclick="opinion('2')"><img src="" alt="Peu satisfait"></button>
+            <button onclick="opinion('1')"><img src="" alt="Pas satisfait"></button>
         </div>
        </div>
-               <p>Vous en voulez plus ?</p>
-
+        <p>Vous en voulez plus ?</p>
         <a href="">
             <button class="nbShadow btnSqr btnSqrColor_grn"><p>JE VAIS AU VILLAGE !</p></button>
         </a>
