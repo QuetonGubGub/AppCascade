@@ -1,0 +1,131 @@
+:root {
+    --fond: #FFF5E0;
+    --vertVar: #AECC54;
+    --jauneVar: #F6C345;
+    --bleuClair: #7CAAE3;
+    --bleuFonce: #38679F;
+
+    --bigPadding : 10px 40px;
+    --smallPadding : 5px 10px;
+}
+
+@font-face {
+    font-family: 'DIN'; /*a name to be used later*/
+    font-weight: bold;
+    src: url('DIN Condensed.ttf'); /*URL to font*/
+}
+
+* {
+    margin : 0px
+}
+
+#headerContent {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+#headerContent button {
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#headerContent h1 {
+    width: 245px;
+    position: absolute;
+    right: 5px;
+    top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#waveBlue {
+    z-index: 500;
+    top: -2px;
+    left: -2px;
+}
+
+#waveGreen {
+    right: 0px;
+    top: -25px;
+}
+
+.btnCircl {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+.btnCirclColor_ylw {
+    background-color: var(--jauneVar);
+}
+
+.btnCirclColor_ylw img {
+    width: 25px;
+}
+
+body{
+    background-color: var(--fond);
+    font-family: 'DIN';
+}
+
+p{
+    font-family: 'DIN';
+}
+
+.info-box{
+    position: absolute;
+    background:var(--jauneVar);
+    border-radius:5px;
+    padding:10px 12px;
+    width: auto;
+}
+
+.info-box ul{
+    padding-left:22px;
+}
+
+.info-box li{
+    font-size:18px;
+}
+
+.manger{
+    left:16px;
+    top:452px;
+}
+
+.boire{
+    right:12px;
+    top:520px;
+}
+
+.animaux{
+    left:16px;
+    top:600px;
+}
+
+.interet{
+    right:12px;
+    top:690px;
+}
+
+.nbShadow {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 4px 4px black;
+    color: black;
+    transition: 0.25s;
+}
+
+.nbShadow:hover {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    transition: 0.25s;
+}
