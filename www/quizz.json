@@ -1,0 +1,28 @@
+{
+        "question-1" : {
+            "description" : "Sillans fait partie des premiers villages à être alimenté par cette énergie au sein de la région. Laquelle ?",
+            "reponse1": "Thermique",
+            "reponse2": "Electrique",
+            "reponse3": "Hydrolique",
+            "reponse4": "Mécanique",
+            "reponseFinale" : 3
+            },
+
+        "question-2" : {
+            "description" : "Quelle espèce de chauve-souris n'habite pas à Sillans-la-Cascade ?",
+            "reponse1": "Rhinolophe",
+            "reponse2": "Oreillard",
+            "reponse3": "Murin",
+            "reponse4": "Pipistrelle",
+            "reponseFinale" : 2
+            },
+        
+        "question-3" : {
+            "description" : "Quel oiseau présent sur le site est en danger d'extinction ?",
+            "reponse1": "Coucou gris",
+            "reponse2": "Corneille noire",
+            "reponse3": "Fauvette pitchou",
+            "reponse4": "Alouette lulu",
+            "reponseFinale" : 3
+            }
+}

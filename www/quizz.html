@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'App Cascade - Bibliothèque</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quizz.css">
+</head>
+<body>
+
+    <!-- Section En-tête -->
+    <header>
+        <div id="headerContent">
+            <button class="nbShadow btnCircl btnCirclColor_ylw"><a href="mode-visite.html"><img src="../testStyle/img/back-btn.png"></a></button>
+            <h1>QUIZZ AVANT DE PARTIR</h1>
+            <div id="headerBackground">
+                <img src="img/general/vagueBleu.svg" id="waveBlue">
+                <img src="img/general/vagueVerte.svg" id="waveGreen">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="section-quizz">
+            <p><span class="num-question">0</span> / 15</p>
+            <div id="block-question" class="nbShadow">
+                <h2>QUESTION <span class="num-question">0</span></h2>
+                <div id="div-question">
+                    <p id="description-question">Question posée ici</p>
+                </div>
+                <div id="reponses">
+                    <button id="rep-1">Réponse 1</button>
+                    <button id="rep-2">Réponse 2</button>
+                    <button id="rep-3">Réponse 3</button>
+                    <button id="rep-4">Réponse 4</button>
+                </div>
+            </div>
+        </section>
+        <div id="div-score">
+            <h3 class="btnSqrColor_blue nbShadow">SCORE : <span id="score">0</span> / 15</h3>
+            <img id="mascotte-quizz" src="img/mascotte/mascotte-question.png">
+        </div>
+    </main>
+<script src="quizz.js"></script>
+</body>
+</html>
