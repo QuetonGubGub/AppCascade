@@ -8,9 +8,61 @@ main {
     align-items: center;
 }
 
+#notificationBox {
+    background-color: var(--jauneVar);
+    border-radius: 5px; 
+    padding: 5px; 
+    margin-bottom: 15px;
+}
+
 #opinionBox {
     padding: 10px;
     margin: 10px 0;
+    background-color: var(--bleuClair);
     border-radius: 5px;
-    margin: 10px;
+}
+
+/* Buttons */
+#opinionButtons button {
+    width: 6vh;
+    background: none;
+    border-style: none;
+}
+
+/* Footer */
+#footerContentA {
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    font-size: small;
+    text-align: left;
+}
+
+#footerContentB {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: medium;
+    text-align: right;
+}
+
+#footerContentB a {
+    color: white;
+}
+
+#footerContentB br {
+    margin: 5px;
+}
+
+#footerBackground img {
+    position: absolute;
+}
+
+#waveCyanDown {
+    z-index: 500;
+}
+
+#waveBlueDown {
+    right: 0px;
 }
