@@ -195,6 +195,7 @@ p, a {
 .btnCircl {
     padding: 5px;
     margin: 5px;
+    min-width: 10px;
     border-radius: 50px;
     aspect-ratio: 1 / 1;
     display: flex;

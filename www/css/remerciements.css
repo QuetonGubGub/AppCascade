@@ -1,3 +1,7 @@
+#headerContent h1 {
+    font-size: 50px;
+    top: 50px
+}
 
 main {
     text-align: center;
