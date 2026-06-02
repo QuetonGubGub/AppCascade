@@ -27,42 +27,10 @@ main {
     width: 6vh;
     background: none;
     border-style: none;
+    transition: 0.25s;
 }
 
-/* Footer */
-#footerContentA {
-    position: absolute;
-    padding: 10px;
-    z-index: 1000;
-    font-size: small;
-    text-align: left;
-}
-
-#footerContentB {
-    position: absolute;
-    right: 0px;
-    padding: 10px;
-    z-index: 1000;
-    font-size: medium;
-    text-align: right;
-}
-
-#footerContentB a {
-    color: white;
-}
-
-#footerContentB br {
-    margin: 5px;
-}
-
-#footerBackground img {
-    position: absolute;
-}
-
-#waveCyanDown {
-    z-index: 500;
-}
-
-#waveBlueDown {
-    right: 0px;
+#opinionButtons button:hover {
+    transform: scale(1.2);
+    transition: 0.25s;
 }

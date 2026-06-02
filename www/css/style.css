@@ -50,6 +50,7 @@ p, a {
     font-family: 'DIN';
     font-size: large;
     padding-top: 5px;
+    text-decoration: none;
 }
 
 /* Header */
@@ -129,6 +130,31 @@ p, a {
 }
 
 /* Footer */
+#footerContentA {
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    font-size: small;
+    text-align: left;
+}
+
+#footerContentB {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    z-index: 1000;
+    text-align: right;
+}
+
+#footerContentB a {
+    color: white;
+    font-size: medium;
+}
+
+#footerContentB br {
+    margin: 5px;
+}
+
 #footerBackground img {
     position: absolute;
 }
@@ -216,7 +242,7 @@ p, a {
     transition: 0.25s;
 }
 
-.nbShadow:hover {
+.nbShadow:hover > button, a button {
     border-width: 2px;
     border-color: black;
     border-style: solid;

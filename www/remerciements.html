@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="headerContent">
-            <button class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/book-solid-full.svg"></button>
+            <a href="accueil.html"><button class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/book-solid-full.svg"></button></a>
             <h1>MERCI !</h1>
         </div>
         <div id="headerBackground">
@@ -30,18 +30,11 @@
        <div class="nbShadow" id="opinionBox">
         <p>Qu'en avez-vous pensé ?</p>
         <div id="opinionButtons">
-            <!--
-            JS
-            
-            Je me demande ce que les bouttons sont censé vraiment faire, est ce qu'ils envoient un truc à un serveur
-            ou est ce que c'est juste un placebo ?
-            -->
-            <!-- Il faut aussi que je mette les images -->
-            <button onclick="opinion('5')"><img src="img/remerciements/face-grin-solid-full.svg" alt="Très satisfait"></button>
-            <button onclick="opinion('4')"><img src="img/remerciements/face-smile-solid-full.svg" alt="Satisfait"></button>
-            <button onclick="opinion('3')"><img src="img/remerciements/face-meh-solid-full.svg" alt="Mixe"></button>
-            <button onclick="opinion('2')"><img src="img/remerciements/face-frown-solid-full.svg" alt="Peu satisfait"></button>
-            <button onclick="opinion('1')"><img src="img/remerciements/face-angry-solid-full.svg" alt="Pas satisfait"></button>
+            <button onclick="opinion(5)"><img src="img/remerciements/face-grin-solid-full.svg" alt="Très satisfait"></button>
+            <button onclick="opinion(4)"><img src="img/remerciements/face-smile-solid-full.svg" alt="Satisfait"></button>
+            <button onclick="opinion(3)"><img src="img/remerciements/face-meh-solid-full.svg" alt="Mixe"></button>
+            <button onclick="opinion(2)"><img src="img/remerciements/face-frown-solid-full.svg" alt="Peu satisfait"></button>
+            <button onclick="opinion(1)"><img src="img/remerciements/face-angry-solid-full.svg" alt="Pas satisfait"></button>
         </div>
        </div>
         <p>Vous en voulez plus ?</p>
@@ -71,5 +64,24 @@
             <img src="img/general/vagueBleuBas.svg" id="waveBlueDown">
         </div>
     </footer>
+    <script>
+        opinionSwitch = false
+
+        function opinion(n) {
+            if (!opinionSwitch) {
+                // Envoi de la réponse vers un serveur éxterieur
+                console.log("Retour utilisateur : "+n)
+                alert("Merci de nous avoir donné votre avis !")
+
+                // Vérouillage
+                box = document.getElementById("opinionBox")
+                box.setAttribute("style", "opacity: 50%;")
+                opinionSwitch = true
+            } else {
+                // Pas de bourage
+                console.log("Opinion déjà éxprimé")
+            }
+        }
+    </script>
 </body>
 </html>
