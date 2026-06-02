@@ -1,0 +1,33 @@
+header img {
+    width: 200px
+}
+
+.btnLang {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: var(--vertVar);
+    font-size: 16px;
+}
+
+#textBlock{
+    background-color: var(--jauneVar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+#textBlock img{
+    width: 150px;
+}
+
+.img-container{
+    position:relative;
+    display: inline-block;
+    background-color: var(--jauneVar);
+}
+

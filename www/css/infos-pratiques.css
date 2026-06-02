@@ -1,0 +1,35 @@
+.info-box{
+    position: absolute;
+    background:var(--jauneVar);
+    border-radius:5px;
+    padding:10px 12px;
+    width: auto;
+}
+
+.info-box ul{
+    padding-left:22px;
+}
+
+.info-box li{
+    font-size:18px;
+}
+
+.manger{
+    left:16px;
+    top:452px;
+}
+
+.boire{
+    right:12px;
+    top:520px;
+}
+
+.animaux{
+    left:16px;
+    top:600px;
+}
+
+.interet{
+    right:12px;
+    top:690px;
+}
