@@ -19,17 +19,17 @@
         </div>
     </header>
     <main id="thankPage">
-        <div class="nbShadow opinionBox" style="background-color: var(--jauneVar);border-radius: 8px; padding: 5px; margin-bottom: 15px;">
+        <div class="nbShadow" id="notificationBox">
             <p>Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.</p>
             <h3>Vous avez contribué à la protection du site !</h3>
         </div>
-        <img src="img/mascotte/Mascotte.png" alt="Frisby est fière de vous !">
+        <img src="img/mascotte/Mascotte_Heureuse_O.png" alt="Frisby est fière de vous !" style="width: 50%; margin-bottom: 10px;">
 
        <p>On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête. </p>
        
-       <div class="nbShadow" style="background-color: var(--bleuClair);">
+       <div class="nbShadow" id="opinionBox">
         <p>Qu'en avez-vous pensé ?</p>
-        <div id="opinionBox">
+        <div id="opinionButtons">
             <!--
             JS
             
@@ -37,11 +37,11 @@
             ou est ce que c'est juste un placebo ?
             -->
             <!-- Il faut aussi que je mette les images -->
-            <button onclick="opinion('5')"><img src="" alt="Très satisfait"></button>
-            <button onclick="opinion('4')"><img src="" alt="Satisfait"></button>
-            <button onclick="opinion('3')"><img src="" alt="Mixe"></button>
-            <button onclick="opinion('2')"><img src="" alt="Peu satisfait"></button>
-            <button onclick="opinion('1')"><img src="" alt="Pas satisfait"></button>
+            <button onclick="opinion('5')"><img src="img/remerciements/face-grin-solid-full.svg" alt="Très satisfait"></button>
+            <button onclick="opinion('4')"><img src="img/remerciements/face-smile-solid-full.svg" alt="Satisfait"></button>
+            <button onclick="opinion('3')"><img src="img/remerciements/face-meh-solid-full.svg" alt="Mixe"></button>
+            <button onclick="opinion('2')"><img src="img/remerciements/face-frown-solid-full.svg" alt="Peu satisfait"></button>
+            <button onclick="opinion('1')"><img src="img/remerciements/face-angry-solid-full.svg" alt="Pas satisfait"></button>
         </div>
        </div>
         <p>Vous en voulez plus ?</p>
