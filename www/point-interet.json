@@ -13,7 +13,7 @@
         "nom" : "Le champ",
         "image" : "img/point-interet/champ.jpg",
         "description-1" : "En empruntant le sentier de la rive droite, vous traversez un vaste espace ouvert qui offre une respiration bucolique avant d'atteindre les sous-bois. Ce grand champ n'est pas seulement un paysage de carte postale : c'est un espace pastoral vivant qui joue un rôle essentiel dans l'entretien du site. Selon la saison, vous y rencontrerez des animaux en éco-pâturage. Ces animaux sont les jardiniers naturels de Sillans : en broutant, ils limitent la prolifération des broussailles, préviennent les risques d'incendie et favorisent la biodiversité.",
-        "description-2" : "Le sol de ce plateau est composé de terres fertiles reposant sur d'anciennes couches de bauxite et de calcaire. En observant les bords du chemin, vous remarquerez peut-être des roches aux nuances rougeâtres, le tuff, témoins du passé minier de la région. Ce milieu ouvert est aussi le terrain de chasse privilégié de nombreux oiseaux. ",
+        "description-2" : "Le sol de ce plateau est composé de terres fertiles reposant sur d'anciennes couches de bauxite et de calcaire. En observant les bords du chemin, vous remarquerez peut-être des roches aux nuances rougeâtres, le tuf, témoins du passé minier de la région. Ce milieu ouvert est aussi le terrain de chasse privilégié de nombreux oiseaux. ",
         "description-3" : "Ce passage offre une lumière magnifique, particulièrement en fin de journée lorsque les rayons rasants soulignent le relief des collines environnantes. C'est un lieu de quiétude où le temps semble s'arrêter, loin de l'effervescence de la cascade. Respectez la tranquillité des animaux présents et restez bien sur les sentiers balisés pour ne pas piétiner cette flore sauvage qui, au printemps, se pare de mille couleurs avec l'éclosion des fleurs de champs et des orchidées sauvages.",
         "prochain" : " le panoramique",
         "video" : "#"
@@ -23,8 +23,8 @@
         "nom" : "Le paronamique",
         "image" : "img/point-interet/panorama.jpg",
         "description-1" : "Ici, sur ce panorama de la rive droite, le spectacle change de dimension. Tandis que le belvédère d'en face offre une vue frontale, ce panorama vous plonge au cœur de la végétation avec la cascade vue de loin. C'est un point de vue remarquable : la cascade commence à se dévoiler, nichée dans un écrin de falaises.",
-        "description-2" : "Ici, sur ce panorama de la rive droite, le spectacle change de dimension. Tandis que le belvédère d'en face offre une vue frontale, ce panorama vous plonge au cœur de la végétation avec la cascade vue de loin. C'est un point de vue remarquable : la cascade commence à se dévoiler, nichée dans un écrin de falaises.",
-        "description-3" : "Ce sentier permet d'apprécier en profondeur le site tout en restant à l'abri du tumulte de la cascade. Prenez le temps d'observer la vue : vous êtes, de loin, face à l'âme sauvage de Sillans.",
+        "description-2" : "Ce sentier permet d'apprécier en profondeur le site tout en restant à l'abri du tumulte de la cascade. Prenez le temps d'observer la vue : vous êtes, de loin, face à l'âme sauvage de Sillans.",
+        "description-3" : "",
         "prochain" : " la cascade",
         "video" : "#"
             },
