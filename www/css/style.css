@@ -72,6 +72,7 @@ p, a {
     top: 30px;
     left: 10px;
     padding-inline: 10px;
+    min-width: 2em;
 }
 
 #headerContent h1 {
