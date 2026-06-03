@@ -1,4 +1,16 @@
 main {
     word-wrap: anywhere;
-    padding: 170px 20px 10px;
+    padding: 150px 20px 10px;
+}
+
+h3 {
+    padding: 20px 0 10px;
+}
+
+p, li {
+    font-size: smaller;
+}
+
+li {
+    margin-left: 20px;
 }
