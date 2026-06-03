@@ -223,14 +223,6 @@ p, a {
     width: 40px;
 }
 
-.btnLang {
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 50px;
-    background-color: var(--vertVar);
-    color : black;
-}
-
 /*Mascotte*/
 .img-mascotte {
     width: 100px;

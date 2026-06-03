@@ -281,6 +281,34 @@
                 "img/bibliotheque/alouette-lulu/alouette-2.webp",
                 "img/bibliotheque/alouette-lulu/alouette-3.webp"
                 ]
+            },
+
+        "cincle" : {
+            "image-espece-animale" : "img/bibliotheque/cincle-plongeur/cincle-1.jpg",
+            "nom-espece-animale": "Cincle plongeur",
+            "liste-rouge": "LC",
+            "liste-rouge-couleur": "#00b04f",
+            "esperance-vie" : "8",
+            "regime-alimentaire" : "Insectivore",
+            "description-espece-animale" : "Le cincle plongeur est un petit passereau pas plus grand que 20 cm, d'envergure maximum 30 cm et pesant maximum 85g. Il a une méthode de pêche assez particulière, il plonge complètement dans l’eau et marche sur le fond à contre-courant puis retourne les pierres ou fouille les plantes aquatiques à la recherche d’insectes. Il vit généralement en solitaire ou bien en couple territorial. La période de reproduction se déroule d’avril à juillet et la ponte ne comporte pas plus de 6 œufs. On observe souvent 2 couvées par an.",
+            "carousel": [
+                "img/bibliotheque/cincle-plongeur/cincle-2.png",
+                "img/bibliotheque/cincle-plongeur/cincle-3.png"
+                ]
+            },
+
+        "martin-pecheur" : {
+            "image-espece-animale" : "img/bibliotheque/martin-pecheur/martin-1.jpg",
+            "nom-espece-animale": "Martin pêcheur",
+            "liste-rouge": "LC",
+            "liste-rouge-couleur": "#00b04f",
+            "esperance-vie" : "7",
+            "regime-alimentaire" : "Piscivore",
+            "description-espece-animale" : "Le martin pêcheur est un petit oiseau pas plus grand que 18 cm, d'envergure maximum 26 cm et pesant maximum 45 g. C’est un petit animal assez important car sa présence sur un site indique une très bonne qualité du milieu aquatique. Dans la nature, en dehors de la période de reproduction, il vit en solitaire. Mais durant la nidification, il vit en couple pour travailler ensemble sur la construction du nid. La période de reproduction se déroule d’avril à août et la ponte ne comporte pas plus de 7 œufs. Le plus souvent, cet oiseau peut avoir 2 couvées par an, voire 3 durant les bonnes années.",
+            "carousel": [
+                "img/bibliotheque/martin-pecheur/martin-2.jpg",
+                "img/bibliotheque/martin-pecheur/martin-3.jpg"
+                ]
             }
         
     }
