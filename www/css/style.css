@@ -44,7 +44,6 @@ body {
 
 main {
     padding-top: 170px;
-    padding-bottom: 50px;
 }
 
 p, a {
@@ -55,6 +54,7 @@ p, a {
 /* Header */
 #headerBackground img {
     position: absolute;
+    width: 350px;
 }
 
 #headerContent {
@@ -178,9 +178,14 @@ p, a {
     color : black;
 }
 
-.btnSqrColor_blue {
+.btnSqrColor_light-blue {
     padding: var(--bigPadding);
     background-color: var(--bleuClair);
+}
+
+.btnSqrColor_blue {
+    padding: var(--bigPadding);
+    background-color: var(--bleuFonce);
 }
 
 .btnSqrColor_grn {

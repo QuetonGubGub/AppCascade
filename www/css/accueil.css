@@ -1,5 +1,8 @@
-header img {
-    width: 200px
+#headerContent img {
+    position: absolute;
+    width: 250px;
+    top: 30px;
+    left: 30px;
 }
 
 .btnLang {
@@ -10,6 +13,14 @@ header img {
     font-size: 16px;
 }
 
+#section1 img{
+    width: 150px;
+    position: absolute;
+    z-index: -10;
+    top:220px;
+    left: 250px;
+}
+
 #textBlock{
     background-color: var(--jauneVar);
     display: flex;
@@ -18,16 +29,19 @@ header img {
     text-align: center;
     flex-direction: column;
     padding: 15px;
+    padding-bottom: 30px;
     gap: 10px;
+    border-top: 3px solid black;
 }
 
 #textBlock img{
-    width: 150px;
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.img-container{
-    position:relative;
-    display: inline-block;
-    background-color: var(--jauneVar);
+footer {
+    position: relative;
+    bottom: 20px;
 }
-
