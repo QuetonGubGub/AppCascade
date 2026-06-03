@@ -1,8 +1,22 @@
+#section1 a{
+    text-decoration: none;
+}
+
 #headerContent img {
     position: absolute;
-    width: 250px;
+    width: 210px;
     top: 30px;
     left: 30px;
+}
+
+#headerContent button {
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    padding-inline: 10px;
 }
 
 .btnLang {
@@ -10,15 +24,36 @@
     margin: 5px;
     border-radius: 50px;
     background-color: var(--vertVar);
-    font-size: 16px;
+    color : black;
+    left: 200px;
 }
 
-#section1 img{
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    padding-bottom: 70px;
+}
+
+#section1 a {
+    width: 150px;
+    justify-content: center;
+}
+
+#mascotte{
     width: 150px;
     position: absolute;
     z-index: -10;
-    top:220px;
+    top:350px;
     left: 250px;
+}
+
+#bulle{
+    width: 30px;
+    position: absolute;
+    left: 200px;
+    top: 400px;
 }
 
 #textBlock{

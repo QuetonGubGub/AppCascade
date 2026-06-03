@@ -48,29 +48,18 @@ main {
 
 p, a {
     font-family: 'DIN';
-    padding-top: 5px;
 }
 
 /* Header */
 #headerBackground img {
     position: absolute;
-    width: 350px;
+    width: 310px;
 }
 
 #headerContent {
     position: absolute;
     z-index: 10;
     width: 100%;
-}
-
-#headerContent button {
-    display: flex;
-    align-items: center;
-    z-index: 5;
-    position: absolute;
-    top: 30px;
-    left: 10px;
-    padding-inline: 10px;
 }
 
 #headerContent h1 {
@@ -179,7 +168,7 @@ p, a {
 }
 
 .btnSqrColor_light-blue {
-    padding: var(--bigPadding);
+    padding: var(--smallPadding);
     background-color: var(--bleuClair);
 }
 
@@ -221,14 +210,6 @@ p, a {
 
 .btnCirclColor_grn img {
     width: 40px;
-}
-
-.btnLang {
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 50px;
-    background-color: var(--vertVar);
-    color : black;
 }
 
 /*Mascotte*/
