@@ -82,6 +82,12 @@ main h3{
     overflow: hidden;
 }
 
+    #div-score h3 {
+        text-align: center;
+        width: 50%
+    }
+
+
 .bonne-reponse {
     background-color: #4CAF50 !important;
     color: white;

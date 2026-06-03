@@ -24,5 +24,114 @@
             "reponse3": "Fauvette pitchou",
             "reponse4": "Alouette lulu",
             "reponseFinale" : 3
+            },
+
+
+        "question-4" : {
+            "description" : "Est-il possible de se baigner dans la cascade ?",
+            "reponse1": "Non, jamais",
+            "reponse2": "Seulement durant certaines saisons",
+            "reponse3": "Oui, tout le temps",
+            "reponse4": "Cela dépend de la météo",
+            "reponseFinale" : 1 
+            },
+
+        "question-5" : {
+            "description" : "Qu'est-ce qu'il y avait avant l'école maternelle dans le village ?",
+            "reponse1": "Un restaurant",
+            "reponse2": "Une église",
+            "reponse3": "Un hôtel",
+            "reponse4": "Une gare",
+            "reponseFinale" : 4 
+            },
+
+        "question-6" : {
+            "description" : "Comment sont créées naturellement les cascades ?",
+            "reponse1": "Par érosion",
+            "reponse2": "Par magie",
+            "reponse3": "Par les chauve-souris qui creusent des cavités",
+            "reponse4": "Par des cascadeurs",
+            "reponseFinale" : 1 
+            },
+
+        "question-7" : {
+            "description" : "Que signifie l'abréviation ENS ?",
+            "reponse1": "Essence Naturel du Site",
+            "reponse2": "Embarquement Naval au Sud",
+            "reponse3": "Ensemble National de Sécurité",
+            "reponse4": "Espace Naturel Sensible",
+            "reponseFinale" : 4 
+            },
+
+        "question-8" : {
+            "description" : "Qu'est-ce qu'un belvédère ?",
+            "reponse1": "Une roche riche en minéraux",
+            "reponse2": "Un oiseau des montagnes",
+            "reponse3": "Un point de vue panoramique",
+            "reponse4": "Une eau turquoise",
+            "reponseFinale" : 3 
+            },
+
+        "question-9" : {
+            "description" : "Quelle est la roche la plus importante historiquement du site ?",
+            "reponse1": "L'obsidienne",
+            "reponse2": "Le tuf",
+            "reponse3": "Le calcaire",
+            "reponse4": "Le gravier",
+            "reponseFinale" : 2 
+            },
+
+        "question-10" : {
+            "description" : "A la tombée de la nuit, certains animaux sortent de leur cachette pour chasser les insectes dans les champs du site, lesquels ?",
+            "reponse1": "Les chauve-souris",
+            "reponse2": "Tous les oiseaux",
+            "reponse3": "Les fourmiliers",
+            "reponse4": "Les chevreuils",
+            "reponseFinale" : 1 
+            },
+
+        "question-11" : {
+            "description" : "Combien de mètres (en hauteur) mesure la cascade de Sillans ?",
+            "reponse1": "25 m",
+            "reponse2": "54 m",
+            "reponse3": "42 m",
+            "reponse4": "33 m",
+            "reponseFinale" : 3 
+            },
+
+        "question-12" : {
+            "description" : "Quelles sont les spécialités locales du village ?",
+            "reponse1": "La baguette au blé complet",
+            "reponse2": "La tarte au pomme et myrtille",
+            "reponse3": "L'huile d'olive et le vin de Provence",
+            "reponse4": "Les pizzas et burgers",
+            "reponseFinale" : 3 
+            },
+
+        "question-13" : {
+            "description" : "Quelles activités sportives sont disponibles à Sillans-la-Cascade ?",
+            "reponse1": "La randonnée et le cyclisme",
+            "reponse2": "La musculation",
+            "reponse3": "La nage",
+            "reponse4": "Le volley ball et le badminton",
+            "reponseFinale" : 1 
+            },
+
+        "question-14" : {
+            "description" : "Pourquoi l'eau de la cascade est-elle turquoise ?",
+            "reponse1": "Grâce à certains poissons",
+            "reponse2": "Grâce aux insectes aquatiques",
+            "reponse3": "Grâce à la mousse tapissée au fond",
+            "reponse4": "Grâce au carbonate de calcium",
+            "reponseFinale" : 4 
+            },
+
+        "question-15" : {
+            "description" : "Comment s'appelle notre mascotte ?",
+            "reponse1": "Fredon",
+            "reponse2": "Fraise",
+            "reponse3": "Frisby",
+            "reponse4": "Frimousse",
+            "reponseFinale" : 3 
             }
 }

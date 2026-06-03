@@ -68,7 +68,6 @@ function verifierReponse(numeroReponse) {
         }
     });
 
-    // Mise à jour du score
     if (numeroReponse === q.reponseFinale) {
         scoreQuiz++;
         score.textContent = scoreQuiz;
@@ -97,5 +96,5 @@ function verifierReponse(numeroReponse) {
         `
         }
 
-    }, 2000);
+    }, 1500);
 }
