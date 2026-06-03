@@ -173,7 +173,7 @@ p, a {
 }
 
 .btnSqrColor_blue {
-    padding: var(--bigPadding);
+    padding: var(--smallPadding);
     background-color: var(--bleuFonce);
 }
 

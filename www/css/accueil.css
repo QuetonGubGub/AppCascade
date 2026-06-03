@@ -32,32 +32,32 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 10px;
+    gap: 5px;
     padding-bottom: 70px;
 }
 
 #section1 a {
     width: 150px;
-    justify-content: center;
+    justify-content: left;
+    color: white;
 }
 
 #mascotte{
     width: 150px;
     position: absolute;
     z-index: -10;
-    top:350px;
-    left: 250px;
+    top:340px;
+    left: 150px;
 }
 
 #bulle{
     width: 30px;
     position: absolute;
-    left: 200px;
-    top: 400px;
+    left: 130px;
+    top: 360px;
 }
 
 #textBlock{
-    background-color: var(--jauneVar);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +66,11 @@
     padding: 15px;
     padding-bottom: 30px;
     gap: 10px;
-    border-top: 3px solid black;
 }
 
 #textBlock img{
-    width: 120px;
-    height: 150px;
+    width: 220px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
