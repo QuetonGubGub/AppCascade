@@ -28,6 +28,11 @@
     src: url('Inter.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'ProtestRiot'; /*a name to be used later*/
+    src: url('ProtestRiot-Regular.ttf'); /*URL to font*/
+}
+
 /* Basic stuff */
 * {
     margin : 0px;
