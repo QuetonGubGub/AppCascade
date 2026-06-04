@@ -29,15 +29,23 @@
             <img src="img/mascotte/mascotte-question-2.png" alt="Mascotte guide" class="mascotte">
         </div>
 
-        <a href="#" class="btn-jaune">
+        <button onclick="downloadAndRedirect()" class="btn-jaune" style="border:none; cursor:pointer; font:inherit;">
             TÉLÉCHARGER<br>LES DONNÉES
-        </a>
+        </button>
     </main>
 
     <footer>
-        <a href="#" class="lien-continuer">CONTINUER SANS TELECHARGER</a>
+        <a href="carte.html" class="lien-continuer">CONTINUER SANS TELECHARGER</a>
         <img src="img/general/logo-departement-var.png" alt="Logo département du Var" class="logo-departement">
     </footer>
 
+    <script>
+        function downloadAndRedirect() {
+            // Ici, on marque que les données sont téléchargées
+            localStorage.setItem('data_downloaded', 'true');
+            // Redirection vers la carte
+            window.location.href = 'carte.html';
+        }
+    </script>
 </body>
 </html>
