@@ -1,4 +1,18 @@
-/* Preparation */
+main {
+    padding-bottom: 0;
+}
+
+#titre2-preparer {
+        font-size: 20px;
+        z-index: 5;
+        width: 100%;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        text-align: right;
+        color: white;
+    }
+
 #comment-preparer {
     display: flex;
     position: relative;
@@ -9,21 +23,45 @@
 #mascotte-dialogue-1 {
     position: absolute;
     top: -20px;
-    left: 7em;
-    font-size: 16px;
-    max-width: 200px;
+    left: 6em;
+    font-family: ProtestRiot;
+    font-size: 14px;
+    max-width: 210px;
 }
+
+#mascotte-equipement .img-mascotte {
+    width: 80px;
+
+}
+
 #bulle-1 {
     position: absolute;
     top: 20px;
-    left: 6.5em;
+    left: 5em;
+}
+
+#block-deco {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    background-color: var(--vertVar);
+    border: solid black 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
 }
 
 #liste-equipements {
     display: flex;
     flex-direction: column;
+    background-color: var(--jauneVar);
+    border: solid black 3px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 20px;
     margin-top: 40px;
     gap: 10px;
+    width: 75%;
 }
 
 .check-equipement {
@@ -33,11 +71,17 @@
     gap: 5px;
 }
     .check-equipement>i {
-        font-size: 24px;
+        font-size: 14px;
+        background-color: var(--vertVar);
+        border: solid black 2px;
+        border-radius: 100%;
+        padding-block: 3px;
+        padding-inline: 4px;
     }
 
 .equipement {
     border: solid black 3px;
+    background-color: white;
     padding: 5px;
     border-radius: 5px;
     width: 220px;
@@ -48,45 +92,65 @@
 
 .nom-equipement {
     display: flex;
-    gap: 10px;
+    font-family: inter;
+    gap: 5px;
     align-items: center;
 }
     .nom-equipement>h3 {
-        font-size: 18px;
+        font-size: 12px;
     }
     .icon-equipement {
-        height: 24px;
+        height: 20px;
     }
 
 #eviter-preparer {
     display: flex;
     position: relative;
-    margin-inline: 10px;
-    margin-block: 6em 3em;
+    margin-inline: 0;
+    margin-top: 30px;
     justify-content: end;
     gap: 10px;
+    overflow: hidden;
+    height: 330px;
+    width: 100%;
 }
+
+    #eviter-preparer .img-mascotte {
+        position: absolute;
+        width: 200px;
+        right: -4em;
+        top: 2em;
+    }
 
 #mascotte-dialogue-2 {
     position: absolute;
-    top: -4em;
-    left: 1em;
-    font-size: 16px;
-    max-width: 250px;
+    top: 0;
+    left: 0;
+    font-family: ProtestRiot;
+    font-size: 14px;
+    text-align: center;
+    max-width: 280px;
 }
 #bulle-2 {
     position: absolute;
-    bottom: 8.5em;
-    right: 6em;
+    top: 4em;
+    right: 7em;
 }
 
 #boutons-preparer {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 10px;
+    left: 20px;
+    bottom: -14em;
+    max-width: 200px;
 }
-    #boutons-preparer>button>a {
+    #boutons-preparer a {
+        display: flex;
+        gap: 5px;
         text-decoration-line: none;
         color: black;
+        width: 100%;
+        padding: 10px;
     }
