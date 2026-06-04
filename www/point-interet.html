@@ -30,5 +30,10 @@
 
 <script src="point-interet.js"></script>
 <script src="pictoFA.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+</script>
 </body>
 </html>
