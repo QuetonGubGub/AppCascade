@@ -40,43 +40,38 @@
 
     <script>
 async function downloadAndRedirect() {
-            const btn = document.getElementById('btn-dl');
-            const status = document.getElementById('status-text');
-            btn.disabled = true;
-            status.innerHTML = "Téléchargement en cours...";
+    const btn = document.getElementById('btn-dl');
+    const status = document.getElementById('status-text');
+    btn.disabled = true;
+    status.innerHTML = "Téléchargement en cours...";
 
-            // LISTE EXHAUSTIVE DES FICHIERS (Assurez-vous que les noms sont exacts)
-            const filesToCache = [
-                '/index.html', 
-                '/carte.html', 
-                '/css/style_carte.css',
-                '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', 
-                '/lieu_4.html', '/lieu_5.html', '/lieu_6.html',
-                '/img/general/IMAGE_OFFICE.jpg', 
-                '/img/general/IMAGE_CHAMP.jpg', 
-                '/img/general/IMAGE_PANORAMA.png',
-                '/img/general/IMAGE_CASCADE.jpg', 
-                '/img/general/IMAGE_ECOLE_GARE.png', 
-                '/img/general/IMAGE_VILLAGE.jpg'
-            ];
+    const filesToCache = [
+        '/', '/carte.html', '/css/style_carte.css',
+        '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', 
+        '/lieu_4.html', '/lieu_5.html', '/lieu_6.html',
+        'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg', 'img/general/IMAGE_PANORAMA.png',
+        'img/general/IMAGE_CASCADE.jpg', 'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
+    ];
 
+    try {
+        const cache = await caches.open('app-cascade-v1');
+        
+        // On traite les fichiers un par un pour ne pas tout annuler si un seul manque
+        for (const url of filesToCache) {
             try {
-                // Enregistrement du service worker avant de cacher
-                if ('serviceWorker' in navigator) {
-                    await navigator.serviceWorker.register('sw.js');
-                }
-
-                const cache = await caches.open('app-cascade-v1');
-                await cache.addAll(filesToCache);
-                
-                localStorage.setItem('data_downloaded', 'true');
-                window.location.href = 'carte.html';
-            } catch (err) {
-                console.error("Erreur cache :", err);
-                status.innerHTML = "Erreur : Vérifiez que tous les fichiers listés existent dans votre dossier.";
-                btn.disabled = false;
+                await cache.add(url);
+            } catch (e) {
+                console.warn("Fichier non trouvé (ignoré) :", url);
             }
         }
+        
+        localStorage.setItem('data_downloaded', 'true');
+        window.location.href = 'carte.html';
+    } catch (err) {
+        status.innerHTML = "Erreur fatale. Vérifiez la console.";
+        btn.disabled = false;
+    }
+}
     </script>
 </body>
 </html>
