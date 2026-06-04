@@ -38,7 +38,8 @@
 .libraryBtnSpecie {
     position: relative;
     background-size: cover;
-    height: 150px;
+    background-position: center;
+    height: 180px;
     width: 150px;
     padding: 10px;
     border-radius: 10px;    
@@ -49,16 +50,28 @@
 }
 
     .nom-espece-animale, .famille-animal h3 {
+        display: flex;
+        align-items:center;
+        justify-content: center;
         position: absolute;
         bottom: 0;
         z-index: 5;
         width: 100%;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 20px;
+        font-family: inter;
+        outline: solid black 2px;
+        background-color: var(--vertVar);
+        border-radius: 0 0 5px 5px;
+        color: black;
         padding-bottom: 5px;
-        letter-spacing: 1px;
         padding-inline: 5px;
-        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .nom-espece-animale{
+        font-size: 16px;
+        background-color: var(--jauneVar);
+        height: 26%;
     }
 
 
@@ -145,7 +158,6 @@
     overflow: hidden;
     margin-top: 40px;
     margin-inline: auto;
-    width: 95%;
     padding-block: 15px;
     box-sizing: border-box;
 }
@@ -159,13 +171,10 @@
     width: calc(100% - 40px);
     margin: 0 20px;
     flex-shrink: 0;
-
     border-radius: 5px;
     object-fit: cover;
-
     border: 2px solid black;
     box-shadow: 4px 4px black;
-
     transition: 0.25s;
 }
 
@@ -174,6 +183,7 @@
     border: none;
     background: var(--blanc);
     margin-block: -5px;
+    padding: 5px;
 }
 
     #lightbox {

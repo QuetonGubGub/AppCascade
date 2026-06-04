@@ -1,5 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
+const nomsFamilles = {
+    mammifere: "Les mammifères",
+    oiseau: "Les oiseaux"
+};
 
 fetch("bibliotheque-sources.json")
 .then(res => res.json())
@@ -28,5 +32,5 @@ fetch("bibliotheque-sources.json")
         </a>
     `;
 }
-    document.getElementById("nom-famille").textContent = famille;
+    document.getElementById("nom-famille").textContent = nomsFamilles[famille] || famille;
   });
