@@ -30,10 +30,15 @@
 
 <script src="point-interet.js"></script>
 <script src="pictoFA.js"></script>
-    <script>
+
+<script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js');
+        // Le fichier sw.js est bien dans le même dossier 'www' que carte.html
+        navigator.serviceWorker.register('sw.js')
+            .then(() => console.log("Service Worker enregistré avec succès"))
+            .catch((err) => console.error("Erreur d'enregistrement :", err));
     }
 </script>
+    
 </body>
 </html>
