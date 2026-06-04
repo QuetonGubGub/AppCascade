@@ -92,12 +92,11 @@ main {
 
 .nom-equipement {
     display: flex;
-    font-family: inter;
     gap: 5px;
     align-items: center;
 }
     .nom-equipement>h3 {
-        font-size: 12px;
+        font-size: 18px;
     }
     .icon-equipement {
         height: 20px;

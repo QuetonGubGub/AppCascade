@@ -58,8 +58,7 @@
         z-index: 5;
         width: 100%;
         font-weight: 600;
-        font-size: 20px;
-        font-family: inter;
+        font-size: 24px;
         outline: solid black 2px;
         background-color: var(--vertVar);
         border-radius: 0 0 5px 5px;
@@ -69,7 +68,7 @@
     }
 
     .nom-espece-animale{
-        font-size: 16px;
+        font-size: 20px;
         background-color: var(--jauneVar);
         height: 26%;
     }
