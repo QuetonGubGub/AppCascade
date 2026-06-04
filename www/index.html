@@ -39,26 +39,41 @@
     </footer>
 
     <script>
-        async function downloadAndRedirect() {
+async function downloadAndRedirect() {
             const btn = document.getElementById('btn-dl');
             const status = document.getElementById('status-text');
             btn.disabled = true;
             status.innerHTML = "Téléchargement en cours...";
 
+            // LISTE EXHAUSTIVE DES FICHIERS (Assurez-vous que les noms sont exacts)
             const filesToCache = [
-                '/', '/carte.html', '/css/style_carte.css',
-                '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', '/lieu_4.html', '/lieu_5.html', '/lieu_6.html',
-                'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg', 'img/general/IMAGE_PANORAMA.png',
-                'img/general/IMAGE_CASCADE.jpg', 'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
+                '/index.html', 
+                '/carte.html', 
+                '/css/style_carte.css',
+                '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', 
+                '/lieu_4.html', '/lieu_5.html', '/lieu_6.html',
+                '/img/general/IMAGE_OFFICE.jpg', 
+                '/img/general/IMAGE_CHAMP.jpg', 
+                '/img/general/IMAGE_PANORAMA.png',
+                '/img/general/IMAGE_CASCADE.jpg', 
+                '/img/general/IMAGE_ECOLE_GARE.png', 
+                '/img/general/IMAGE_VILLAGE.jpg'
             ];
 
             try {
+                // Enregistrement du service worker avant de cacher
+                if ('serviceWorker' in navigator) {
+                    await navigator.serviceWorker.register('sw.js');
+                }
+
                 const cache = await caches.open('app-cascade-v1');
                 await cache.addAll(filesToCache);
+                
                 localStorage.setItem('data_downloaded', 'true');
                 window.location.href = 'carte.html';
             } catch (err) {
-                status.innerHTML = "Erreur lors du téléchargement. Vérifiez votre connexion.";
+                console.error("Erreur cache :", err);
+                status.innerHTML = "Erreur : Vérifiez que tous les fichiers listés existent dans votre dossier.";
                 btn.disabled = false;
             }
         }
