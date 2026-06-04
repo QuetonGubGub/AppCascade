@@ -347,7 +347,6 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // Vérification du téléchargement au chargement
         window.onload = () => {
             if (localStorage.getItem('data_downloaded') !== 'true') {
                 window.location.href = 'telechargement.html';
@@ -358,15 +357,19 @@
         };
 
         const pois = [
-            { id: 1, name: "Fenêtre CO", lat: 43.121132570385754, lng: 5.940268467388728, radius: 20, imgSrc: "img/lieux/fenetre1.jpg", url: "lieu_1.html" },
-            { id: 2, name: "Fenêtre FA", lat: 43.12125531569781, lng: 5.939883219673375, radius: 20, imgSrc: "img/lieux/fenetre2.jpg", url: "lieu_2.html" },
-            { id: 3, name: "Fenêtre BA", lat: 43.121205819766466, lng: 5.939452527577985, radius: 20, imgSrc: "img/lieux/fenetre3.jpg", url: "lieu_3.html" }
+            { id: 1, name: "Office du tourisme", lat: 43.56731747597149, lng: 6.179183457625016, radius: 20, imgSrc: "img/lieux/tourisme.jpg", url: "lieu_1.html" },
+            { id: 2, name: "Champs", lat: 43.56268964950472, lng: 6.183498683218254, radius: 20, imgSrc: "img/lieux/champs.jpg", url: "lieu_2.html" },
+            { id: 3, name: "Panorama", lat: 43.5626088343104, lng: 6.184502958786835, radius: 20, imgSrc: "img/lieux/panorama.jpg", url: "lieu_3.html" },
+            { id: 4, name: "La cascade", lat: 43.56352174660885, lng: 6.185312478004507, radius: 20, imgSrc: "img/lieux/cascade.jpg", url: "lieu_4.html" },
+            { id: 5, name: "Ecole de la gare", lat: 43.56791279982941, lng: 6.18189913268109, radius: 20, imgSrc: "img/lieux/ecole.jpg", url: "lieu_5.html" },
+            { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/lieux/village.jpg", url: "lieu_6.html" }
         ];
 
         let map, userMarker, accuracyCircle, unlockedPois = new Set(), notifiedPois = new Set();
 
         function initMap() {
-            map = L.map('map').setView([43.121, 5.939], 16);
+            // Centré sur le milieu des points
+            map = L.map('map').setView([43.565, 6.182], 15);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
             map.on('click', closePoi);
 
@@ -410,6 +413,10 @@
 
         function successCallback(position) {
             const { latitude: lat, longitude: lng, accuracy } = position.coords;
+            document.getElementById('gps-status').innerText = "OK";
+            document.getElementById('gps-status').className = "active";
+            document.getElementById('gps-accuracy').innerText = Math.round(accuracy);
+
             if (!userMarker) {
                 userMarker = L.marker([lat, lng], { icon: L.divIcon({ className: 'user-pulse', iconSize: [20, 20], iconAnchor: [10, 10] }) }).addTo(map);
                 accuracyCircle = L.circle([lat, lng], { radius: accuracy, color: '#005A9C', fillColor: '#005A9C', fillOpacity: 0.1 }).addTo(map);
