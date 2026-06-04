@@ -38,40 +38,39 @@
         <img src="img/general/logo-departement-var.png" alt="Logo département du Var" class="logo-departement">
     </footer>
 
-    <script>
-async function downloadAndRedirect() {
-    const btn = document.getElementById('btn-dl');
-    const status = document.getElementById('status-text');
-    btn.disabled = true;
-    status.innerHTML = "Téléchargement en cours...";
+<script>
+    async function downloadAndRedirect() {
+        const btn = document.getElementById('btn-dl');
+        btn.innerHTML = "Téléchargement en cours...";
+        btn.disabled = true;
 
-    const filesToCache = [
-        '/', '/carte.html', '/css/style_carte.css',
-        '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', 
-        '/lieu_4.html', '/lieu_5.html', '/point-interet.html',
-        'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg', 'img/general/IMAGE_PANORAMA.png',
-        'img/general/IMAGE_CASCADE.jpg', 'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
-    ];
+        const filesToCache = [
+            '/', '/telechargement.html', '/carte.html', '/accueil.html',
+            '/css/style_carte.css', '/css/telechargement.css',
+            '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', 
+            '/lieu_4.html', '/lieu_5.html', '/point-interet.html',
+            'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+            'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+            // Ajoutez ici tous vos chemins d'images exacts
+            'img/general/logo-app-cascade.png', 'img/general/Fond.png',
+            'img/general/Bulle.png', 'img/mascotte/mascotte-question-2.png',
+            'img/general/logo-departement-var.png', 'img/carte/vagueBleu.svg',
+            'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg',
+            'img/general/IMAGE_PANORAMA.png', 'img/general/IMAGE_CASCADE.jpg',
+            'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
+        ];
 
-    try {
-        const cache = await caches.open('app-cascade-v1');
-        
-        // On traite les fichiers un par un pour ne pas tout annuler si un seul manque
-        for (const url of filesToCache) {
-            try {
-                await cache.add(url);
-            } catch (e) {
-                console.warn("Fichier non trouvé (ignoré) :", url);
-            }
+        try {
+            const registration = await navigator.serviceWorker.register('sw.js');
+            const cache = await caches.open('app-cascade-v3');
+            await cache.addAll(filesToCache);
+            localStorage.setItem('data_downloaded', 'true');
+            window.location.href = 'carte.html';
+        } catch (err) {
+            alert("Erreur réseau : assurez-vous d'être connecté pour télécharger.");
+            btn.disabled = false;
         }
-        
-        localStorage.setItem('data_downloaded', 'true');
-        window.location.href = 'carte.html';
-    } catch (err) {
-        status.innerHTML = "Erreur fatale. Vérifiez la console.";
-        btn.disabled = false;
     }
-}
-    </script>
+</script>
 </body>
 </html>
