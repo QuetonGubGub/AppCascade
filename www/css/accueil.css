@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: end;
     gap: 5px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 #section1 a {
@@ -55,6 +55,12 @@
     position: absolute;
     left: 130px;
     top: 360px;
+}
+
+#section2 p{
+    position: absolute;
+    left: 40px;
+    top:320px;
 }
 
 #textBlock{

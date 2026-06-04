@@ -53,7 +53,6 @@ p, a {
 /* Header */
 #headerBackground img {
     position: absolute;
-    width: 310px;
 }
 
 #headerContent {
@@ -73,16 +72,16 @@ p, a {
     color: white;
 }
 
-    #titre2-preparer {
-        font-size: 20px;
-        z-index: 5;
-        width: 100%;
-        position: absolute;
-        right: 30px;
-        top: 40px;
-        text-align: right;
-        color: white;
-    }
+#headerContent button {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    padding-inline: 10px;
+    min-width: 2em;
+}
 
 #waveBlue {
     z-index: 1;
