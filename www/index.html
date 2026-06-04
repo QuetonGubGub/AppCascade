@@ -21,15 +21,14 @@
         <div class="zone-dialogue">
             <div class="conteneur-bulle">
                 <img src="img/general/Bulle.png" alt="Ligne de dialogue" class="image-bulle-fond">
-                <div class="texte-sur-bulle">
+                <div class="texte-sur-bulle" id="status-text">
                     Téléchargez l’application pour une<br>expérience optimale, sur ce site il n’y a pas de réseau !
                 </div>
             </div>
-            
             <img src="img/mascotte/mascotte-question-2.png" alt="Mascotte guide" class="mascotte">
         </div>
 
-        <button onclick="downloadAndRedirect()" class="btn-jaune" style="border:none; cursor:pointer; font:inherit;">
+        <button id="btn-dl" onclick="downloadAndRedirect()" class="btn-jaune" style="border:none; cursor:pointer; font:inherit;">
             TÉLÉCHARGER<br>LES DONNÉES
         </button>
     </main>
@@ -40,11 +39,28 @@
     </footer>
 
     <script>
-        function downloadAndRedirect() {
-            // Ici, on marque que les données sont téléchargées
-            localStorage.setItem('data_downloaded', 'true');
-            // Redirection vers la carte
-            window.location.href = 'carte.html';
+        async function downloadAndRedirect() {
+            const btn = document.getElementById('btn-dl');
+            const status = document.getElementById('status-text');
+            btn.disabled = true;
+            status.innerHTML = "Téléchargement en cours...";
+
+            const filesToCache = [
+                '/', '/carte.html', '/css/style_carte.css',
+                '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', '/lieu_4.html', '/lieu_5.html', '/lieu_6.html',
+                'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg', 'img/general/IMAGE_PANORAMA.png',
+                'img/general/IMAGE_CASCADE.jpg', 'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
+            ];
+
+            try {
+                const cache = await caches.open('app-cascade-v1');
+                await cache.addAll(filesToCache);
+                localStorage.setItem('data_downloaded', 'true');
+                window.location.href = 'carte.html';
+            } catch (err) {
+                status.innerHTML = "Erreur lors du téléchargement. Vérifiez votre connexion.";
+                btn.disabled = false;
+            }
         }
     </script>
 </body>
