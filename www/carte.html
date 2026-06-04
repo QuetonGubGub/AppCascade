@@ -10,8 +10,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
     <link rel="stylesheet" href="css/style_carte.css">
-
-
 </head>
 <body>
 
@@ -83,80 +81,15 @@
             { id: 3, name: "Panorama", lat: 43.5626088343104, lng: 6.184502958786835, radius: 20, imgSrc: "img/general/IMAGE_PANORAMA.png", url: "lieu_3.html" },
             { id: 4, name: "La cascade", lat: 43.56352174660885, lng: 6.185312478004507, radius: 20, imgSrc: "img/general/IMAGE_CASCADE.jpg", url: "lieu_4.html" },
             { id: 5, name: "Ecole de la gare", lat: 43.56791279982941, lng: 6.18189913268109, radius: 20, imgSrc: "img/general/IMAGE_ECOLE_GARE.png", url: "lieu_5.html" },
-            { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "lieu_6.html" }
+            { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "lieu_6.html" },
             { id: 7, name: "FA-HABAULT", lat: 43.12129714832532, lng: 5.939933474720238, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "lieu_6.html" }
         ];
 
-        let map, userMarker, accuracyCircle, unlockedPois = new Set(), notifiedPois = new Set();
-
+        // ... (reste de vos fonctions initMap, showPoiPopup, startWatch, etc.)
         function initMap() {
-            // Centré sur le milieu des points
             map = L.map('map').setView([43.565, 6.182], 15);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
-            map.on('click', closePoi);
-
-            pois.forEach((poi, index) => {
-                const marker = L.marker([poi.lat, poi.lng], { 
-                    icon: L.divIcon({ className: 'custom-div-icon', html: `<div class='marker-pin'><span>${index + 1}</span></div>`, iconSize: [30, 42], iconAnchor: [15, 42] })
-                }).addTo(map);
-                marker.on('click', (e) => { L.DomEvent.stopPropagation(e); showPoiPopup(poi.id); });
-            });
-        }
-
-        function showPoiPopup(id) {
-            const poi = pois.find(p => p.id === id);
-            document.getElementById('poi-popup-title').innerText = poi.name;
-            document.getElementById('popup-img').src = poi.imgSrc;
-            document.getElementById('poi-popup').style.display = 'block';
-
-            document.getElementById('plate-content').onclick = (e) => {
-                e.stopPropagation();
-                if (unlockedPois.has(id)) { window.location.href = poi.url; } 
-                else { document.getElementById('poi-alert-modal').style.display = 'block'; closePoi(); }
-            };
-        }
-
-        function closePoi() { document.getElementById('poi-popup').style.display = 'none'; }
-
-        function triggerNotification(poi) {
-            if (notifiedPois.has(poi.id)) return;
-            notifiedPois.add(poi.id);
-            document.getElementById('notif-title').innerText = poi.name;
-            document.getElementById('notif-link').href = poi.url;
-            document.getElementById('poi-notification').style.display = 'block';
-            setTimeout(() => { document.getElementById('poi-notification').style.display = 'none'; }, 8000);
-        }
-
-        function startWatch() { 
-            if (navigator.geolocation) {
-                navigator.geolocation.watchPosition(successCallback, (err) => console.warn("GPS Erreur"), { enableHighAccuracy: true });
-            }
-        }
-
-        function successCallback(position) {
-            const { latitude: lat, longitude: lng, accuracy } = position.coords;
-            document.getElementById('gps-status').innerText = "OK";
-            document.getElementById('gps-status').className = "active";
-            document.getElementById('gps-accuracy').innerText = Math.round(accuracy);
-
-            if (!userMarker) {
-                userMarker = L.marker([lat, lng], { icon: L.divIcon({ className: 'user-pulse', iconSize: [20, 20], iconAnchor: [10, 10] }) }).addTo(map);
-                accuracyCircle = L.circle([lat, lng], { radius: accuracy, color: '#005A9C', fillColor: '#005A9C', fillOpacity: 0.1 }).addTo(map);
-            } else { userMarker.setLatLng([lat, lng]); accuracyCircle.setLatLng([lat, lng]); accuracyCircle.setRadius(accuracy); }
-            
-            pois.forEach(poi => {
-                const dist = calculateDistance(lat, lng, poi.lat, poi.lng);
-                if (dist <= poi.radius && !unlockedPois.has(poi.id)) {
-                    unlockedPois.add(poi.id);
-                    triggerNotification(poi);
-                }
-            });
-        }
-
-        function calculateDistance(lat1, lon1, lat2, lon2) {
-            const R = 6371e3;
-            const a = Math.sin(((lat2-lat1) * Math.PI/180)/2)**2 + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(((lon2-lon1) * Math.PI/180)/2)**2;
-            return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            // ...
         }
     </script>
 </body>
