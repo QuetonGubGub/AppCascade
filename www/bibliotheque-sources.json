@@ -1,7 +1,7 @@
 {
     "mammifere": {
         "pipistrelle" : {
-            "image-espece-animale" : "img/bibliotheque/pipistrelle-commune/pipistrelle-1.jpg",
+            "image-espece-animale" : "img/bibliotheque/pipistrelle-commune/pipistrelle-1.webp",
             "nom-espece-animale": "Pipistrelle commune",
             "liste-rouge": "NT",
             "liste-rouge-couleur": "#93d14f",

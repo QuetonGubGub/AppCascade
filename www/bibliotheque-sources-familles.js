@@ -1,5 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
+const nomsFamilles = {
+    mammifere: "Les mammifères",
+    oiseau: "Les oiseaux"
+};
 
 fetch("bibliotheque-sources.json")
 .then(res => res.json())
@@ -18,20 +22,15 @@ fetch("bibliotheque-sources.json")
     const animal = animaux[espece];
 
     section.innerHTML += `
-    <div class="nbShadow libraryBtnSpecie">
-        <a class="lien-espece-animale"
-           href="bibliotheque-animal.html?famille=${famille}&nom=${espece}">
-
-            <img class="image-espece-animale"
-                 src="${animal["image-espece-animale"]}">
+        <a class="nbShadow libraryBtnSpecie"
+           href="bibliotheque-animal.html?famille=${famille}&nom=${espece}" style="background-image: url(${animal["image-espece-animale"]}  )">
 
             <p class="nom-espece-animale">
                 ${animal["nom-espece-animale"]}
             </p>
 
         </a>
-    </div>
     `;
 }
-    document.getElementById("nom-famille").textContent = famille;
+    document.getElementById("nom-famille").textContent = nomsFamilles[famille] || famille;
   });

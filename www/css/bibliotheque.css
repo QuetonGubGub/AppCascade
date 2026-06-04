@@ -1,12 +1,18 @@
 /* Library */
 #headerContent>#nom-espece-animale {
+    display: flex;
+    align-items: center;
     max-width: 150px;
+    height: 140px;
     position: absolute;
     right: 100px;
-    top: 45px;
     text-align: right;
     color: white;
     z-index: 600;
+}
+
+#headerContent h1 {
+    top: 50px;
 }
 
 #section-especes {
@@ -22,65 +28,85 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 55px;
-    top: 90px;
+    right: 30px;
+    top: 75px;
     text-align: center;
     color: white;
     z-index: 600;
 }
 
 .libraryBtnSpecie {
-    width: 30%;
-    aspect-ratio: 1 / 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 150px;
     padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: var(--vertVar);
+    border-radius: 10px;    
     color: white;
-    font-weight: 100;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center ;
+    text-align: center;
 }
+
+    .nom-espece-animale, .famille-animal h3 {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 5;
+        width: 100%;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: inter;
+        outline: solid black 2px;
+        background-color: var(--vertVar);
+        border-radius: 0 0 5px 5px;
+        color: black;
+        padding-bottom: 5px;
+        padding-inline: 5px;
+    }
+
+    .nom-espece-animale{
+        font-size: 16px;
+        background-color: var(--jauneVar);
+        height: 26%;
+    }
+
 
 #bibliotheque-famille{
     display: flex;
     gap: 30px;
     flex-direction: column;
+    margin-block: 3em;
     margin-inline: 15px;  
 }
 
-.famille-animal{
-    background-color:#AECC54;
-    border-radius: 10px;
-}
-
-.famille-animal>a {
+.famille-animal {
+    padding: 0;
     display: flex;
-    gap: 20px;
-    align-items: center;
-    text-decoration-line: none;
-    padding: 10px;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
     color: white;
-    font-size: 16px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-
-    .div-image-animal{
-        border-radius: 100%;
-        border: solid black 3px;
-        background-color: #7CAAE3;
+    #images-famille {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
 
-    .famille-animal-img{
-        width: 60px;
-        height: 60px;
-        padding: 10px;
-        object-fit: contain;
+    #images-famille img{
+        object-fit: cover;
+        flex: 1;
+        width: 0;
     }
 
-.image-espece-animale, #image-espece-animale {
+#image-espece-animale {
     width: 80px;
     height: 80px;
     border-style: solid;
@@ -91,6 +117,7 @@
 }
 
 .lien-espece-animale {
+    position: relative;
     text-decoration-line: none;
     color: white;
 }
@@ -130,7 +157,7 @@
     display: flex;
     overflow: hidden;
     margin-top: 40px;
-    width: 100%;
+    margin-inline: auto;
     padding-block: 15px;
     box-sizing: border-box;
 }
@@ -144,13 +171,10 @@
     width: calc(100% - 40px);
     margin: 0 20px;
     flex-shrink: 0;
-
     border-radius: 5px;
     object-fit: cover;
-
     border: 2px solid black;
     box-shadow: 4px 4px black;
-
     transition: 0.25s;
 }
 
@@ -159,6 +183,7 @@
     border: none;
     background: var(--blanc);
     margin-block: -5px;
+    padding: 5px;
 }
 
     #lightbox {
