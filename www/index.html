@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>L'App Cascade</title>
     <link rel="stylesheet" href="css/telechargement.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="app-mobile-container">
     <header>
@@ -16,12 +17,12 @@
         <h1 class="titre-attention">ATTENTION</h1>
         <div class="zone-dialogue">
             <div class="conteneur-bulle">
-                <img src="img/general/Bulle.png" alt="Ligne de dialogue" class="image-bulle-fond">
                 <div class="texte-sur-bulle">
-                    Téléchargez l’application pour une<br>expérience optimale, sur ce site il n’y a pas de réseau !
+                    Téléchargez l’application pour une expérience optimale, sur ce site il n’y a pas de réseau !
                 </div>
+                <img id="bulle-blanche" src="img/general/bulle-blanche.svg">
             </div>
-            <img src="img/mascotte/mascotte_inverse.png" alt="Mascotte guide" class="mascotte">
+            <img src="img/mascotte/Mascotte_Question_O.png" alt="Mascotte guide" id="mascotte-telechargement" class="img-invert">
         </div>
         <button onclick="validerTelechargement()" class="btn-jaune" style="border:none; cursor:pointer;">
             TÉLÉCHARGER<br>LES DONNÉES!
