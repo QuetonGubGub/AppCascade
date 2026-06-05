@@ -1,6 +1,8 @@
 #mascotte-consignes {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: -2em;
+    left: 60%;
     display: flex;
     justify-content: end;
 }
@@ -12,9 +14,9 @@
 
 #bulle-consignes {
     position: absolute;
-    top: 1em;
-    max-width: 200px;
-    right: 120px;
+    top: -1.5em;
+    max-width: 140px;
+    left: -2em;
 }
 
     #bulle-consignes p {
@@ -52,7 +54,6 @@
         background-color: white;
         font-size: 20px;
         border-radius: 100%;
-        padding: 10px;
         height: 50px;
         width: 50px;
 }
