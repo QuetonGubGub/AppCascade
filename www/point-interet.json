@@ -1,5 +1,6 @@
 {
     "office-tourisme" : {
+        "retour": "carte.html",
         "nom" : "Office du tourisme",
         "image" : "img/point-interet/office-tourisme.jpg",
         "description-1" : "Votre exploration commence ici, au cœur battant du village. L’office de tourisme est votre première étape : installé dans un cadre authentique, c’est le lieu idéal pour récupérer vos plans de randonnée et découvrir les secrets de la cascade. L'équipe locale partage avec passion les bons plans pour explorer le vallon de la Bresque et comprendre la fragilité de cet écosystème classé 'Espace Naturel Sensible'.",
@@ -11,6 +12,7 @@
             },
 
     "champ" : {
+        "retour": "carte.html",
         "nom" : "Le champ",
         "image" : "img/point-interet/champ.jpg",
         "description-1" : "En empruntant le sentier de la rive droite, vous traversez un vaste espace ouvert qui offre une respiration bucolique avant d'atteindre les sous-bois. Ce grand champ n'est pas seulement un paysage de carte postale : c'est un espace pastoral vivant qui joue un rôle essentiel dans l'entretien du site. Selon la saison, vous y rencontrerez des animaux en éco-pâturage. Ces animaux sont les jardiniers naturels de Sillans : en broutant, ils limitent la prolifération des broussailles, préviennent les risques d'incendie et favorisent la biodiversité.",
@@ -22,6 +24,7 @@
             },
 
     "panorama" : {
+        "retour": "carte.html",
         "nom" : "Le paronamique",
         "image" : "img/point-interet/panorama.jpg",
         "description-1" : "Ici, sur ce panorama de la rive droite, le spectacle change de dimension. Tandis que le belvédère d'en face offre une vue frontale, ce panorama vous plonge au cœur de la végétation avec la cascade vue de loin. C'est un point de vue remarquable : la cascade commence à se dévoiler, nichée dans un écrin de falaises.",
@@ -34,6 +37,7 @@
 
 
     "cascade" : {
+        "retour": "carte.html",
         "nom" : "La cascade",
         "image" : "img/point-interet/cascade.jpg",
         "description-1" : "C’est le moment que tout le monde attend, l'image iconique qui fait la renommée du village. En débouchant sur ce balcon aménagé, le choc est visuel : la cascade se dresse directement face à vous dans toute sa splendeur. Du haut de ses 42 mètres, la chute d'eau s'élance pour s'écraser dans une vasque au bleu lagon absolument saisissant.",
@@ -45,6 +49,7 @@
             },
 
     "ecole" : {
+        "retour": "carte.html",
         "nom" : "L'école de la gare",
         "image" : "img/point-interet/ecole.jpg",
         "description-1" : "Ce bâtiment au charme typique cache une double identité qui témoigne de l'histoire mouvementée de Sillans. À l'origine, ce lieu n'accueillait pas des cahiers et des crayons, mais des voyageurs : il s'agissait de la gare du 'Central-Var', une ligne de chemin de fer mythique qui reliait Nice à Meyrargues dès la fin du XIXe siècle. On imagine encore l'agitation sur le quai et la fumée des locomotives qui transportaient passagers et marchandises.",
@@ -56,6 +61,7 @@
             },
 
     "village" : {
+        "retour": "accueil.html",
         "nom" : "Le village",
         "image" : "img/point-interet/village.jpg",
         "description-1" : "Le village de Sillans n'est pas qu'un lieu de passage vers l'eau, c'est une escale vivante qui invite à la découverte. Entre ses murs chargés d'histoire, vous trouverez une multitude d'activités pour prolonger votre visite.",

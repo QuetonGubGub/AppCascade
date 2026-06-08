@@ -48,6 +48,10 @@
         width: 140px; 
         transition: 0.2s;  
     }
+    
+main {
+    padding-bottom: 0;
+}
 
 main h3{
     color: white;
@@ -60,7 +64,7 @@ main h3{
 #mascotte-quizz {
     position: absolute;
     right: -2em;
-    bottom: -4em;
+    bottom: 0;
     width: 180px;
 }
 
@@ -78,7 +82,7 @@ main h3{
 #div-score {
     position: relative;
     bottom: 0;
-    height: 200px;
+    height: 250px;
     overflow: hidden;
 }
 

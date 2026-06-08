@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Test GPS Déplacements</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
     <link rel="stylesheet" href="css/carte.css">
 </head>
 <body>
     <header>
         <div id="headerContent">
-            <a href="accueil.html" class="nbShadow btnCircl btnCirclColor_ylw"></a>
-            <button class="close-btn" onclick="history.back()"><img src="img/general/back-btn.png"></button>
-        </div>
-        <div id="headerBackground">
-            <img src="img/general/vagueBleu.svg" id="waveBlue">
+            <button class="nbShadow btnCircl btnCirclColor_ylw"><a href="javascript:history.back()"><img src="img/general/back-btn.png"></a></button>
+            <div id="headerBackground">
+                <img src="img/general/vagueBleu.svg" id="waveBlue">
+            </div>
         </div>
     </header>
 
@@ -47,7 +47,7 @@
             </div>
             
             <div class="compass-css">
-                <div class="ew"><span>O</span><span>E</span></div>
+                <img src="img/general/boussole.png">
             </div>
 
             <div id="status-gps-mini">GPS: <span id="gps-status" class="searching">...</span> (<span id="gps-accuracy">--</span>m)</div>

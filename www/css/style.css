@@ -41,10 +41,13 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'DIN';
     background-color: var(--blanc);
-    overflow-x: hidden;
 }
 
 main {
@@ -126,9 +129,14 @@ p, a {
 }
 
 /* Footer */
+footer {
+    width: 100%;
+}
+
 #footerContentA {
     position: absolute;
     padding: 10px;
+    padding-bottom: 0;
     z-index: 1000;
     font-size: small;
     text-align: left;
@@ -137,7 +145,7 @@ p, a {
 #footerContentB {
     position: absolute;
     right: 0px;
-    padding: 10px;
+    padding: 15px 10px 0 0;
     z-index: 1000;
     text-align: right;
 }
@@ -151,16 +159,23 @@ p, a {
     margin: 5px;
 }
 
+#footerContentB img {
+    max-width: 55px;
+    margin-top: 5px
+}
+
 #footerBackground img {
     position: absolute;
 }
 
 #waveCyanDown {
     z-index: 500;
+    width: 100%;
 }
 
 #waveBlueDown {
     right: 0px;
+    width: 100%;
 }
 
 /* Square Buttons */

@@ -20,25 +20,38 @@
     padding-inline: 10px;
 }
 
+#vague-verte{
+    position: relative;
+    top: -5px;
+    width: 90%;
+}
+
 .btnLang {
-    padding: 10px 15px;
-    margin: 5px;
+    display: flex;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     background-color: var(--vertVar);
+    justify-content: center;
     color : black;
-    left: 200px;
 }
 
 #section1 {
+    position: relative;
+    top: -2em;
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 5px;
-    padding-bottom: 100px;
+    padding-bottom: 6em;
+    overflow: hidden;
 }
 
 #section1 a {
+    position: relative;
+    right: -10px;
     width: 150px;
+    padding-inline: 10px;
     justify-content: left;
     color: white;
 }
@@ -48,20 +61,21 @@
     position: absolute;
     z-index: -10;
     top:340px;
-    left: 150px;
+    left: 10em;
 }
 
 #bulle{
-    width: 30px;
+    width: 50px;
     position: absolute;
     left: 130px;
-    top: 360px;
+    top: 22em;
 }
 
 #section2 p{
     position: absolute;
-    left: 40px;
-    top:320px;
+    font-family: ProtestRiot;
+    left: 20px;
+    top: 17em;
 }
 
 #textBlock{
@@ -83,6 +97,7 @@
 }
 
 footer {
+    width: 100%;
     position: relative;
     bottom: 20px;
 }

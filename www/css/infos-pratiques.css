@@ -3,23 +3,22 @@
     position: absolute;
     z-index: -10;
     top:200px;
-    left: 40px;
+    left: 25px;
 }
 
 #bulle{
     width: 30px;
     position: absolute;
-    left: 130px;
-    top: 210px;
+    left: 120px;
+    top: 13.5em;
 }
 
 #bulle-mascotte{
     font-family: ProtestRiot;
-}
-
-main p{
     position: absolute;
-    right: 90px;
+    max-width: 240px;
+    right: 0;
+    top: 9em;
 }
 
 .info-box{
