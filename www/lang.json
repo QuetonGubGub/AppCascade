@@ -104,6 +104,21 @@
             "txt_points_6" : "Village"
         },
 
+        "quizz" : {
+            "titre" : "QUIZZ AVANT DE PARTIR",
+            "indique_question" : "question ", 
+            "indique_score" : "Score :  "
+        },
+
+        "remerciements" : {
+            "titre" : "ON VOUS REMERCIE !",
+            "txt_box" : "Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.",
+            "indique_box" : "Vous avez contribué à la protection du site !",
+            "txt_conclusion" : "On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête.",
+            "indique_opinion" : "Qu’en avez-vous pensé ?",
+            "boutton_" : "JE VAIS AU VILLAGE !"  
+        },
+
         "général" : {
             "txt_footer_confidentialité" : "Politique de confidentialité",
             "txt_footer_legal" : "Mentions légales"
