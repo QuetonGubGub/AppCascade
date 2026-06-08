@@ -5,81 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>L'App Cascade</title>
     <link rel="stylesheet" href="css/telechargement.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="app-mobile-container">
-
     <header>
         <img src="img/general/logo-app-cascade.png" alt="L'App Cascade" class="logo-app">
     </header>
 
     <main class="section-cascade">
         <img src="img/general/Fond.png" alt="Image de la cascade" class="fond-cascade">
-        
         <h1 class="titre-attention">ATTENTION</h1>
-        
         <div class="zone-dialogue">
             <div class="conteneur-bulle">
-                <img src="img/general/Bulle.png" alt="Ligne de dialogue" class="image-bulle-fond">
-                <div class="texte-sur-bulle" id="status-text">
-                    Téléchargez l’application pour une<br>expérience optimale, sur ce site il n’y a pas de réseau !
+                <div class="texte-sur-bulle">
+                    Téléchargez l’application pour une expérience optimale, sur ce site il n’y a pas de réseau !
                 </div>
+                <img id="bulle-blanche" src="img/general/bulle-blanche.svg">
             </div>
-            <img src="img/mascotte/mascotte-question-2.png" alt="Mascotte guide" class="mascotte">
+            <img src="img/mascotte/Mascotte_Question_O.png" alt="Mascotte guide" id="mascotte-telechargement" class="img-invert">
         </div>
-
-        <button id="btn-dl" onclick="downloadAndRedirect()" class="btn-jaune" style="border:none; cursor:pointer; font:inherit;">
-            TÉLÉCHARGER<br>LES DONNÉES
+        <button onclick="validerTelechargement()" class="btn-jaune" style="border:none; cursor:pointer;">
+            TÉLÉCHARGER<br>LES DONNÉES!
         </button>
     </main>
 
     <footer>
-        <a href="accueil.html" class="lien-continuer">CONTINUER SANS TELECHARGER</a>
+        <a href="carte.html" class="lien-continuer">CONTINUER SANS TELECHARGER</a>
         <img src="img/general/logo-departement-var.png" alt="Logo département du Var" class="logo-departement">
     </footer>
 
-<script>
-    async function downloadAndRedirect() {
-        const btn = document.getElementById('btn-dl');
-        const status = document.getElementById('status-text');
-        
-        if (!('serviceWorker' in navigator)) {
-            status.innerHTML = "Votre navigateur ne supporte pas le hors-ligne.";
-            return;
-        }
-
-        btn.disabled = true;
-        status.innerHTML = "Téléchargement des données... (ne quittez pas la page)";
-
-        const filesToCache = [
-            '/', '/carte.html', '/css/style_carte.css', '/css/telechargement.css',
-            '/lieu_1.html', '/lieu_2.html', '/lieu_3.html', '/lieu_4.html', '/lieu_5.html', '/point-interet.html',
-            'img/general/IMAGE_OFFICE.jpg', 'img/general/IMAGE_CHAMP.jpg', 'img/general/IMAGE_PANORAMA.png',
-            'img/general/IMAGE_CASCADE.jpg', 'img/general/IMAGE_ECOLE_GARE.png', 'img/general/IMAGE_VILLAGE.jpg'
-        ];
-
-        try {
-            // Enregistrement du service worker
-            await navigator.serviceWorker.register('sw.js');
-            const cache = await caches.open('app-cascade-v3');
-
-            // Téléchargement sécurisé (un par un)
-            for (const file of filesToCache) {
-                try {
-                    await cache.add(file);
-                } catch (e) {
-                    console.warn("Fichier non trouvé (ignoré) :", file);
-                }
-            }
-
+    <script>
+        function validerTelechargement() {
+            // Marquage simple du passage par le téléchargement
             localStorage.setItem('data_downloaded', 'true');
-            status.innerHTML = "Téléchargement terminé ! Redirection...";
             window.location.href = 'carte.html';
-        } catch (err) {
-            status.innerHTML = "Erreur fatale : " + err.message;
-            btn.disabled = false;
         }
-    }
-</script>
+    </script>
 </body>
 </html>

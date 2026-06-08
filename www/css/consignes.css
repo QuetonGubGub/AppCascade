@@ -1,23 +1,35 @@
 #mascotte-consignes {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
     justify-content: end;
+    align-items: end;
 }
 
     #mascotte-consignes img {
-        margin-top: 40px;
-        width: 120px;
+        position: absolute;
+        top: 3.5em;
+        right: 0;
+        width: 100px;
     }
 
 #bulle-consignes {
     position: absolute;
-    max-width: 200px;
-    right: 120px;
+    top: -1em;
+    max-width: 140px;
+    right: 0;
 }
+
+    #bulle-consignes p {
+        font-family: ProtestRiot;
+        font-size: 14px;
+    }
 
     #bulle-consignes img {
         position: absolute;
-        top: 10px;
-        right:0;
+        top: 3em;
+        right: 0.5em;
         width: 40px;
     }
 
@@ -37,6 +49,13 @@
     gap: 10px;
 }
 
+    #court1 {
+        width: 155px;
+    }
+    #court2 {
+        width: 200px;
+    }
+
 .icon-consigne{
         display: flex;
         justify-content: center;
@@ -44,9 +63,8 @@
         background-color: white;
         font-size: 20px;
         border-radius: 100%;
-        padding: 10px;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
 }
 
 #section2-consignes {
