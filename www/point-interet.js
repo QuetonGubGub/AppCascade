@@ -1,9 +1,14 @@
+
 fetch("point-interet.json")
 .then(res => res.json())
 .then(data => {
 
     const params = new URLSearchParams(window.location.search);
     const nomPoint = params.get("nom");
+    const actions = {
+    home: () => window.location.href = "accueil.html",
+    back: () => history.back()
+    };
 
     const nom = data[nomPoint];
 
@@ -14,7 +19,7 @@ fetch("point-interet.json")
     document.getElementById("description-interet").textContent += nom["description-3"];
     document.getElementById("prochain-point").textContent = nom["prochain"];
     document.getElementById("lien-video").href = nom["video"];
-    document.getElementById("lien-point").href = nom["retour"];
+    document.getElementById("lien-point").onclick = actions[nom.retour];
 
     /*Cacher le bouton vidéo si src = "#"*/
     const lienVideo = document.getElementById("plus");

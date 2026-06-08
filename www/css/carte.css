@@ -10,6 +10,7 @@
 
         .screen.active {
             display: flex;
+            height: 100%;
         }
 
         /* --- STYLES ÉCRAN DE TÉLÉCHARGEMENT --- */
