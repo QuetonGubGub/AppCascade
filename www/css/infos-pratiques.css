@@ -1,0 +1,56 @@
+#mascotte{
+    width: 100px;
+    position: absolute;
+    z-index: -10;
+    top:200px;
+    left: 40px;
+}
+
+#bulle{
+    width: 30px;
+    position: absolute;
+    left: 130px;
+    top: 210px;
+}
+
+main p{
+    position: absolute;
+    right: 90px;
+}
+
+.info-box{
+    font-size: 16px;
+    position: absolute;
+    background:var(--jauneVar);
+    border-radius:5px;
+    padding:10px 12px;
+    width: auto;
+}
+
+.info-box ul{
+    padding-left:15px;
+}
+
+.info-box li{
+    font-size: 16px;
+}
+
+.manger{
+    right:20px;
+    top:250px;
+}
+
+.boire{
+    left:16px;
+    top:345px;
+}
+
+.animaux{
+    right:20px;
+    top:460px;
+}
+
+.interet{
+    left:16px;
+    top:570px;
+}
