@@ -142,7 +142,7 @@ main {
     flex-direction: column;
     gap: 10px;
     left: 20px;
-    bottom: -14em;
+    bottom: -18em;
     max-width: 200px;
 }
     #boutons-preparer a {

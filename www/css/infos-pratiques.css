@@ -18,12 +18,19 @@
     position: absolute;
     max-width: 240px;
     right: 0;
-    top: 9em;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: 32em;
 }
 
 .info-box{
-    font-size: 16px;
     position: absolute;
+    font-size: 16px;
     background:var(--jauneVar);
     border-radius:5px;
     padding:10px 12px;
@@ -40,20 +47,20 @@
 
 .manger{
     right:20px;
-    top:250px;
+    top:5em;
 }
 
 .boire{
     left:16px;
-    top:345px;
+    top: 12em;
 }
 
 .animaux{
     right:20px;
-    top:460px;
+    top: 19em;
 }
 
 .interet{
     left:16px;
-    top:570px;
+    top: 27em;
 }

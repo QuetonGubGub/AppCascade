@@ -25,6 +25,8 @@
         align-items: center;
         justify-content: center;
         background-color: white;
+        border: solid black 3px;
+        padding: 15px;
         border-radius: 5px;
         margin-block: 20px;
         width: 90%;
@@ -42,7 +44,6 @@
         font-family: DIN;
         font-size: 20px;
         background-color: white;
-        border: none;
         border-radius: 5px;
         padding: 5px;
         width: 140px; 
