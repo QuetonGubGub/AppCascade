@@ -35,11 +35,119 @@
     </footer>
 
     <script>
-        function validerTelechargement() {
-            // Marquage simple du passage par le téléchargement
-            localStorage.setItem('data_downloaded', 'true');
-            window.location.href = 'accueil.html';
-        }
+        document.getElementById('btn-dl').addEventListener('click', async () => {
+            const status = document.getElementById('status-text');
+            const btn = document.getElementById('btn-dl');
+            
+            btn.style.pointerEvents = 'none';
+            btn.style.opacity = '0.5';
+            
+            const isLocal = window.location.protocol === 'file:';
+
+            if (isLocal) {
+                // SIMULATION POUR LE LOCAL
+                status.innerHTML = "Mode local.<br>Simulation...";
+                let progress = 0;
+                const fakeDownload = setInterval(() => {
+                    progress += 20;
+                    status.innerHTML = `Téléchargement en cours...<br><b>${progress}%</b>`;
+                    if (progress >= 100) {
+                        clearInterval(fakeDownload);
+                        status.innerHTML = "Redirection...";
+                        localStorage.setItem('data_downloaded', 'true');
+                        setTimeout(() => { window.location.href = 'accueil.html'; }, 1000);
+                    }
+                }, 300);
+
+            } else {
+                // VRAI TÉLÉCHARGEMENT HÉBERGÉ
+                status.innerHTML = "Préparation du téléchargement...";
+
+                const filesToCache = [
+                    './',
+                    'index.html',
+                    'point-interet.html',
+                    'accueil.html',
+                    'carte.html',
+                    'test-pt.html',
+                    'css/telechargement.css',
+                    'css/style_carte.css',
+                    'css/style_accueil.css',
+                    'img/general/logo-app-cascade.png',
+                    'img/general/Fond.png',
+                    'img/general/Bulle.png',
+                    'img/mascotte/Mascotte_inverse.png',
+                    'img/carte/vagueBleu.svg',
+                    'img/carte/back-btn.png',
+                    'img/carte/book-solid-full.svg',
+                    'img/carte/flag-solid-full.svg',
+                    'img/carte/back-btn.png',
+                    'img/carte/book-solid-full.svg',
+                    'img/carte/vagueBleu.svg',
+                    'img/carte/vagueBleuBas.svg',
+                    'img/carte/vagueCyanBas.svg',
+                    'img/carte/vagueVerte.svg',
+                    'img/general/IMAGE_CASCADE.jpg',
+                    'img/general/IMAGE_VILLAGE.jpg',
+                    'img/general/IMAGE_CHAMP.jpg',
+                    'img/general/IMAGE_OFFICE.jpg',
+                    'img/general/IMAGE_ECOLE_GARE.png',
+                    'img/general/IMAGE_PANORAMA.png',
+
+                ];
+
+                let erreurs = [];
+
+                try {
+                    const cache = await caches.open('cascade-v1');
+                    let loaded = 0;
+                    const total = filesToCache.length;
+
+                    for (const file of filesToCache) {
+                        try {
+                            const request = new Request(file, { mode: file.startsWith('http') ? 'cors' : 'no-cors' });
+                            const response = await fetch(request);
+                            
+                            if (response.ok || response.type === 'opaque') {
+                                await cache.put(request, response);
+                            } else {
+                                erreurs.push(file); // On mémorise le fichier qui a planté
+                            }
+                        } catch (fetchErr) {
+                            erreurs.push(file); // On mémorise le fichier introuvable
+                        }
+                        loaded++;
+                        const percentage = Math.round((loaded / total) * 100);
+                        status.innerHTML = `Téléchargement en cours...<br><b>${percentage}%</b>`;
+                    }
+
+                    // SI DES FICHIERS ONT PLANTÉ, ON LES AFFICHE
+                    if (erreurs.length > 0) {
+                        console.error("Fichiers introuvables :", erreurs);
+                        status.innerHTML = `<b>Erreur sur ces fichiers :</b><br> ${erreurs.slice(0, 2).join(', ')}...<br>Vérifiez les majuscules !`;
+                        btn.style.pointerEvents = 'auto';
+                        btn.style.opacity = '1';
+                        return; // On stoppe tout
+                    }
+
+                    status.innerHTML = "Installation du mode hors-ligne...";
+
+                    if ('serviceWorker' in navigator) {
+                        await navigator.serviceWorker.register('sw.js');
+                    }
+
+                    status.innerHTML = "Données prêtes ! Redirection...";
+                    localStorage.setItem('data_downloaded', 'true');
+                    setTimeout(() => { window.location.href = 'accueil.html'; }, 1000);
+
+                } catch (err) {
+                    status.innerHTML = `Impossible de créer le cache. Erreur : ${err.message}`;
+                    btn.style.pointerEvents = 'auto';
+                    btn.style.opacity = '1';
+                }
+            }
+        });
     </script>
+
 </body>
 </html>
