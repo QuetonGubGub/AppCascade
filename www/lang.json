@@ -1,7 +1,29 @@
 {
     "francais" : {
         "page" : {
-            "txt_description" : "Lorem ipsum"
+            "titre" : "Titre de la page",
+            "txt_" : "Lorem ipsum",
+            "indique_" : "Texte court",
+            "boutton_" : "CLIQUER"  
+        },
+        
+        "accueil" : {
+            "indique_meteo" : "Météo",
+            "indique_incendie_desc" : "Risque incendie",
+            "indique_incendie_1" : "Faible",
+            "indique_incendie_2" : "Moyen",
+            "indique_incendie_3" : "Élevé",
+            "indique_incendie_4" : "Extrême",
+            "txt_frisby" : "Avant de débuter, préparons la visite !",
+            "txt_carte" : "Appuyez sur la carte pour commencer la visite de Sillans-la-Cascade",
+            "boutton_consignes" : "CONSIGNES",
+            "boutton_préparer" : "SE PRÉPARER",
+            "boutton_infos" : "INFOS PRATIQUES"
+        },
+
+        "général" : {
+            "txt_footer_confidentialité" : "Politique de confidentialité",
+            "txt_footer_legal" : "Mentions légales"
         }
             }
 }
