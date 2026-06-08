@@ -30,6 +30,54 @@
             "boutton_espèces" : "ESPÈCES"  
         },
 
+        "bibliothèqe" : {
+            "titre" : "BIBLIOTHÈQUE",
+            "titre2" : "DES ESPÈCES"
+        },
+
+        "preparer" : {
+            "titre" : "PREPARER MA VISITE",
+            "titre2" : "LES ÉQUIPEMENTS A AVOIR",
+
+            "txt_frisby_1" : "Pour profiter un maximum de la visite, voici ce qu’il faut préparer :",
+            "txt_frisby_2" : "Pour visiter la cascade, il y a de la marche ! Venez avec une bonne condition physique, et évitez de venir avec une poussette pour faciliter la visite.",
+            
+            "indique_chaussures" : "Chaussures de randonnée",
+            "txt_chaussures" : "Il y a des sentiers, du dénivelé et beaucoup de marches à monter et descendre, ça serait bête de se fouler une cheville !",
+
+            "indique_sac" : "Sac à dos",
+            "txt_sac" : "Pour tout avoir à portée de main, ranger ses affaires et ses déchets sur soi de manière confortable.",
+
+            "indique_eau" : "Gourde / Bouteille d’eau",
+            "txt_eau" : "L’été, il y a des fortes chaleurs, il faut rester hydraté pour ne pas faire un malaise, et ainsi gâcher la visite.",
+
+            "indique_chapeau" : "Casquette / Chapeau",
+            "txt_chapeau" : "Pour vous protéger des coups de chaleurs.",
+
+            "indique_téléphone" : "Téléphone",
+            "txt_téléphone" : "Pour la meilleure expérience lors de la visite, chargez le et bien le garder avec vous !",
+            
+            "boutton_consignes" : "CONSIGNES",
+            "boutton_infos" : "INFOS PRATIQUES"
+        },
+
+        "consignes" : {
+            "titre" : "CONSIGNES",
+            "indique_frisby_1" : "Hé ! Avant de venir, prenez conscience des points suivants !",
+
+            "txt_consigne_1" : "Pour le bien être de la nature, des autres visiteurs, ainsi que votre santé, laisser la cigarette de côté pendant la visite du site.",
+            "txt_consigne_2" : "Pour éviter de créer le plus grand incendie de l’été et de dégrader le site, attendez d’être chez vous pour faire un barbecue entre amis. Vous avez même des restaurants au village !",
+            "txt_consigne_3" : "Si vous souhaitez vous protéger contre les chutes tout en protégeant la biodiversité, ne venez pas ici pour vous baigner. Cet endroit n’est pas adapté à la baignade, et les baigneurs sur Instagram, ce n’est pas vrai !",
+            "txt_consigne_4" : "Vous voulez profiter à fond de la visite et découvrir tous les beaux recoins du site ? Alors suivez le sentier dans le bon sens et n’en sortez pas.",
+            "txt_consigne_5" : "Pour camper, il y a des établissements à proximité, mais ce n’est pas ici.",
+
+            "indique_incendie" : "Que faire en cas d’incendie ?",
+            "txt_incendie_1" : "Ne pas paniquer et alerter les autres",
+            "txt_incendie_2" : "S’éloigner du danger sans précipitation",
+            "txt_incendie_3" : "Aider les autres personnes dans le besoin",
+            "txt_incendie_4" : "Rester en sécurité, et ne pas faire marche arrière"
+        },
+
         "général" : {
             "txt_footer_confidentialité" : "Politique de confidentialité",
             "txt_footer_legal" : "Mentions légales"
