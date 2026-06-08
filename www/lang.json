@@ -21,6 +21,15 @@
             "boutton_infos" : "INFOS PRATIQUES"
         },
 
+        "visite" : {
+            "txt_info" : "Commençons la visite ! Allez au prochain point d’intérêt pour le découvrir.",
+            "indique_fin_A" : "TERMINER",
+            "indique_fin_B" : "LA VISITE",
+            "indique_boussole" : ["N","S","E","O"],
+            "indique_points-interet" : ["L’office du tourisme","Le champ","Le panorama","La cascade","L’école de la gare","Le village"],
+            "boutton_espèces" : "ESPÈCES"  
+        },
+
         "général" : {
             "txt_footer_confidentialité" : "Politique de confidentialité",
             "txt_footer_legal" : "Mentions légales"
