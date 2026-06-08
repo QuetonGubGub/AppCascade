@@ -5,9 +5,9 @@
 
 #headerContent img {
     position: absolute;
-    width: 210px;
-    top: 30px;
-    left: 30px;
+    width: 180px;
+    top: 15px;
+    left: 20px;
 }
 
 #headerContent button {
