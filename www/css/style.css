@@ -44,6 +44,7 @@
 body {
     font-family: 'DIN';
     background-color: var(--blanc);
+    overflow-x: hidden;
 }
 
 main {
