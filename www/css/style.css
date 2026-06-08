@@ -28,6 +28,11 @@
     src: url('Inter.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'ProtestRiot'; /*a name to be used later*/
+    src: url('ProtestRiot-Regular.ttf'); /*URL to font*/
+}
+
 /* Basic stuff */
 * {
     margin : 0px;
@@ -39,15 +44,18 @@
 body {
     font-family: 'DIN';
     background-color: var(--blanc);
-    overflow-x:hidden ;
 }
 
 main {
     padding-top: 170px;
+    padding-bottom: 50px;
 }
 
 p, a {
     font-family: 'DIN';
+    font-size: large;
+    padding-top: 5px;
+    text-decoration: none;
 }
 
 /* Header */
@@ -61,17 +69,6 @@ p, a {
     width: 100%;
 }
 
-#headerContent h1 {
-    font-size: 26px;
-    z-index: 5;
-    width: 100%;
-    position: absolute;
-    right: 30px;
-    top: 65px;
-    text-align: right;
-    color: white;
-}
-
 #headerContent button {
     display: flex;
     align-items: center;
@@ -81,6 +78,17 @@ p, a {
     left: 10px;
     padding-inline: 10px;
     min-width: 2em;
+}
+
+#headerContent h1 {
+    font-size: 26px;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    right: 30px;
+    top: 65px;
+    text-align: right;
+    color: white;
 }
 
 #waveBlue {
@@ -108,6 +116,7 @@ p, a {
 #intro {
     background-image: url(../img/general/blockIntro.png);
     height: 444px;
+
 }
 
 #wave {
@@ -129,16 +138,12 @@ p, a {
     right: 0px;
     padding: 10px;
     z-index: 1000;
-    font-size: small;
     text-align: right;
-}
-
-#footerContentB img{
-    width: 60px;
 }
 
 #footerContentB a {
     color: white;
+    font-size: medium;
 }
 
 #footerContentB br {
@@ -167,12 +172,12 @@ p, a {
 }
 
 .btnSqrColor_light-blue {
-    padding: var(--smallPadding);
+    padding: var(--bigPadding);
     background-color: var(--bleuClair);
 }
 
 .btnSqrColor_blue {
-    padding: var(--smallPadding);
+    padding: var(--bigPadding);
     background-color: var(--bleuFonce);
 }
 
@@ -190,6 +195,7 @@ p, a {
 .btnCircl {
     padding: 5px;
     margin: 5px;
+    min-width: 10px;
     border-radius: 50px;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -229,7 +235,7 @@ p, a {
     transition: 0.25s;
 }
 
-.nbShadow:hover {
+.nbShadow:hover > button, a button {
     border-width: 2px;
     border-color: black;
     border-style: solid;
