@@ -13,6 +13,10 @@
     top: 210px;
 }
 
+#bulle-mascotte{
+    font-family: ProtestRiot;
+}
+
 main p{
     position: absolute;
     right: 90px;
