@@ -78,6 +78,32 @@
             "txt_incendie_4" : "Rester en sécurité, et ne pas faire marche arrière"
         },
 
+        "infos" : {
+            "titre" : "INFOS PRATIQUES",
+            "txt_frisby" : "Informations supplémentaires pour mieux apprécier la visite.",
+
+            "indique_manger" : "Où manger ?",
+            "txt_manger_1" : "Boulangerie au village",
+            "txt_manger_2" : "Tables de pique-nique",
+
+            "indique_boire" : "Où boire ?",
+            "txt_boire_1" : "Apporter son eau (recommandé)",
+            "txt_boire_2" : "Seulement 1 endroit avec eau potable",
+
+            "indique_espèces" : "Quelles espèces animales ?",
+            "txt_espèces_1" : "Mammifères",
+            "txt_espèces_2" : "Poissons",
+            "txt_espèces_3" : "Oiseaux",
+
+            "indique_points" : "Quels points d’intérêt ?",
+            "txt_points_1" : "Office du tourisme",
+            "txt_points_2" : "Prairies",
+            "txt_points_3" : "Panorama",
+            "txt_points_4" : "Cascade",
+            "txt_points_5" : "École de la gare",
+            "txt_points_6" : "Village"
+        },
+
         "général" : {
             "txt_footer_confidentialité" : "Politique de confidentialité",
             "txt_footer_legal" : "Mentions légales"
