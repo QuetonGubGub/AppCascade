@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Test GPS Déplacements</title>
-    
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#005A9C">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-    <link rel="stylesheet" href="css/style_carte.css">
+    <link rel="stylesheet" href="css/carte.css">
 </head>
 <body>
-
     <header>
         <div id="headerContent">
             <a href="accueil.html" class="nbShadow btnCircl btnCirclColor_ylw"></a>
-            <button class="close-btn" onclick="history.back()">×</button>
+            <button class="close-btn" onclick="history.back()"><img src="img/carte/back-btn.png"></button>
         </div>
         <div id="headerBackground">
-            <img src="img/general/vagueBleu.svg" id="waveBlue">
+            <img src="img/carte/vagueBleu.svg" id="waveBlue">
         </div>
     </header>
 
@@ -42,6 +37,14 @@
                     <p id="poi-popup-title">Titre</p>
                 </div>
             </div>
+
+            <div id="mascot-overlay">
+                <img id="mascot-img" src="img/mascotte/Mascotte_inverse.png" alt="Mascotte">
+                <div class="mascot-bubble">
+                    <p id="mascot-text">Texte de la mascotte</p>
+                    <button class="notif-btn" id="mascot-btn">J'AI COMPRIS</button>
+                </div>
+            </div>
             
             <div class="compass-css">
                 <div class="ew"><span>O</span><span>E</span></div>
@@ -51,128 +54,187 @@
             <div id="map"></div>
         </div>
         
-        <p id="map-phrase">Commençons la visite ! Allez au prochain<br> point d'intérêt pour le découvrir.</p>
+        <p id="map-phrase">Commençons la visite ! Allez au prochain point d'intérêt.</p>
 
         <div class="action-buttons">
             <a href="bibliotheque.html" class="btn-action-col">
-                <div class="btn-especes-rect"><img src="img/general/book-solid-full.svg" style="width: 16px;">ESPECES</div>
+                <div class="btn-especes-rect"><img src="img/carte/book-solid-full.svg" style="width: 16px;">ESPECES</div>
             </a>
             <a href="quizz.html" class="btn-terminer-circle">TERMINER
-                <div class="circle-icon"><img src="img/general/flag-solid-full.svg" style="width: 20px;"></div>LA VISITE
+                <div class="circle-icon"><img src="img/carte/flag-solid-full.svg" style="width: 20px;"></div>LA VISITE
             </a>
         </div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <script>
-window.onload = () => {
-    if (localStorage.getItem('data_downloaded') !== 'true') {
-        window.location.href = 'telechargement.html';
-    } else {
-        initMap();
-        startWatch();
-    }
-};
+        const pois = [
+            { id: 1, name: "Office du tourisme", lat: 43.56731747597149, lng: 6.179183457625016, radius: 20, imgSrc: "img/general/IMAGE_OFFICE.jpg", url: "point-interet.html?nom=office-tourisme" },
+            { id: 2, name: "Champs", lat: 43.56268964950472, lng: 6.183498683218254, radius: 20, imgSrc: "img/general/IMAGE_CHAMP.jpg", url: "point-interet.html?nom=champ" },
+            { id: 3, name: "Panorama", lat: 43.5626088343104, lng: 6.184502958786835, radius: 20, imgSrc: "img/general/IMAGE_PANORAMA.png", url: "point-interet.html?nom=panorama" },
+            { id: 4, name: "La cascade", lat: 43.56352174660885, lng: 6.185312478004507, radius: 20, imgSrc: "img/general/IMAGE_CASCADE.jpg", url: "point-interet.html?nom=cascade" },
+            { id: 5, name: "Ecole de la gare", lat: 43.56791279982941, lng: 6.18189913268109, radius: 20, imgSrc: "img/general/IMAGE_ECOLE_GARE.png", url: "point-interet.html?nom=ecole" },
+            { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=village" },
+            { id: 7, name: "Fenêtre FA", lat: 43.12129714832532, lng: 5.939933474720238, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=office-tourisme" },
+            { id: 8, name: "Coursive CO", lat: 43.121042349179625, lng: 5.940163215636212, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=ecole" },
+            { id: 9, name: "Coursive BA", lat: 43.12110190969806, lng: 5.939464375368417, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=cascade" },
+            { id: 10, name: "Coursive FA", lat: 43.12113520805749, lng: 5.939874441944869, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=panorama" },
+            { id: 11, name: "Batiment CO", lat: 43.12120470891093, lng: 5.940215082471948, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=village" },
+        ];
 
-const pois = [
-    { id: 1, name: "Office du tourisme", lat: 43.56731747597149, lng: 6.179183457625016, radius: 20, imgSrc: "img/general/IMAGE_OFFICE.jpg", url: "lieu_1.html" },
-    { id: 2, name: "Champs", lat: 43.56268964950472, lng: 6.183498683218254, radius: 20, imgSrc: "img/general/IMAGE_CHAMP.jpg", url: "lieu_2.html" },
-    { id: 3, name: "Panorama", lat: 43.5626088343104, lng: 6.184502958786835, radius: 20, imgSrc: "img/general/IMAGE_PANORAMA.png", url: "lieu_3.html" },
-    { id: 4, name: "La cascade", lat: 43.56352174660885, lng: 6.185312478004507, radius: 20, imgSrc: "img/general/IMAGE_CASCADE.jpg", url: "lieu_4.html" },
-    { id: 5, name: "Ecole de la gare", lat: 43.56791279982941, lng: 6.18189913268109, radius: 20, imgSrc: "img/general/IMAGE_ECOLE_GARE.png", url: "lieu_5.html" },
-    { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "lieu_6.html" },
-    { id: 7, name: "FA-HABAULT", lat: 43.12129714832532, lng: 5.939933474720238, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html" }
-];
+        let map, userMarker, accuracyCircle, unlockedPois = new Set(), notifiedPois = new Set();
+        let markers = {}; 
 
-let map, userMarker, accuracyCircle, unlockedPois = new Set(), notifiedPois = new Set();
+        // ==========================================
+        // LOGIQUE DE LA MASCOTTE ALÉATOIRE
+        // ==========================================
+        const mascotMessages = [
+            "Si vous avez bien préparé la visite, vous allez vous régaler !",
+            "Vous voulez profiter à fond de la visite et découvrir tous les beaux recoins du site ? Alors suivez le sentier dans le bon sens et n’en sortez pas.",
+            "Pour le bien-être de la nature, des autres visiteurs, ainsi que votre santé, laissez la cigarette de côté pendant la visite du site.",
+            "Pour éviter de créer le plus grand incendie de l’été et de dégrader le site, attendez d’être chez vous pour faire un barbecue entre amis. Vous avez même des restaurants au village !",
+            "Si vous souhaitez vous protéger contre les chutes tout en protégeant la biodiversité, ne venez pas ici pour vous baigner. Cet endroit n’est pas adapté à la baignade, et les baigneurs sur Instagram, ce n’est pas vrai !",
+            "Pour camper, il y a des établissements à proximité, mais ce n’est pas ici."
+        ];
 
-function initMap() {
-    // Centré sur le milieu des points
-    map = L.map('map').setView([43.565, 6.182], 15);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
-    map.on('click', closePoi);
+        // Mémoire de la mascotte pour le hors ligne
+        let currentMascotIndex = parseInt(localStorage.getItem('cascade_mascot_index')) || 0;
+        let lastMascotTime = parseInt(localStorage.getItem('cascade_last_mascot_time')) || 0;
 
-    pois.forEach((poi, index) => {
-        const marker = L.marker([poi.lat, poi.lng], { 
-            icon: L.divIcon({ className: 'custom-div-icon', html: `<div class='marker-pin'><span>${index + 1}</span></div>`, iconSize: [30, 42], iconAnchor: [15, 42] })
-        }).addTo(map);
-        marker.on('click', (e) => { L.DomEvent.stopPropagation(e); showPoiPopup(poi.id); });
-    });
-}
+        function tryShowMascot() {
+            // Si tous les messages ont été lus, on arrête
+            if (currentMascotIndex >= mascotMessages.length) return;
+            
+            // Si la mascotte est déjà à l'écran, on ne fait rien
+            if (document.getElementById('mascot-overlay').style.display === 'flex') return;
 
-function showPoiPopup(id) {
-    const poi = pois.find(p => p.id === id);
-    document.getElementById('poi-popup-title').innerText = poi.name;
-    document.getElementById('popup-img').src = poi.imgSrc;
-    document.getElementById('poi-popup').style.display = 'block';
+            const now = Date.now();
+            
+            // Cooldown de 60 secondes minimum entre chaque apparition
+            if (lastMascotTime !== 0 && now - lastMascotTime < 60000) return;
 
-    document.getElementById('plate-content').onclick = (e) => {
-        e.stopPropagation();
-        if (unlockedPois.has(id)) { window.location.href = poi.url; } 
-        else { document.getElementById('poi-alert-modal').style.display = 'block'; closePoi(); }
-    };
-}
+            // Chance d'apparition (50% pour le premier message, puis 15% de chance toutes les 10 secondes)
+            let chance = (lastMascotTime === 0) ? 0.5 : 0.15;
+            if (Math.random() > chance) return;
 
-function closePoi() { document.getElementById('poi-popup').style.display = 'none'; }
-
-function triggerNotification(poi) {
-    if (notifiedPois.has(poi.id)) return;
-    notifiedPois.add(poi.id);
-    document.getElementById('notif-title').innerText = poi.name;
-    document.getElementById('notif-link').href = poi.url;
-    document.getElementById('poi-notification').style.display = 'block';
-    setTimeout(() => { document.getElementById('poi-notification').style.display = 'none'; }, 8000);
-}
-
-function startWatch() { 
-    if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(successCallback, (err) => console.warn("GPS Erreur"), { enableHighAccuracy: true });
-    }
-}
-
-function successCallback(position) {
-    const { latitude: lat, longitude: lng, accuracy } = position.coords;
-    document.getElementById('gps-status').innerText = "OK";
-    document.getElementById('gps-status').className = "active";
-    document.getElementById('gps-accuracy').innerText = Math.round(accuracy);
-
-    if (!userMarker) {
-        userMarker = L.marker([lat, lng], { icon: L.divIcon({ className: 'user-pulse', iconSize: [20, 20], iconAnchor: [10, 10] }) }).addTo(map);
-        accuracyCircle = L.circle([lat, lng], { radius: accuracy, color: '#005A9C', fillColor: '#005A9C', fillOpacity: 0.1 }).addTo(map);
-    } else { userMarker.setLatLng([lat, lng]); accuracyCircle.setLatLng([lat, lng]); accuracyCircle.setRadius(accuracy); }
-    
-    pois.forEach(poi => {
-        const dist = calculateDistance(lat, lng, poi.lat, poi.lng);
-        if (dist <= poi.radius && !unlockedPois.has(poi.id)) {
-            unlockedPois.add(poi.id);
-            triggerNotification(poi);
+            showMascot(currentMascotIndex);
         }
-    });
-}
 
-function calculateDistance(lat1, lon1, lat2, lon2) {
-    const R = 6371e3;
-    const a = Math.sin(((lat2-lat1) * Math.PI/180)/2)**2 + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(((lon2-lon1) * Math.PI/180)/2)**2;
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-}
+        function showMascot(index) {
+            document.getElementById('mascot-text').innerText = mascotMessages[index];
+            document.getElementById('mascot-overlay').style.display = 'flex';
+            lastMascotTime = Date.now();
+            localStorage.setItem('cascade_last_mascot_time', lastMascotTime.toString());
+        }
+
+        // Action du bouton "J'ai compris"
+        document.getElementById('mascot-btn').onclick = () => {
+            document.getElementById('mascot-overlay').style.display = 'none';
+            currentMascotIndex++;
+            localStorage.setItem('cascade_mascot_index', currentMascotIndex.toString());
+        };
+
+        // Lancement de la vérification toutes les 10 secondes
+        setInterval(tryShowMascot, 10000);
+        // ==========================================
+
+        window.onload = () => {
+            initMap();
+            startWatch();
+            // Premier appel manuel au cas où pour démarrer
+            setTimeout(tryShowMascot, 3000);
+        };
+
+        function initMap() {
+            map = L.map('map').setView([43.121, 5.939], 16);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
+            map.on('click', closePoi);
+
+            pois.forEach((poi, index) => {
+                const marker = L.marker([poi.lat, poi.lng], { 
+                    icon: L.divIcon({ className: 'custom-div-icon', html: `<div class='marker-pin'><span>${index + 1}</span></div>`, iconSize: [30, 42], iconAnchor: [15, 42] })
+                }).addTo(map);
+                
+                markers[poi.id] = marker; 
+                marker.on('click', (e) => { L.DomEvent.stopPropagation(e); showPoiPopup(poi.id); });
+            });
+        }
+
+        function showPoiPopup(id) {
+            const poi = pois.find(p => p.id === id);
+            document.getElementById('poi-popup-title').innerText = poi.name;
+            document.getElementById('popup-img').src = poi.imgSrc;
+            document.getElementById('poi-popup').style.display = 'block';
+            
+            document.getElementById('plate-content').onclick = (e) => {
+                e.stopPropagation();
+                if (unlockedPois.has(id)) { 
+                    document.getElementById('poi-popup').style.display = 'none';
+                    window.location.href = poi.url; 
+                } 
+                else { 
+                    document.getElementById('poi-alert-modal').style.display = 'block'; 
+                    closePoi(); 
+                }
+            };
+        }
+
+        function closePoi() { document.getElementById('poi-popup').style.display = 'none'; }
+
+        function triggerNotification(poi) {
+            if (notifiedPois.has(poi.id)) return;
+            notifiedPois.add(poi.id);
+            document.getElementById('notif-title').innerText = poi.name;
+            
+            const notifLink = document.getElementById('notif-link');
+            notifLink.href = poi.url;
+            
+            notifLink.onclick = () => {
+                document.getElementById('poi-notification').style.display = 'none';
+            };
+
+            document.getElementById('poi-notification').style.display = 'block';
+            setTimeout(() => { document.getElementById('poi-notification').style.display = 'none'; }, 8000);
+        }
+
+        function startWatch() { 
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(successCallback, (err) => console.warn("GPS Erreur"), { enableHighAccuracy: true });
+            }
+        }
+
+        function successCallback(position) {
+            const { latitude: lat, longitude: lng, accuracy } = position.coords;
+            document.getElementById('gps-accuracy').innerText = Math.round(accuracy);
+            document.getElementById('gps-status').innerText = "Actif";
+            
+            if (!userMarker) {
+                userMarker = L.marker([lat, lng], { icon: L.divIcon({ className: 'user-pulse', iconSize: [20, 20], iconAnchor: [10, 10] }) }).addTo(map);
+                accuracyCircle = L.circle([lat, lng], { radius: accuracy, color: '#005A9C', fillColor: '#005A9C', fillOpacity: 0.1 }).addTo(map);
+            } else { userMarker.setLatLng([lat, lng]); accuracyCircle.setLatLng([lat, lng]); accuracyCircle.setRadius(accuracy); }
+            
+            pois.forEach(poi => {
+                const dist = calculateDistance(lat, lng, poi.lat, poi.lng);
+                if (dist <= poi.radius && !unlockedPois.has(poi.id)) {
+                    unlockedPois.add(poi.id);
+                    
+                    const poiIndex = pois.indexOf(poi);
+                    markers[poi.id].setIcon(L.divIcon({
+                        className: 'custom-div-icon',
+                        html: `<div class='marker-pin visited-pin'><span>${poiIndex + 1}</span></div>`,
+                        iconSize: [30, 42], iconAnchor: [15, 42]
+                    }));
+
+                    triggerNotification(poi);
+                }
+            });
+        }
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371e3;
+            const a = Math.sin(((lat2-lat1) * Math.PI/180)/2)**2 + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(((lon2-lon1) * Math.PI/180)/2)**2;
+            return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        }
     </script>
-
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js');
-    }
-</script>
-
-    <script>
-    if ('serviceWorker' in navigator) {
-        // Le fichier sw.js est bien dans le même dossier 'www' que carte.html
-        navigator.serviceWorker.register('sw.js')
-            .then(() => console.log("Service Worker enregistré avec succès"))
-            .catch((err) => console.error("Erreur d'enregistrement :", err));
-    }
-</script>
-    
-    
 </body>
 </html>
