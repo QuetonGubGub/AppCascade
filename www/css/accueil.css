@@ -1,0 +1,87 @@
+#section1 a{
+    text-decoration: none;
+}
+
+#headerContent img {
+    position: absolute;
+    width: 210px;
+    top: 30px;
+    left: 30px;
+}
+
+#headerContent button {
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    padding-inline: 10px;
+}
+
+.btnLang {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: var(--vertVar);
+    color : black;
+    left: 200px;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    padding-bottom: 100px;
+}
+
+#section1 a {
+    width: 150px;
+    justify-content: left;
+    color: white;
+}
+
+#mascotte{
+    width: 150px;
+    position: absolute;
+    z-index: -10;
+    top:340px;
+    left: 150px;
+}
+
+#bulle{
+    width: 30px;
+    position: absolute;
+    left: 130px;
+    top: 360px;
+}
+
+#section2 p{
+    position: absolute;
+    left: 40px;
+    top:320px;
+}
+
+#textBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+#textBlock img{
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 20px;
+}
