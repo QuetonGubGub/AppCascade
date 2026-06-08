@@ -1,0 +1,452 @@
+/*//////////////////////
+/       Atlantis       /
+/    Style ToolBox     /
+/ 2026 - Expedition 33 /
+//////////////////////*/
+
+/* Variables */
+:root {
+    --bleuClair: #7CAAE3;
+    --bleuFonce: #38679F;
+    --vertVar: #AECC54;
+    --jauneVar: #F6C345;
+    --blanc: #FFF5E0;
+
+    --bigPadding : 10px 40px;
+    --smallPadding : 5px 10px;
+}
+
+/* Custom font */
+@font-face {
+    font-family: 'DIN'; /*a name to be used later*/
+    font-weight: bold;
+    src: url('DIN Condensed.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('Inter.ttf'); /*URL to font*/
+}
+
+/* Basic stuff */
+* {
+    margin : 0px
+}
+
+body {
+    font-family: 'DIN';
+    background-color: var(--blanc);
+}
+
+main {
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+
+p {
+    font-family: 'DIN';
+    font-size: large;
+    padding-top: 5px;
+}
+
+/* Header */
+#headerBackground img {
+    position: absolute;
+}
+
+#headerContent {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+#headerContent button {
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+#headerContent h1 {
+    width: 245px;
+    position: absolute;
+    /*left: 140px;*/
+    right: 5px;
+    top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#waveBlue {
+    z-index: 500;
+    top: -2px;
+    left: -2px;
+}
+
+#waveGreen {
+    right: 0px;
+    top: -25px;
+}
+
+/* Text blocks */
+.textBlock {
+    padding: 70px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.textBlock p {
+    font-family: 'Inter';
+}
+
+#intro {
+    background-image: url(./img/blockIntro.png);
+    height: 444px;
+
+}
+
+#wave {
+    background-image: url(./img/blockWave.png);
+    height: 450px;
+}
+
+/* Footer */
+#footerContentA {
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    font-size: small;
+    text-align: left;
+}
+
+#footerContentB {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: medium;
+    text-align: right;
+}
+
+#footerContentB a {
+    color: white;
+}
+
+#footerContentB br {
+    margin: 5px;
+}
+
+#footerBackground img {
+    position: absolute;
+}
+
+#waveCyanDown {
+    z-index: 500;
+}
+
+#waveBlueDown {
+    right: 0px;
+}
+
+/* Square Buttons */
+.btnSqr {
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color : black;
+}
+
+.btnSqrColor_blue {
+    padding: var(--bigPadding);
+    background-color: var(--bleuClair);
+}
+
+.btnSqrColor_grn {
+    padding: var(--smallPadding);
+    background-color: var(--vertVar);
+}
+
+.btnSqr img {
+    width: 25px;
+    padding-right: 10px;
+}
+
+/* Round buttons*/
+.btnCircl {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+}
+
+.btnCirclColor_ylw {
+    background-color: var(--jauneVar);
+}
+
+.btnCirclColor_ylw img {
+    width: 25px;
+}
+
+.btnCirclColor_grn {
+    background-color: var(--vertVar);
+}
+
+.btnCirclColor_grn img {
+    width: 40px;
+}
+
+.btnLang {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: var(--vertVar);
+    color : black;
+}
+
+/* Map plates */
+.mapPlate {
+    margin: 5px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: var(--jauneVar);
+    text-align: center;
+}
+
+.mapPlate img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    border-color: black;
+    border-bottom-style: solid;
+}
+
+.mapPlate p {
+    padding: 2px;
+    font-size: 1.30em;
+}
+
+/* Library */
+#headerContent>#nom-espece-animale {
+    max-width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 45px;
+    text-align: right;
+    color: white;
+    z-index: 600;
+}
+
+#section-especes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10em;
+    margin-bottom: 50px;
+}
+
+#titre-famille>h2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 55px;
+    top: 90px;
+    text-align: center;
+    color: white;
+    z-index: 600;
+}
+
+.libraryBtnSpecie {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--vertVar);
+    color: white;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.libraryBtnSpecie img {
+    width: 100%;
+}
+
+#bibliotheque-famille{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-inline: 15px;  
+}
+
+.famille-animal{
+    background-color:#AECC54;
+    border-radius: 10px;
+}
+
+.famille-animal>a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-decoration-line: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+    .div-image-animal{
+        border-radius: 100%;
+        border: solid black 3px;
+        background-color: #7CAAE3;
+    }
+
+    .famille-animal-img{
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        object-fit: contain;
+    }
+
+.image-espece-animale, #image-espece-animale {
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.lien-espece-animale {
+    text-decoration-line: none;
+    color: white;
+}
+
+.image-principale-animale {
+    position: absolute;
+    z-index: 500;
+    right: 10px;
+    top: 30px;
+}
+
+#liste-rouge-couleur {
+    position: absolute;
+    z-index: 550;
+    right: 10px;
+    top: 90px;
+    border-radius: 100%;
+    border: 2px solid black;
+    padding-inline: 6px;
+}
+
+#bloc-text {
+    margin-top: 140px;
+    margin-inline: 30px;
+}
+
+    #bloc-text>div {
+        margin-bottom: 10px;
+    }
+
+    #bloc-text>div>h3 {
+        text-decoration-line: underline;
+    }
+
+/*CAROUSEL*/
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+    margin-top: 40px;
+    width: 100%;
+    padding-block: 15px;
+    box-sizing: border-box;
+}
+
+#galleryTrack {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+#galleryTrack img {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    object-fit: cover;
+
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+
+    transition: 0.25s;
+}
+
+.prev, .next {
+    z-index: 50;
+    border: none;
+    background: var(--blanc);
+    margin-block: -5px;
+}
+
+    #lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    #lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 12px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.6);
+        animation: zoomIn 0.3s ease;
+        cursor: zoom-out;
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes translate {
+        0% {transform : translateY(0);}
+        50% {transform : translateY(3px);}
+        100% {transform : translateY(0);}
+    }
+
+#vu {
+    text-align: center;
+    margin-block: 10px;
+}
+
+/* Neobrutalist shadow */
+.nbShadow {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 4px 4px black;
+    transition: 0.25s;
+}
+
+.nbShadow:hover {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    transition: 0.25s;
+}
