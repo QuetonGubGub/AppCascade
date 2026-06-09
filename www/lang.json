@@ -132,7 +132,7 @@
             "boutton_" : "CLIQUER"  
         },
         
-        "accueilC" : {
+        "accueil" : {
             "indique_meteo" : "Weather",
             "indique_incendie_desc" : "Wildfire risk",
             "indique_incendie_1" : "Low",
@@ -140,7 +140,7 @@
             "indique_incendie_3" : "High",
             "indique_incendie_4" : "Extreme",
             "txt_frisby" : "Before we start, let's prepare our visit !",
-            "txt_carte" : "Press on the map to start your visite of Sillans-la-Cascade",
+            "txt_carte" : "Press on the map to begin your visit of Sillans-la-Cascade",
             "boutton_consignes" : "INSTRUCTIONS",
             "boutton_préparer" : "PREPARE",
             "boutton_infos" : "USEFULL INFOS"
@@ -235,18 +235,18 @@
             "indique_score" : "Score :  "
         },
 
-        "remerciementsF" : {
-            "titre" : "ON VOUS REMERCIE !",
-            "txt_box" : "Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.",
-            "indique_box" : "Vous avez contribué à la protection du site !",
-            "txt_conclusion" : "On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête.",
-            "indique_opinion" : "Qu’en avez-vous pensé ?",
-            "boutton_" : "JE VAIS AU VILLAGE !"  
+        "remerciements" : {
+            "titre" : "THANK YOU !",
+            "txt_box" : "Coungratulation, you have completed you visite of the Sillans-la-Cascade site.",
+            "indique_box" : "You've countributed to the site's protection !",
+            "txt_conclusion" : "We sincerely hope you enjoyed your visit and that  you were able to come away with new knowledge in mind.",
+            "indique_opinion" : "What did you think of your visit ?",
+            "boutton_" : "I'M GOING TO THE VILLAGE !"  
         },
 
-        "généralF" : {
-            "txt_footer_confidentialité" : "Politique de confidentialité",
-            "txt_footer_legal" : "Mentions légales"
+        "général" : {
+            "txt_footer_confidentialité" : "Privacy policy",
+            "txt_footer_legal" : "Legal notice"
         }
             }
 }
