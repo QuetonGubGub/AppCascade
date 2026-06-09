@@ -88,7 +88,7 @@
 
             "indique_boire" : "Où boire ?",
             "txt_boire_1" : "Apporter son eau (recommandé)",
-            "txt_boire_2" : "Seulement 1 endroit avec eau potable",
+            "txt_boire_2" : "De l'eau potable est seulement disponible au départ près de l'école",
 
             "indique_espèces" : "Quelles espèces animales ?",
             "txt_espèces_1" : "Mammifères",
@@ -106,7 +106,7 @@
 
         "quizz" : {
             "titre" : "QUIZZ AVANT DE PARTIR",
-            "indique_question" : "question ", 
+            "indique_question" : "Question ", 
             "indique_score" : "Score :  "
         },
 
@@ -120,6 +120,131 @@
         },
 
         "général" : {
+            "txt_footer_confidentialité" : "Politique de confidentialité",
+            "txt_footer_legal" : "Mentions légales"
+        }
+            },
+    "english" : {
+        "page" : {
+            "titre" : "Titre de la page",
+            "txt_" : "Lorem ipsum",
+            "indique_" : "Texte court",
+            "boutton_" : "CLIQUER"  
+        },
+        
+        "accueilC" : {
+            "indique_meteo" : "Weather",
+            "indique_incendie_desc" : "Wildfire risk",
+            "indique_incendie_1" : "Low",
+            "indique_incendie_2" : "Mid",
+            "indique_incendie_3" : "High",
+            "indique_incendie_4" : "Extreme",
+            "txt_frisby" : "Before we start, let's prepare our visit !",
+            "txt_carte" : "Press on the map to start your visite of Sillans-la-Cascade",
+            "boutton_consignes" : "INSTRUCTIONS",
+            "boutton_préparer" : "PREPARE",
+            "boutton_infos" : "USEFULL INFOS"
+        },
+
+        "visite" : {
+            "txt_info" : "Let's start the visit ! Get to the next point of intrest to discover it.",
+            "indique_fin_A" : "FINISH",
+            "indique_fin_B" : "THE VISIT",
+            "indique_boussole" : ["N","S","E","W"],
+            "indique_points-interet" : ["Tourist office","The field","The panorama","The waterfall","The train station's school","The village"],
+            "boutton_espèces" : "SPECIES"  
+        },
+
+        "bibliothèqe" : {
+            "titre" : "LIBRARY",
+            "titre2" : "OF SPECIES"
+        },
+
+        "preparerF" : {
+            "titre" : "PREPARE MY VISIT",
+            "titre2" : "LES ÉQUIPEMENTS A AVOIR",
+
+            "txt_frisby_1" : "Pour profiter un maximum de la visite, voici ce qu’il faut préparer :",
+            "txt_frisby_2" : "Pour visiter la cascade, il y a de la marche ! Venez avec une bonne condition physique, et évitez de venir avec une poussette pour faciliter la visite.",
+            
+            "indique_chaussures" : "Chaussures de randonnée",
+            "txt_chaussures" : "Il y a des sentiers, du dénivelé et beaucoup de marches à monter et descendre, ça serait bête de se fouler une cheville !",
+
+            "indique_sac" : "Sac à dos",
+            "txt_sac" : "Pour tout avoir à portée de main, ranger ses affaires et ses déchets sur soi de manière confortable.",
+
+            "indique_eau" : "Gourde / Bouteille d’eau",
+            "txt_eau" : "L’été, il y a des fortes chaleurs, il faut rester hydraté pour ne pas faire un malaise, et ainsi gâcher la visite.",
+
+            "indique_chapeau" : "Casquette / Chapeau",
+            "txt_chapeau" : "Pour vous protéger des coups de chaleurs.",
+
+            "indique_téléphone" : "Téléphone",
+            "txt_téléphone" : "Pour la meilleure expérience lors de la visite, chargez le et bien le garder avec vous !",
+            
+            "boutton_consignes" : "CONSIGNES",
+            "boutton_infos" : "INFOS PRATIQUES"
+        },
+
+        "consignesF" : {
+            "titre" : "INSTRUCTIONS",
+            "indique_frisby_1" : "Hé ! Avant de venir, prenez conscience des points suivants !",
+
+            "txt_consigne_1" : "Pour le bien être de la nature, des autres visiteurs, ainsi que votre santé, laisser la cigarette de côté pendant la visite du site.",
+            "txt_consigne_2" : "Pour éviter de créer le plus grand incendie de l’été et de dégrader le site, attendez d’être chez vous pour faire un barbecue entre amis. Vous avez même des restaurants au village !",
+            "txt_consigne_3" : "Si vous souhaitez vous protéger contre les chutes tout en protégeant la biodiversité, ne venez pas ici pour vous baigner. Cet endroit n’est pas adapté à la baignade, et les baigneurs sur Instagram, ce n’est pas vrai !",
+            "txt_consigne_4" : "Vous voulez profiter à fond de la visite et découvrir tous les beaux recoins du site ? Alors suivez le sentier dans le bon sens et n’en sortez pas.",
+            "txt_consigne_5" : "Pour camper, il y a des établissements à proximité, mais ce n’est pas ici.",
+
+            "indique_incendie" : "Que faire en cas d’incendie ?",
+            "txt_incendie_1" : "Ne pas paniquer et alerter les autres",
+            "txt_incendie_2" : "S’éloigner du danger sans précipitation",
+            "txt_incendie_3" : "Aider les autres personnes dans le besoin",
+            "txt_incendie_4" : "Rester en sécurité, et ne pas faire marche arrière"
+        },
+
+        "infos" : {
+            "titre" : "USEFULL INFOS",
+            "txt_frisby" : "Additionnal informations to better appreciate your stay.",
+
+            "indique_manger" : "Where can you eat ?",
+            "txt_manger_1" : "The village's bakery",
+            "txt_manger_2" : "Pic-nic tables",
+
+            "indique_boire" : "Where can you drink ?",
+            "txt_boire_1" : "Bring your own water (reccomended)",
+            "txt_boire_2" : "Water is only available at the start near the school",
+
+            "indique_espèces" : "What animal speacies are there ?",
+            "txt_espèces_1" : "Mammals",
+            "txt_espèces_2" : "Fishes",
+            "txt_espèces_3" : "Birds",
+
+            "indique_points" : "What are the points of intrest ?",
+            "txt_points_1" : "Tourist office",
+            "txt_points_2" : "Fields",
+            "txt_points_3" : "Panorama",
+            "txt_points_4" : "Waterfall",
+            "txt_points_5" : "Train station's school",
+            "txt_points_6" : "Village"
+        },
+
+        "quizz" : {
+            "titre" : "QUIZZ BEFORE LEAVING",
+            "indique_question" : "Question ", 
+            "indique_score" : "Score :  "
+        },
+
+        "remerciementsF" : {
+            "titre" : "ON VOUS REMERCIE !",
+            "txt_box" : "Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.",
+            "indique_box" : "Vous avez contribué à la protection du site !",
+            "txt_conclusion" : "On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête.",
+            "indique_opinion" : "Qu’en avez-vous pensé ?",
+            "boutton_" : "JE VAIS AU VILLAGE !"  
+        },
+
+        "généralF" : {
             "txt_footer_confidentialité" : "Politique de confidentialité",
             "txt_footer_legal" : "Mentions légales"
         }
