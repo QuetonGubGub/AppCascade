@@ -1,4 +1,8 @@
 /* Library */
+#headerContent {
+    top: 0;
+}
+
 #headerContent>#nom-espece-animale {
     display: flex;
     align-items: center;

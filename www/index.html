@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="app-mobile-container">
+    <!-- Section En-tête -->
     <header>
         <img src="img/general/logo-app-cascade.svg" alt="L'App Cascade" class="logo-app">
     </header>
 
+    <!-- Section Principale -->
     <main class="section-cascade">
         <img src="img/general/Fond.png" alt="Image de la cascade" class="fond-cascade">
         <h1 class="titre-attention">ATTENTION</h1>
@@ -25,16 +27,19 @@
             </div>
             <img src="img/mascotte/Mascotte_Question_O.png" alt="Mascotte guide" id="mascotte-telechargement" class="img-invert">
         </div>
+        <!-- Bouton relié au JavaScript du téléchargement des données -->
         <button id="btn-dl" class="btn-jaune" style="border:none; cursor:pointer;">
             TÉLÉCHARGER<br>LES DONNÉES
         </button>
     </main>
 
+    <!-- Section Footer -->
     <footer>
         <a href="accueil.html" class="lien-continuer">CONTINUER SANS TELECHARGER</a>
         <img src="img/general/logo-departement-var.png" alt="Logo département du Var" class="logo-departement">
     </footer>
 
+    <!-- Script permettant l'accessibilité complète de l'application hors connexion en téléchargeant les données -->
     <script>
         document.getElementById('btn-dl').addEventListener('click', async () => {
             const status = document.getElementById('status-text');

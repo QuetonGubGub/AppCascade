@@ -1,4 +1,4 @@
-/* Point of interest */
+/* Point d'intérêt */
 a {
     text-decoration: none;
     color: black;
@@ -15,7 +15,7 @@ a {
 
 .block-interet {
     position: absolute;
-    margin-top: 16em;
+    margin-top: 8em;
 }
 
 #description-interet {
@@ -31,7 +31,7 @@ a {
     margin-bottom: 10px;
 }
 
-#plus {
+#lien-video {
     position: absolute;
     border-radius: 100%;
     padding-inline: 0;
@@ -42,6 +42,6 @@ a {
     margin-left: 20px;
 }
 
-    #plus i {
+    #lien-video i {
         font-size: 25px;
     }

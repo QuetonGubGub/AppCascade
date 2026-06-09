@@ -9,7 +9,7 @@
     <title>Point d'intérêt</title>
 </head>
 <body>
-            <!-- Section En-tête -->
+    <!-- Section En-tête -->
     <header>
         <div id="headerContent">
             <button id="lien-point" class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/back-btn.png"></button>
@@ -20,21 +20,22 @@
             </div>
         </div>
     </header>
-    <body>
+    <!-- Section Principale comportant toutes les informations sur le point d'intérêt, elles sont transmises via le JavaScript -->
+    <main>
         <img id="image-interet" src="#">
         <div class="block-interet">
             <p id="description-interet" class="textBlock"></p><br>
             <p id="consulter-interet">Prochain point d’intérêt : <span id="prochain-point">PROCHAIN</span></p>
-            <button id="plus" class="btnSqrColor_blue"><a id="lien-video" href="#"><i class="fa-solid fa-circle-play"></i></a></button>
+            <a id="lien-video" class="btnSqrColor_blue" href="#"><i class="fa-solid fa-circle-play"></i></a>
         </div>
-    </body>
+    </main>
 
 <script src="point-interet.js" defer></script>
 <script src="pictoFA.js"></script>
 
+<!-- Vérification de la fonctionnalité de navigation en JavaScript -->
 <script>
     if ('serviceWorker' in navigator) {
-        // Le fichier sw.js est bien dans le même dossier 'www' que carte.html
         navigator.serviceWorker.register('sw.js')
             .then(() => console.log("Service Worker enregistré avec succès"))
             .catch((err) => console.error("Erreur d'enregistrement :", err));
