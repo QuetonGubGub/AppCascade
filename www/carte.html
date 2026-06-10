@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
     <link rel="stylesheet" href="css/carte.css">
+    <script src="traduction.js"></script>
+    <script src="lang.js"></script>
 </head>
 <body>
     <!-- Section En-tête -->
@@ -42,8 +44,8 @@
             <div id="mascot-overlay">
                 <img id="mascot-img" class="img-invert" src="img/mascotte/Mascotte_Defaut_O.png" alt="Mascotte">
                 <div class="mascot-bubble">
-                    <p id="mascot-text">Texte de la mascotte</p>
-                    <button class="notif-btn" id="mascot-btn">J'AI COMPRIS</button>
+                    <p id="mascot-text" contenuTXT="txt_frisby">Texte de la mascotte</p>
+                    <button class="notif-btn" id="mascot-btn" contenuTXT="indique_frisbyOk">J'AI COMPRIS</button>
                 </div>
             </div>
             
@@ -55,15 +57,17 @@
             <div id="map"></div>
         </div>
         
-        <p id="map-phrase">Commençons la visite ! Allez au prochain point d'intérêt.</p>
+        <p id="map-phrase" contenuTXT="txt_info">Commençons la visite ! Allez au prochain point d'intérêt.</p>
 
         <div class="action-buttons">
             <a href="bibliotheque.html" class="btn-action-col">
-                <div class="btn-especes-rect"><img src="img/general/book-solid-full.svg" style="width: 16px;" alt="Icône livre">ESPECES</div>
+                <div class="btn-especes-rect"><img src="img/general/book-solid-full.svg" style="width: 16px;" alt="Icône livre"><p contenuTXT="boutton_espèces">ESPECES</p></div>
             </a>
-            <a href="quizz.html" class="btn-terminer-circle">TERMINER
-                <div class="circle-icon"><img src="img/general/flag-solid-full.svg" style="width: 20px;" alt="Icône drapeau"></div>LA VISITE
+            <p style="margin-right: -30px;" contenuTXT="indique_fin_A">TERMINER : </p>
+            <a href="quizz.html" class="btn-terminer-circle">
+                <div class="circle-icon"><img src="img/general/flag-solid-full.svg" style="width: 20px;" alt="Icône drapeau"></div>
             </a>
+            <!--<p contenuTXT="indique_fin_B">LA VISITE</p>-->
         </div>
     </div>
 
