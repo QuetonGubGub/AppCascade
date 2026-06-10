@@ -1,4 +1,4 @@
-siteLang = "francais"
+siteLang = "english"
 
 path = window.location.pathname;
 pageActuelle = path.split("/").pop();
