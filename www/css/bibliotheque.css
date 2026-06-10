@@ -6,9 +6,10 @@
 #headerContent>#nom-espece-animale {
     display: flex;
     align-items: center;
-    max-width: 150px;
+    width: 130px;
     height: 140px;
     position: absolute;
+    top: 0;
     right: 100px;
     text-align: right;
     color: white;
@@ -53,7 +54,7 @@
     text-align: center;
 }
 
-    .nom-espece-animale, .famille-animal h3 {
+    .nom-espece-animale, .famille-animal h2 {
         display: flex;
         align-items:center;
         justify-content: center;
@@ -96,14 +97,14 @@
     border-radius: 10px;
     overflow: hidden;
 }
-    #images-famille {
+    .images-famille {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 100%;
     }
 
-    #images-famille img{
+    .images-famille img{
         object-fit: cover;
         flex: 1;
         width: 0;

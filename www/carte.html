@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/general/favicon-cascade.png" rel="icon">
-    <title>Test GPS Déplacements</title>
+    <title>L'App Cascade - Mode visite</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
     <link rel="stylesheet" href="css/carte.css">
@@ -13,10 +13,8 @@
     <!-- Section En-tête -->
     <header>
         <div id="headerContent">
-            <button class="nbShadow btnCircl btnCirclColor_ylw"><a href="javascript:history.back()"><img src="img/general/back-btn.png"></a></button>
-            <div id="headerBackground">
-                <img src="img/general/vagueBleu.svg" id="waveBlue">
-            </div>
+            <button onclick="history.back()" class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/back-btn.png" alt="Bouton de retour"></button>
+                <img src="img/general/vagueBleu.svg" id="waveBlue" alt="Motif vague bleue">
         </div>
     </header>
 
@@ -24,7 +22,7 @@
     <div id="home-screen" class="screen active">
         <div id="map-container">
             <div id="poi-notification">
-                <h3 id="notif-title">Nouveau lieu !</h3>
+                <h1 id="notif-title">Nouveau lieu !</h1>
                 <p>Découvrez ce point d'intérêt.</p>
                 <a href="#" class="notif-btn" id="notif-link">Voir le lieu</a>
             </div>
@@ -36,7 +34,7 @@
 
             <div id="poi-popup">
                 <div class="mapPlate" id="plate-content">
-                    <img id="popup-img" src="" alt="Lieu">
+                    <img id="popup-img" src="#" alt="Lieu">
                     <p id="poi-popup-title">Titre</p>
                 </div>
             </div>
@@ -50,7 +48,7 @@
             </div>
             
             <div class="compass-css">
-                <img src="img/general/boussole.png">
+                <img src="img/general/boussole.png" alt="Boussole">
             </div>
 
             <div id="status-gps-mini">GPS: <span id="gps-status" class="searching">...</span> (<span id="gps-accuracy">--</span>m)</div>
@@ -61,10 +59,10 @@
 
         <div class="action-buttons">
             <a href="bibliotheque.html" class="btn-action-col">
-                <div class="btn-especes-rect"><img src="img/general/book-solid-full.svg" style="width: 16px;">ESPECES</div>
+                <div class="btn-especes-rect"><img src="img/general/book-solid-full.svg" style="width: 16px;" alt="Icône livre">ESPECES</div>
             </a>
             <a href="quizz.html" class="btn-terminer-circle">TERMINER
-                <div class="circle-icon"><img src="img/general/flag-solid-full.svg" style="width: 20px;"></div>LA VISITE
+                <div class="circle-icon"><img src="img/general/flag-solid-full.svg" style="width: 20px;" alt="Icône drapeau"></div>LA VISITE
             </a>
         </div>
     </div>
@@ -80,11 +78,11 @@
             { id: 4, name: "La cascade", lat: 43.56352174660885, lng: 6.185312478004507, radius: 20, imgSrc: "img/point-interet/cascade.jpg", url: "point-interet.html?nom=cascade" },
             { id: 5, name: "Ecole de la gare", lat: 43.56791279982941, lng: 6.18189913268109, radius: 20, imgSrc: "img/point-interet/ecole.jpg", url: "point-interet.html?nom=ecole" },
             { id: 6, name: "Le village", lat: 43.56706568900049, lng: 6.180312041859076, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=village" },
-            { id: 7, name: "Fenêtre FA", lat: 43.12129714832532, lng: 5.939933474720238, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=office-tourisme" },
-            { id: 8, name: "Coursive CO", lat: 43.121042349179625, lng: 5.940163215636212, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=ecole" },
-            { id: 9, name: "Coursive BA", lat: 43.12110190969806, lng: 5.939464375368417, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=cascade" },
-            { id: 10, name: "Coursive FA", lat: 43.12113520805749, lng: 5.939874441944869, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=panorama" },
-            { id: 11, name: "Batiment CO", lat: 43.12120470891093, lng: 5.940215082471948, radius: 20, imgSrc: "img/general/IMAGE_VILLAGE.jpg", url: "point-interet.html?nom=village" },
+            { id: 7, name: "Fenêtre FA", lat: 43.12129714832532, lng: 5.939933474720238, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=office-tourisme" },
+            { id: 8, name: "Coursive CO", lat: 43.121042349179625, lng: 5.940163215636212, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=ecole" },
+            { id: 9, name: "Coursive BA", lat: 43.12110190969806, lng: 5.939464375368417, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=cascade" },
+            { id: 10, name: "Coursive FA", lat: 43.12113520805749, lng: 5.939874441944869, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=panorama" },
+            { id: 11, name: "Batiment CO", lat: 43.12120470891093, lng: 5.940215082471948, radius: 20, imgSrc: "img/point-interet/village.jpg", url: "point-interet.html?nom=village" },
         ];
 
         let map, userMarker, accuracyCircle, unlockedPois = new Set(), notifiedPois = new Set();

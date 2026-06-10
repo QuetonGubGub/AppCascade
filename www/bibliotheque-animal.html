@@ -13,15 +13,15 @@
         <!-- Section En-tête -->
     <header>
         <div id="headerContent">
-            <button class="nbShadow btnCircl btnCirclColor_ylw"><a onclick="window.history.back()"><img src="img/general/back-btn.png"></a></button>
-            <h2 id="nom-espece-animale"></h2>
+            <button onclick="history.back()" class="nbShadow btnCircl btnCirclColor_ylw"><img src="img/general/back-btn.png" alt="Bouton de retour"></button>
+            <h1 id="nom-espece-animale">Nom de l'animal</h1>
             <img id="image-espece-animale" class="image-principale-animale" src="#" alt="Image de profil de l'animal">
         <div id="liste-rouge-couleur">
             <p id="liste-rouge"></p>
         </div>
             <div id="headerBackground">
-                <img src="img/general/vagueBleu.svg" id="waveBlue">
-                <img src="img/general/vagueVerte.svg" id="waveGreen">
+                <img src="img/general/vagueBleu.svg" id="waveBlue" alt="Motif vague bleue">
+                <img src="img/general/vagueVerte.svg" id="waveGreen" alt="Motif vague verte">
             </div>
         </div>
     </header>
@@ -29,25 +29,25 @@
         <!-- Informations sur l'animal -->
     <div id="bloc-text">
         <div>
-            <h3>Peut vivre jusqu'à <span id="esperance-vie"></span> ans</h3>
-            <h3>Régime alimentaire : <span id="regime-alimentaire"></span></h3>
+            <h2>Peut vivre jusqu'à <span id="esperance-vie"></span> ans</h2>
+            <h2>Régime alimentaire : <span id="regime-alimentaire"></span></h2>
         </div>
         <p id="description-espece-animale"></p>
     </div>
 
         <!-- Carousel -->
-    <section id="gallery">
+    <div id="gallery">
         <div class="gallery-container">
             <button class="prev"><img alt="bouton de carousel gauche" src="img/bibliotheque/carousel-fleche-g.png"></button>
             <div id="galleryTrack"></div>
             <button class="next"><img alt="bouton de carousel droit" src="img/bibliotheque/carousel-fleche-d.png"></button>
         </div>
-    </section>
+    </div>
         <!-- Permet le zoom sur les images -->
         <div id="lightbox">
-        <img id="lightboxImg">
+        <img id="lightboxImg" src="#" alt="Image Zoomée">
     </div>
     <h3 id="vu">L'avez-vous vu ?</h3>
-</body>
 <script src="bibliotheque-sources-animaux.js"></script>
+</body>
 </html>

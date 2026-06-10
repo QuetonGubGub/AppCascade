@@ -95,7 +95,7 @@ main {
     gap: 5px;
     align-items: center;
 }
-    .nom-equipement>h3 {
+    .nom-equipement>h2 {
         font-size: 18px;
     }
     .icon-equipement {
