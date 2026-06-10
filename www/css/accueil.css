@@ -3,6 +3,28 @@
     text-decoration: none;
 }
 
+#meteo {
+    position: absolute;
+    background-color: var(--jauneVar);
+    width: 180px;
+    border-radius: 5px;
+    padding: 10px;
+    left: 15px;
+    top: 10em;
+    text-align: center;
+    justify-items: center;
+}
+
+    #iconMeteo{
+        text-align: left;
+        font-size: 30px;
+    }
+
+    #t {
+        display: flex;
+        gap: 10px;
+    }
+
 #headerContent img {
     position: absolute;
     width: 180px;
