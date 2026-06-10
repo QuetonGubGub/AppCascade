@@ -186,6 +186,7 @@ footer {
     display: flex;
     align-items: center;
     color : black;
+    appearance: none;
     -webkit-appearance: none;
 }
 
@@ -217,6 +218,7 @@ footer {
     border-radius: 50px;
     aspect-ratio: 1 / 1;
     display: flex;
+    appearance: none;
     -webkit-appearance: none;
 }
 
