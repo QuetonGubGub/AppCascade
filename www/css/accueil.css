@@ -36,8 +36,10 @@
     color : black;
     font-family: DIN;
     font-size: 20px;
+
     appearance: none;
     -webkit-appearance: none;
+    clip-path: circle(50% at 50% 50%);
 }
 
 #section1 {
