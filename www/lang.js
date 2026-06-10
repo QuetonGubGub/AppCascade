@@ -7,7 +7,7 @@ lang = {
             "boutton_" : "CLIQUER"  
         },
         
-        "accueil" : {
+        "accueil.html" : {
             "indique_meteo" : "Météo",
             "indique_incendie_desc" : "Risque incendie",
             "indique_incendie_1" : "Faible",
@@ -21,7 +21,7 @@ lang = {
             "boutton_infos" : "INFOS PRATIQUES"
         },
 
-        "visite" : {
+        "carte.html" : {
             "txt_info" : "Commençons la visite ! Allez au prochain point d’intérêt pour le découvrir.",
             "indique_fin_A" : "TERMINER",
             "indique_fin_B" : "LA VISITE",
@@ -30,12 +30,12 @@ lang = {
             "boutton_espèces" : "ESPÈCES"  
         },
 
-        "bibliothèqe" : {
+        "bibliothèqe.html" : {
             "titre" : "BIBLIOTHÈQUE",
             "titre2" : "DES ESPÈCES"
         },
 
-        "preparer" : {
+        "preparation.html" : {
             "titre" : "PREPARER MA VISITE",
             "titre2" : "LES ÉQUIPEMENTS A AVOIR",
 
@@ -61,7 +61,7 @@ lang = {
             "boutton_infos" : "INFOS PRATIQUES"
         },
 
-        "consignes" : {
+        "consignes.html" : {
             "titre" : "CONSIGNES",
             "indique_frisby_1" : "Hé ! Avant de venir, prenez conscience des points suivants !",
 
@@ -78,7 +78,7 @@ lang = {
             "txt_incendie_4" : "Rester en sécurité, et ne pas faire marche arrière"
         },
 
-        "infos" : {
+        "infos-pratiques.html" : {
             "titre" : "INFOS PRATIQUES",
             "txt_frisby" : "Informations supplémentaires pour mieux apprécier la visite.",
 
@@ -104,13 +104,13 @@ lang = {
             "txt_points_6" : "Village"
         },
 
-        "quizz" : {
+        "quizz.html" : {
             "titre" : "QUIZZ AVANT DE PARTIR",
             "indique_question" : "Question ", 
             "indique_score" : "Score :  "
         },
 
-        "remerciements" : {
+        "remerciements.html" : {
             "titre" : "ON VOUS REMERCIE !",
             "txt_box" : "Félicitations, vous avez terminé votre visite au sein du site de Sillans-la-Cascade.",
             "indique_box" : "Vous avez contribué à la protection du site !",
@@ -132,7 +132,7 @@ lang = {
             "boutton_" : "CLIQUER"  
         },
         
-        "accueil" : {
+        "accueil.html" : {
             "indique_meteo" : "Weather",
             "indique_incendie_desc" : "Wildfire risk",
             "indique_incendie_1" : "Low",
@@ -146,7 +146,7 @@ lang = {
             "boutton_infos" : "USEFULL INFOS"
         },
 
-        "visite" : {
+        "carte.html" : {
             "txt_info" : "Let's start the visit ! Get to the next point of intrest to discover it.",
             "indique_fin_A" : "FINISH",
             "indique_fin_B" : "THE VISIT",
@@ -155,12 +155,12 @@ lang = {
             "boutton_espèces" : "SPECIES"  
         },
 
-        "bibliothèqe" : {
+        "bibliotheque.html" : {
             "titre" : "LIBRARY",
             "titre2" : "OF SPECIES"
         },
 
-        "preparer" : {
+        "preparation.html" : {
             "titre" : "PREPARE MY VISIT",
             "titre2" : "RECOMMEDED GEAR",
 
@@ -186,7 +186,7 @@ lang = {
             "boutton_infos" : "USEFULL INFOS"
         },
 
-        "consignes" : {
+        "consignes.html" : {
             "titre" : "INSTRUCTIONS",
             "indique_frisby_1" : "Hey ! Before your arrival, be aware of the following :",
 
@@ -203,7 +203,7 @@ lang = {
             "txt_incendie_4" : "Remain safe, and do not step back"
         },
 
-        "infos" : {
+        "infos-pratiques.html" : {
             "titre" : "USEFULL INFOS",
             "txt_frisby" : "Additionnal informations to better appreciate your stay.",
 
@@ -229,13 +229,13 @@ lang = {
             "txt_points_6" : "Village"
         },
 
-        "quizz" : {
+        "quizz.html" : {
             "titre" : "QUIZZ BEFORE LEAVING",
             "indique_question" : "Question ", 
             "indique_score" : "Score :  "
         },
 
-        "remerciements" : {
+        "remerciements.html" : {
             "titre" : "THANK YOU !",
             "txt_box" : "Coungratulation, you have completed you visite of the Sillans-la-Cascade site.",
             "indique_box" : "You've countributed to the site's protection !",
