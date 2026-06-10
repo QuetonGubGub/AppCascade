@@ -6,6 +6,8 @@
     <title>Merci !</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/remerciements.css">
+    <script src="traduction.js"></script>
+    <script src="lang.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
        <p>On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête. </p>
        
        <div class="nbShadow" id="opinionBox">
-        <p>Qu'en avez-vous pensé ?</p>
+        <p contenuTxt="indique_opinion">Qu'en avez-vous pensé ?</p>
         <div id="opinionButtons">
             <!--
             JS
@@ -44,9 +46,9 @@
             <button onclick="opinion('1')"><img src="img/remerciements/face-angry-solid-full.svg" alt="Pas satisfait"></button>
         </div>
        </div>
-        <p>Vous en voulez plus ?</p>
+        <p contenuTxt="indique_plus">Vous en voulez plus ?</p>
         <a href="">
-            <button class="nbShadow btnSqr btnSqrColor_grn" style="margin: 10px;"><p>JE VAIS AU VILLAGE !</p></button>
+            <button class="nbShadow btnSqr btnSqrColor_grn" style="margin: 10px;" contenuTxt="bouton_village"><p>JE VAIS AU VILLAGE !</p></button>
         </a>
     </main>
     <footer>

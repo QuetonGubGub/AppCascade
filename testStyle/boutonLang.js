@@ -33,7 +33,6 @@ function showLang(actif = false) {
         // Modification du bouton
         bouton.setAttribute("onclick", "showLang()")
         bouton.setAttribute("class", "nbShadow")
-
     }
 }
 

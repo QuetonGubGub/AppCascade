@@ -1,4 +1,4 @@
-{
+const lang = {
     "francais" : {
         "page" : {
             "titre" : "Titre de la page",
@@ -116,7 +116,8 @@
             "indique_box" : "Vous avez contribué à la protection du site !",
             "txt_conclusion" : "On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête.",
             "indique_opinion" : "Qu’en avez-vous pensé ?",
-            "boutton_" : "JE VAIS AU VILLAGE !"  
+            "indique_plus" : "Vous en voulez plus ?",
+            "boutton_village" : "JE VAIS AU VILLAGE !"  
         },
 
         "général" : {
@@ -241,7 +242,8 @@
             "indique_box" : "You've countributed to the site's protection !",
             "txt_conclusion" : "We sincerely hope you enjoyed your visit and that  you were able to come away with new knowledge in mind.",
             "indique_opinion" : "What did you think of your visit ?",
-            "boutton_" : "I'M GOING TO THE VILLAGE !"  
+            "indique_opinion" : "You want more ?",
+            "boutton_village" : "I'M GOING TO THE VILLAGE !"  
         },
 
         "général" : {
