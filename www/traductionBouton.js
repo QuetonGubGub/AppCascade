@@ -1,4 +1,30 @@
-// Activation du bouton
+// Utilisation du bouton
+function changeLang() {
+    langue = localStorage.getItem("siteLang") || "francais"
+    nouvelleLangue = ""
+
+    switch (langue) {
+    case "francais":
+        nouvelleLangue = "english"
+        break;
+    case "english":
+        nouvelleLangue = "español"
+        break;
+    case "español":
+        nouvelleLangue = "italiano"
+        break;
+    case "italiano":
+        nouvelleLangue = "francais"
+        break;
+    default:
+        nouvelleLangue = "english"
+    }
+
+    localStorage.setItem("siteLang", nouvelleLangue);    // On change la langue dans Local Storage
+    location.reload()                                    // On recharge la page
+}
+
+// Activation du bouton (ne marche pas)
 function showLang(actif = false) {
     console.log("Touché")
 

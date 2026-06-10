@@ -6,19 +6,6 @@ if (localStorage.getItem("siteLang") == undefined) {
 path = window.location.pathname;
 pageActuelle = path.split("/").pop();
 
-// Changement de la langue
-function changeLang(l = "francais") {
-    if (localStorage.getItem("siteLang") == undefined) {
-        siteLang = "francais"
-    }
-
-    localStorage.removeItem("siteLang")
-    localStorage.setItem("siteLang", l)
-
-    // On recharge la page
-    location.reload()
-}
-
 // Fonction pour transposer dynamiquement tous les champs du JSON
 function transposeContent() {
     // Récupérer les données de la page actuelle dans la langue sélectionnée
