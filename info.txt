@@ -1,0 +1,13 @@
+Vu que c'est plus possible de merge, voilà les instructions :
+
+Pour chaque pages de l'app :
+- Ajouter ces deux lignes de code
+    <script src="traduction.js"></script>
+    <script src="lang.js"></script>
+- Mettre l'id contenuTxt dans chaque champ texte
+- Modifier le nom de la section page du JSON en accord avec le nom de la page
+
+A faire avant ce soir :
+- Modifier le code JS pour qu'il detecte le nom de la page
+- Implémenter un moyen de changer la langue
+- Merge
