@@ -22,19 +22,11 @@ function transposeContent() {
             element.textContent = pageData[key];
         }
     });
-}
 
-// Changer de langue
-function changeContent(l) {
-    siteLang = l
-    /*
-    localStorage.removeItem("siteLang")
-    localStorage.setItem("siteLang", l)
-    */
-    location.reload();
+    console.log("Contenu de la page modifié")
 }
 
 // Appeler la fonction lorsque le DOM est chargé
 document.addEventListener('DOMContentLoaded', transposeContent);
 
-//
+console.log(localStorage.getItem("siteLang"))
