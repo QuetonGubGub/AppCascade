@@ -36,6 +36,7 @@
     color : black;
     font-family: DIN;
     font-size: 20px;
+    -webkit-appearance: none;
 }
 
 #section1 {
