@@ -1,4 +1,4 @@
-{
+lang = {
     "francais" : {
         "page" : {
             "titre" : "Titre de la page",
