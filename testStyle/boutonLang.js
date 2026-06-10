@@ -1,6 +1,8 @@
 // Changement de la langue
-function changeLang(l = "fr") {
-
+function changeLang(l = 1) {
+    // Chaque langue a un chiffre de 0 à 3 (Francais, Anglais, Italien, Espagnol)
+    // On fait joujou avec le Local Storage pour changer la langue actuelle
+    // On recharge la page (si c'est possible)
 }
 
 // Activation du bouton
@@ -8,24 +10,29 @@ function showLang(actif = false) {
     console.log("Touché")
 
     // On récupère les informations du bouton
-    document.getElementById("btnLang")
+    bouton = document.getElementById("btnLang")
 
     // On change le bouton
     if (!actif) {
         console.log("Bouton activé")
-        // On crée le menu
-        // On ajoute son css
-        // On ajoute les sous-boutons
-        // On ajoute leur classe et leur onlick
-        // On réecrit le css du bouton
-        // On réecrit aussi son onlick
+
+        // Création du menu
+        bouton.insertAdjacentHTML("afterend", '<div class="nbShadow" id="btnLangSelector"> <button class="btnLangSub" onclick="changeLang(0)">FR</button> <button class="btnLangSub" onclick="changeLang(1)">EN</button> <button class="btnLangSub" onclick="changeLang(1)">IT</button> <button class="btnLangSub" onclick="changeLang(3)">ES</button></div>')
+        
+        // Modification du bouton
+        bouton.setAttribute("onclick", "showLang(true)")
+        bouton.setAttribute("class", "")
 
     } else {
         console.log("Bouton désactivé")
-        // On cherche le menu
-        // On vide son inner html
-        // On réecrit le css du bouton
-        // On réecrit aussi son onlick
+
+        // Suppression du menu
+        menu = document.getElementById("btnLangSelector")
+        menu.outerHTML = ""
+
+        // Modification du bouton
+        bouton.setAttribute("onclick", "showLang()")
+        bouton.setAttribute("class", "nbShadow")
 
     }
 }
