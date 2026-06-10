@@ -189,7 +189,6 @@ footer {
 
     appearance: none;
     -webkit-appearance: none;
-    clip-path: circle(50% at 50% 50%);
 }
 
 .btnSqrColor_light-blue {
