@@ -250,5 +250,257 @@ lang = {
             "txt_footer_confidentialité" : "Privacy policy",
             "txt_footer_legal" : "Legal notice"
         }
-            }
+            },
+    "español" : {
+        "page" : {
+            "titre" : "Título de la página",
+            "txt_" : "Lorem ipsum",
+            "indique_" : "Texto corto",
+            "boutton_" : "HACER CLIC"
+        },
+
+        "accueil.html" : {
+            "indique_meteo" : "Clima",
+            "indique_incendie_desc" : "Riesgo de incendio",
+            "indique_incendie_1" : "Bajo",
+            "indique_incendie_2" : "Moderado",
+            "indique_incendie_3" : "Alto",
+            "indique_incendie_4" : "Extremo",
+            "txt_frisby" : "¡Antes de empezar, preparemos la visita!",
+            "txt_carte" : "Pulse en el mapa para comenzar la visita de Sillans-la-Cascade",
+            "boutton_consignes" : "INSTRUCCIONES",
+            "boutton_préparer" : "PREPARAR",
+            "boutton_infos" : "INFORMACIÓN PRÁCTICA"
+        },
+
+        "carte.html" : {
+            "txt_info" : "¡Comencemos la visita! Vaya al siguiente punto de interés para descubrirlo.",
+            "indique_fin_A" : "TERMINAR",
+            "indique_fin_B" : "LA VISITA",
+            "indique_boussole" : ["N","S","E","O"],
+            "indique_points-interet" : ["Oficina de turismo","El campo","El mirador","La cascada","La escuela de la estación","El pueblo"],
+            "boutton_espèces" : "ESPECIES"
+        },
+
+        "bibliothèqe.html" : {
+            "titre" : "BIBLIOTECA",
+            "titre2" : "DE ESPECIES"
+        },
+
+        "preparation.html" : {
+            "titre" : "PREPARAR MI VISITA",
+            "titre2" : "EQUIPO RECOMENDADO",
+
+            "txt_frisby_1" : "Para disfrutar al máximo de la visita, prepare lo siguiente:",
+            "txt_frisby_2" : "Para visitar la cascada, ¡habrá mucha caminata! Venga en buena condición física y evite traer un cochecito para facilitar la visita.",
+
+            "indique_chaussures" : "Zapatos de senderismo",
+            "txt_chaussures" : "Hay senderos, desniveles y muchas escaleras que subir y bajar. ¡No querrá torcerse un tobillo!",
+
+            "indique_sac" : "Mochila",
+            "txt_sac" : "Para tener todo a mano, guardar sus pertenencias y residuos de manera cómoda.",
+
+            "indique_eau" : "Botella de agua",
+            "txt_eau" : "En verano hace mucho calor. Manténgase hidratado para evitar mareos y arruinar la visita.",
+
+            "indique_chapeau" : "Gorra / Sombrero",
+            "txt_chapeau" : "Para protegerse del calor.",
+
+            "indique_téléphone" : "Teléfono",
+            "txt_téléphone" : "Para la mejor experiencia durante la visita, ¡cárguelo y llévelo consigo!",
+
+            "boutton_consignes" : "INSTRUCCIONES",
+            "boutton_infos" : "INFORMACIÓN PRÁCTICA"
+        },
+
+        "consignes.html" : {
+            "titre" : "INSTRUCCIONES",
+            "indique_frisby_1" : "¡Eh! Antes de venir, tenga en cuenta lo siguiente:",
+
+            "txt_consigne_1" : "Por el bienestar de la naturaleza, otros visitantes y su propia salud, deje el cigarrillo aparte durante la visita al sitio.",
+            "txt_consigne_2" : "Para evitar causar el mayor incendio del verano y dañar el sitio, espere a llegar a casa para hacer una barbacoa con amigos. ¡Incluso hay restaurantes en el pueblo!",
+            "txt_consigne_3" : "Si desea protegerse de caídas y proteger la biodiversidad, no venga a bañarse. Este lugar no es apto para nadar, y los bañistas de Instagram no son reales.",
+            "txt_consigne_4" : "¿Quiere disfrutar al máximo de la visita y descubrir todos los rincones del sitio? Entonces siga el sendero en la dirección correcta y no se salga de él.",
+            "txt_consigne_5" : "Para acampar, hay establecimientos cerca, pero no aquí.",
+
+            "indique_incendie" : "¿Qué hacer en caso de incendio?",
+            "txt_incendie_1" : "No entre en pánico y alerte a los demás",
+            "txt_incendie_2" : "Aléjese del peligro sin precipitarse",
+            "txt_incendie_3" : "Ayude a las personas que lo necesiten",
+            "txt_incendie_4" : "Manténgase a salvo y no vuelva atrás"
+        },
+
+        "infos-pratiques.html" : {
+            "titre" : "INFORMACIÓN PRÁCTICA",
+            "txt_frisby" : "Información adicional para disfrutar mejor de la visita.",
+
+            "indique_manger" : "¿Dónde comer?",
+            "txt_manger_1" : "Panadería en el pueblo",
+            "txt_manger_2" : "Mesas de picnic",
+
+            "indique_boire" : "¿Dónde beber?",
+            "txt_boire_1" : "Traiga su propia agua (recomendado)",
+            "txt_boire_2" : "Solo hay agua potable disponible al inicio, cerca de la escuela",
+
+            "indique_espèces" : "¿Qué especies animales hay?",
+            "txt_espèces_1" : "Mamíferos",
+            "txt_espèces_2" : "Peces",
+            "txt_espèces_3" : "Aves",
+
+            "indique_points" : "¿Cuáles son los puntos de interés?",
+            "txt_points_1" : "Oficina de turismo",
+            "txt_points_2" : "Praderas",
+            "txt_points_3" : "Mirador",
+            "txt_points_4" : "Cascada",
+            "txt_points_5" : "Escuela de la estación",
+            "txt_points_6" : "Pueblo"
+        },
+
+        "quizz.html" : {
+            "titre" : "CUESTIONARIO ANTES DE IRSE",
+            "indique_question" : "Pregunta ",
+            "indique_score" : "Puntuación: "
+        },
+
+        "remerciements.html" : {
+            "titre" : "¡GRACIAS!",
+            "txt_box" : "¡Felicidades! Ha completado su visita al sitio de Sillans-la-Cascade.",
+            "indique_box" : "¡Ha contribuido a la protección del sitio!",
+            "txt_conclusion" : "Esperamos sinceramente que haya disfrutado de la visita y que se lleve nuevos conocimientos.",
+            "indique_opinion" : "¿Qué le pareció?",
+            "indique_plus" : "¿Quiere más?",
+            "boutton_" : "¡VOY AL PUEBLO!"
+        },
+
+        "général" : {
+            "txt_footer_confidentialité" : "Política de privacidad",
+            "txt_footer_legal" : "Aviso legal"
+        }
+    },
+    "italiano" : {
+        "page" : {
+            "titre" : "Titolo della pagina",
+            "txt_" : "Lorem ipsum",
+            "indique_" : "Testo breve",
+            "boutton_" : "CLICCARE"
+        },
+
+        "accueil.html" : {
+            "indique_meteo" : "Meteo",
+            "indique_incendie_desc" : "Rischio incendio",
+            "indique_incendie_1" : "Basso",
+            "indique_incendie_2" : "Medio",
+            "indique_incendie_3" : "Alto",
+            "indique_incendie_4" : "Estremo",
+            "txt_frisby" : "Prima di iniziare, prepariamo la visita!",
+            "txt_carte" : "Premi sulla mappa per iniziare la visita di Sillans-la-Cascade",
+            "boutton_consignes" : "ISTRUZIONI",
+            "boutton_préparer" : "PREPARARSI",
+            "boutton_infos" : "INFORMAZIONI PRATICHE"
+        },
+
+        "carte.html" : {
+            "txt_info" : "Iniziamo la visita! Recati al prossimo punto di interesse per scoprirlo.",
+            "indique_fin_A" : "TERMINA",
+            "indique_fin_B" : "LA VISITA",
+            "indique_boussole" : ["N","S","E","O"],
+            "indique_points-interet" : ["Ufficio turistico","Il campo","Il panorama","La cascata","La scuola della stazione","Il villaggio"],
+            "boutton_espèces" : "SPECIE"
+        },
+
+        "bibliothèqe.html" : {
+            "titre" : "BIBLIOTECA",
+            "titre2" : "DELLE SPECIE"
+        },
+
+        "preparation.html" : {
+            "titre" : "PREPARA LA MIA VISITA",
+            "titre2" : "EQUIPAGGIAMENTO NECESSARIO",
+
+            "txt_frisby_1" : "Per goderti al massimo la visita, ecco cosa preparare:",
+            "txt_frisby_2" : "Per visitare la cascata, ci sarà molto cammino! Vieni in buona condizione fisica e evita di portare un passeggino per facilitare la visita.",
+
+            "indique_chaussures" : "Scarpe da trekking",
+            "txt_chaussures" : "Ci sono sentieri, dislivelli e molte scale da salire e scendere. Non vorrai slogarti una caviglia!",
+
+            "indique_sac" : "Zaino",
+            "txt_sac" : "Per avere tutto a portata di mano, riporre le tue cose e i rifiuti in modo confortevole.",
+
+            "indique_eau" : "Bottiglia d'acqua",
+            "txt_eau" : "In estate fa molto caldo. Mantieniti idratato per evitare malesseri e rovinare la visita.",
+
+            "indique_chapeau" : "Cappellino / Cappello",
+            "txt_chapeau" : "Per proteggerti dal caldo.",
+
+            "indique_téléphone" : "Telefono",
+            "txt_téléphone" : "Per la migliore esperienza durante la visita, caricalo e tienilo con te!",
+
+            "boutton_consignes" : "ISTRUZIONI",
+            "boutton_infos" : "INFORMAZIONI PRATICHE"
+        },
+
+        "consignes.html" : {
+            "titre" : "ISTRUZIONI",
+            "indique_frisby_1" : "Ehi! Prima di venire, prendi in considerazione i seguenti punti:",
+
+            "txt_consigne_1" : "Per il benessere della natura, degli altri visitatori e della tua salute, lascia da parte la sigaretta durante la visita al sito.",
+            "txt_consigne_2" : "Per evitare di causare il più grande incendio dell'estate e danneggiare il sito, aspetta di essere a casa per fare un barbecue con gli amici. Ci sono anche ristoranti nel villaggio!",
+            "txt_consigne_3" : "Se vuoi proteggerti dalle cadute e proteggere la biodiversità, non venire qui per nuotare. Questo posto non è adatto al bagno, e i bagnanti su Instagram non sono reali.",
+            "txt_consigne_4" : "Vuoi goderti al massimo la visita e scoprire tutti gli angoli belli del sito? Allora segui il sentiero nella direzione giusta e non uscirne.",
+            "txt_consigne_5" : "Per campeggiare, ci sono strutture vicine, ma non qui.",
+
+            "indique_incendie" : "Cosa fare in caso di incendio?",
+            "txt_incendie_1" : "Non farti prendere dal panico e avvisa gli altri",
+            "txt_incendie_2" : "Allontanati dal pericolo senza fretta",
+            "txt_incendie_3" : "Aiuta le persone che hanno bisogno",
+            "txt_incendie_4" : "Mantieniti al sicuro e non tornare indietro"
+        },
+
+        "infos-pratiques.html" : {
+            "titre" : "INFORMAZIONI PRATICHE",
+            "txt_frisby" : "Informazioni aggiuntive per apprezzare meglio la visita.",
+
+            "indique_manger" : "Dove mangiare?",
+            "txt_manger_1" : "Panificio nel villaggio",
+            "txt_manger_2" : "Tavoli da picnic",
+
+            "indique_boire" : "Dove bere?",
+            "txt_boire_1" : "Porta la tua acqua (consigliato)",
+            "txt_boire_2" : "L'acqua potabile è disponibile solo all'inizio vicino alla scuola",
+
+            "indique_espèces" : "Quali specie animali ci sono?",
+            "txt_espèces_1" : "Mammiferi",
+            "txt_espèces_2" : "Pesci",
+            "txt_espèces_3" : "Uccelli",
+
+            "indique_points" : "Quali sono i punti di interesse?",
+            "txt_points_1" : "Ufficio turistico",
+            "txt_points_2" : "Prati",
+            "txt_points_3" : "Panorama",
+            "txt_points_4" : "Cascata",
+            "txt_points_5" : "Scuola della stazione",
+            "txt_points_6" : "Villaggio"
+        },
+
+        "quizz.html" : {
+            "titre" : "QUIZ PRIMA DI ANDARSENE",
+            "indique_question" : "Domanda ",
+            "indique_score" : "Punteggio: "
+        },
+
+        "remerciements.html" : {
+            "titre" : "GRAZIE!",
+            "txt_box" : "Congratulazioni, hai completato la tua visita al sito di Sillans-la-Cascade.",
+            "indique_box" : "Hai contribuito alla protezione del sito!",
+            "txt_conclusion" : "Speriamo sinceramente che la visita ti sia piaciuta e che tu possa portarti a casa nuove conoscenze.",
+            "indique_opinion" : "Cosa ne pensi?",
+            "indique_plus" : "Vuoi di più?",
+            "boutton_" : "VA DOPO AL VILLAGGIO!"
+        },
+
+        "général" : {
+            "txt_footer_confidentialité" : "Politica sulla privacy",
+            "txt_footer_legal" : "Note legali"
+        }
+    }
 }

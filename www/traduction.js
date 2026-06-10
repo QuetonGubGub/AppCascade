@@ -22,3 +22,5 @@ function transposeContent() {
 
 // Appeler la fonction lorsque le DOM est chargé
 document.addEventListener('DOMContentLoaded', transposeContent);
+
+//
