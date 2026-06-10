@@ -22,17 +22,20 @@ lang = {
         },
 
         "carte.html" : {
+            "txt_frisby" : "Commençons la visite ! Allez au prochain point d’intérêt pour le découvrir.",
+            "indique_frisbyOk" : "Confirmation",
             "txt_info" : "Commençons la visite ! Allez au prochain point d’intérêt pour le découvrir.",
-            "indique_fin_A" : "TERMINER",
+            "indique_fin_A" : "TERMINER :",
             "indique_fin_B" : "LA VISITE",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["L’office du tourisme","Le champ","Le panorama","La cascade","L’école de la gare","Le village"],
             "boutton_espèces" : "ESPÈCES"  
         },
 
-        "bibliothèqe.html" : {
-            "titre" : "BIBLIOTHÈQUE",
-            "titre2" : "DES ESPÈCES"
+        "bibliothèque.html" : {
+            "titre" : "BIBLIOTHÈQUE DES ESPÈCES",
+            "indique_mamiferes" : "Mammifères",
+            "indique_oiseaux" : "Oiseaux"
         },
 
         "preparation.html" : {
@@ -126,13 +129,6 @@ lang = {
         }
             },
     "english" : {
-        "page" : {
-            "titre" : "Titre de la page",
-            "txt_" : "Lorem ipsum",
-            "indique_" : "Texte court",
-            "boutton_" : "CLIQUER"  
-        },
-        
         "accueil.html" : {
             "indique_meteo" : "Weather",
             "indique_incendie_desc" : "Wildfire risk",
@@ -144,10 +140,12 @@ lang = {
             "txt_carte" : "Press on the map to begin your visit of Sillans-la-Cascade",
             "boutton_consignes" : "INSTRUCTIONS",
             "boutton_préparer" : "PREPARE",
-            "boutton_infos" : "USEFULL INFOS"
+            "boutton_infos" : "USEFUL INFOS"
         },
 
         "carte.html" : {
+            "txt_frisby" : "Let's start the tour! Go to the next point of interest to discover it.",
+            "indique_frisbyOk" : "Confirmation",
             "txt_info" : "Let's start the visit ! Get to the next point of intrest to discover it.",
             "indique_fin_A" : "FINISH",
             "indique_fin_B" : "THE VISIT",
@@ -157,8 +155,9 @@ lang = {
         },
 
         "bibliotheque.html" : {
-            "titre" : "LIBRARY",
-            "titre2" : "OF SPECIES"
+            "titre" : "LIBRARY OF SPECIES",
+            "indique_mamiferes" : "Mammals",
+            "indique_oiseaux" : "Birds"
         },
 
         "preparation.html" : {
@@ -184,7 +183,7 @@ lang = {
             "txt_téléphone" : "For the best possible experience during the visit, charge the battery and keep it with you !",
             
             "boutton_consignes" : "INSTRUCTIONS",
-            "boutton_infos" : "USEFULL INFOS"
+            "boutton_infos" : "USEFUL INFOS"
         },
 
         "consignes.html" : {
@@ -205,7 +204,7 @@ lang = {
         },
 
         "infos-pratiques.html" : {
-            "titre" : "USEFULL INFOS",
+            "titre" : "USEFUL INFOS",
             "txt_frisby" : "Additionnal informations to better appreciate your stay.",
 
             "indique_manger" : "Where can you eat ?",
@@ -252,13 +251,6 @@ lang = {
         }
             },
     "español" : {
-        "page" : {
-            "titre" : "Título de la página",
-            "txt_" : "Lorem ipsum",
-            "indique_" : "Texto corto",
-            "boutton_" : "HACER CLIC"
-        },
-
         "accueil.html" : {
             "indique_meteo" : "Clima",
             "indique_incendie_desc" : "Riesgo de incendio",
@@ -274,8 +266,10 @@ lang = {
         },
 
         "carte.html" : {
+            "txt_frisby" : "¡Comencemos el tour! Ve al siguiente punto de interés para descubrirlo.",
+            "indique_frisbyOk" : "Confirmación",
             "txt_info" : "¡Comencemos la visita! Vaya al siguiente punto de interés para descubrirlo.",
-            "indique_fin_A" : "TERMINAR",
+            "indique_fin_A" : "TERMINAR : ",
             "indique_fin_B" : "LA VISITA",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["Oficina de turismo","El campo","El mirador","La cascada","La escuela de la estación","El pueblo"],
@@ -283,8 +277,9 @@ lang = {
         },
 
         "bibliothèqe.html" : {
-            "titre" : "BIBLIOTECA",
-            "titre2" : "DE ESPECIES"
+            "titre" : "BIBLIOTECA DE ESPECIES",
+            "indique_mamiferes" : "Mamíferos",
+            "indique_oiseaux" : "Aves"
         },
 
         "preparation.html" : {
@@ -378,13 +373,6 @@ lang = {
         }
     },
     "italiano" : {
-        "page" : {
-            "titre" : "Titolo della pagina",
-            "txt_" : "Lorem ipsum",
-            "indique_" : "Testo breve",
-            "boutton_" : "CLICCARE"
-        },
-
         "accueil.html" : {
             "indique_meteo" : "Meteo",
             "indique_incendie_desc" : "Rischio incendio",
@@ -400,8 +388,10 @@ lang = {
         },
 
         "carte.html" : {
+            "txt_frisby" : "Iniziamo il tour! Vai al prossimo punto di interesse per scoprirlo.",
+            "indique_frisbyOk" : "Conferma",
             "txt_info" : "Iniziamo la visita! Recati al prossimo punto di interesse per scoprirlo.",
-            "indique_fin_A" : "TERMINA",
+            "indique_fin_A" : "TERMINA : ",
             "indique_fin_B" : "LA VISITA",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["Ufficio turistico","Il campo","Il panorama","La cascata","La scuola della stazione","Il villaggio"],
@@ -409,8 +399,9 @@ lang = {
         },
 
         "bibliothèqe.html" : {
-            "titre" : "BIBLIOTECA",
-            "titre2" : "DELLE SPECIE"
+            "titre" : "BIBLIOTECA DELLE SPECIE",
+            "indique_mamiferes" : "Mammiferi",
+            "indique_oiseaux" : "Uccelli"
         },
 
         "preparation.html" : {
