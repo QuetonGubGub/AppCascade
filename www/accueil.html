@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/accueil.css">
     <script src="traduction.js"></script>
     <script src="lang.js"></script>
+    <script src="traductionBouton.js"></script>
 </head>
 <body>
     <!-- Section En-tête -->
     <header>
         <div id="headerContent">
             <img src="img/general/logo-app-cascade.svg" alt="Logo de l'application">
-            <button class="nbShadow btnLang">FR</button>
+            <button class="nbShadow" id="btnLang" onclick="showLang()"><p>FR</p></button>
         </div>
         <div id="headerBackground">
             <img src="img/general/vagueVerte.svg" id="vague-verte" class="img-invert" alt="Motif vague verte">

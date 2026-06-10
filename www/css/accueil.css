@@ -10,7 +10,7 @@
     left: 20px;
 }
 
-#headerContent button {
+#headerContent > button {
     display: flex;
     align-items: center;
     z-index: 5;
@@ -26,7 +26,7 @@
     width: 90%;
 }
 
-.btnLang {
+#btnLang {
     display: flex;
     width: 50px;
     height: 50px;
@@ -42,6 +42,30 @@
     clip-path: circle(50% at 50% 50%);
 }
 
+#btnLangSelector {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 35px;
+    padding: 0 5px; 
+    padding-top: 60px;
+    padding-bottom: 10px;  
+    margin: 5px;
+    margin-top: -55px;
+    z-index: -1;
+    border-radius: 50px;
+    background-color: var(--jauneVar);
+}
+
+.btnLangSub {
+    border-style: none;
+    background-color: initial;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "DIN";
+}
+
 #section1 {
     position: relative;
     top: -2em;
@@ -51,6 +75,7 @@
     gap: 5px;
     padding-bottom: 6em;
     overflow: hidden;
+    z-index: 1;
 }
 
 #section1 a {
