@@ -7,6 +7,8 @@ pageActuelle = path.split("/").pop();
 function transposeContent() {
     // Récupérer les données de la page actuelle dans la langue sélectionnée
     const pageData = lang[siteLang][pageActuelle];
+    //siteLang = localStorage.getItem("siteLang")
+    //const pageData = lang[][pageActuelle];
 
     // Sélectionner tous les éléments avec l'attribut [contenuTxt]
     const elements = document.querySelectorAll('[contenuTxt]');
@@ -18,6 +20,16 @@ function transposeContent() {
             element.textContent = pageData[key];
         }
     });
+}
+
+// Changer de langue
+function changeContent(l) {
+    siteLang = l
+    /*
+    localStorage.removeItem("siteLang")
+    localStorage.setItem("siteLang", l)
+    */
+    location.reload();
 }
 
 // Appeler la fonction lorsque le DOM est chargé
