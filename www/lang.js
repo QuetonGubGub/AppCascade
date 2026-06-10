@@ -241,7 +241,7 @@ lang = {
             "indique_box" : "You've countributed to the site's protection !",
             "txt_conclusion" : "We sincerely hope you enjoyed your visit and that  you were able to come away with new knowledge in mind.",
             "indique_opinion" : "What did you think of your visit ?",
-            "indique_opinion" : "You want more ?",
+            "indique_plus" : "You want more ?",
             "bouton_" : "I'M GOING TO THE VILLAGE !"  
         },
 
