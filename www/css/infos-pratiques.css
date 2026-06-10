@@ -46,21 +46,25 @@
 }
 
 .manger{
+    max-width: 180px;
     right:20px;
     top:5em;
 }
 
 .boire{
+    max-width: 300px;
     left:16px;
     top: 12em;
 }
 
 .animaux{
+    max-width: 280px;
     right:20px;
     top: 19em;
 }
 
 .interet{
+    max-width: 260px;
     left:16px;
     top: 27em;
 }
