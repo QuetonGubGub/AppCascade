@@ -197,12 +197,38 @@ p {
     width: 40px;
 }
 
-.btnLang {
+#btnLang {
     padding: 10px 15px;
     margin: 5px;
     border-radius: 50px;
     background-color: var(--vertVar);
     color : black;
+    border-color: black;
+    border-style: solid;
+}
+
+#btnLangSelector {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 35px;
+    padding: 0 5px; 
+    padding-top: 60px;
+    padding-bottom: 10px;  
+    margin: 5px;
+    margin-top: -55px;
+    z-index: -1;
+    border-radius: 50px;
+    background-color: var(--jauneVar);
+}
+
+.btnLangSub {
+    border-style: none;
+    background-color: initial;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "DIN";
 }
 
 /* Map plates */
