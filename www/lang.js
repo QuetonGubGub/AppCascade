@@ -4,7 +4,7 @@ lang = {
             "titre" : "Titre de la page",
             "txt_" : "Lorem ipsum",
             "indique_" : "Texte court",
-            "boutton_" : "CLIQUER"  
+            "bouton_" : "CLIQUER"  
         },
         
         "accueil.html" : {
@@ -16,9 +16,9 @@ lang = {
             "indique_incendie_4" : "Extrême",
             "txt_frisby" : "Avant de débuter, préparons la visite !",
             "txt_carte" : "Appuyez sur la carte pour commencer la visite de Sillans-la-Cascade",
-            "boutton_consignes" : "CONSIGNES",
-            "boutton_préparer" : "SE PRÉPARER",
-            "boutton_infos" : "INFOS PRATIQUES"
+            "bouton_consignes" : "CONSIGNES",
+            "bouton_préparer" : "SE PRÉPARER",
+            "bouton_infos" : "INFOS PRATIQUES"
         },
 
         "carte.html" : {
@@ -29,7 +29,7 @@ lang = {
             "indique_fin_B" : "LA VISITE",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["L’office du tourisme","Le champ","Le panorama","La cascade","L’école de la gare","Le village"],
-            "boutton_espèces" : "ESPÈCES"  
+            "bouton_espèces" : "ESPÈCES"  
         },
 
         "bibliothèque.html" : {
@@ -60,13 +60,13 @@ lang = {
             "indique_téléphone" : "Téléphone",
             "txt_téléphone" : "Pour la meilleure expérience lors de la visite, chargez le et bien le garder avec vous !",
             
-            "boutton_consignes" : "CONSIGNES",
-            "boutton_infos" : "INFOS PRATIQUES"
+            "bouton_consignes" : "CONSIGNES",
+            "bouton_infos" : "INFOS PRATIQUES"
         },
 
         "consignes.html" : {
             "titre" : "CONSIGNES",
-            "indique_frisby_1" : "Hé ! Avant de venir, prenez conscience des points suivants !",
+            "indique_frisby" : "Hé ! Avant de venir, prenez conscience des points suivants !",
 
             "txt_consigne_1" : "Pour le bien être de la nature, des autres visiteurs, ainsi que votre santé, laisser la cigarette de côté pendant la visite du site.",
             "txt_consigne_2" : "Pour éviter de créer le plus grand incendie de l’été et de dégrader le site, attendez d’être chez vous pour faire un barbecue entre amis. Vous avez même des restaurants au village !",
@@ -120,7 +120,7 @@ lang = {
             "txt_conclusion" : "On espère sincèrement que cette visite vous a plu et que vous avez pu ressortir avec de nouvelles connaissances en tête.",
             "indique_opinion" : "Qu’en avez-vous pensé ?",
             "indique_plus" : "Vous en voulez plus ?",
-            "boutton_" : "JE VAIS AU VILLAGE !"  
+            "bouton_" : "JE VAIS AU VILLAGE !"  
         },
 
         "général" : {
@@ -138,9 +138,9 @@ lang = {
             "indique_incendie_4" : "Extreme",
             "txt_frisby" : "Before we start, let's prepare our visit !",
             "txt_carte" : "Press on the map to begin your visit of Sillans-la-Cascade",
-            "boutton_consignes" : "INSTRUCTIONS",
-            "boutton_préparer" : "PREPARE",
-            "boutton_infos" : "USEFUL INFOS"
+            "bouton_consignes" : "INSTRUCTIONS",
+            "bouton_préparer" : "PREPARE",
+            "bouton_infos" : "USEFUL INFOS"
         },
 
         "carte.html" : {
@@ -151,7 +151,7 @@ lang = {
             "indique_fin_B" : "THE VISIT",
             "indique_boussole" : ["N","S","E","W"],
             "indique_points-interet" : ["Tourist office","The field","The panorama","The waterfall","The train station's school","The village"],
-            "boutton_espèces" : "SPECIES"  
+            "bouton_espèces" : "SPECIES"  
         },
 
         "bibliotheque.html" : {
@@ -182,13 +182,13 @@ lang = {
             "indique_téléphone" : "Phone",
             "txt_téléphone" : "For the best possible experience during the visit, charge the battery and keep it with you !",
             
-            "boutton_consignes" : "INSTRUCTIONS",
-            "boutton_infos" : "USEFUL INFOS"
+            "bouton_consignes" : "INSTRUCTIONS",
+            "bouton_infos" : "USEFUL INFOS"
         },
 
         "consignes.html" : {
             "titre" : "INSTRUCTIONS",
-            "indique_frisby_1" : "Hey ! Before your arrival, be aware of the following :",
+            "indique_frisby" : "Hey ! Before your arrival, be aware of the following :",
 
             "txt_consigne_1" : "For the well-being of nature, other visitors, and your own health, please leave your cigarette aside during your visit to the site.",
             "txt_consigne_2" : "To avoid starting the biggest fire of the summer and damaging the site, wait until you get home to have a barbecue with friends. There are even restaurants in the village !",
@@ -242,7 +242,7 @@ lang = {
             "txt_conclusion" : "We sincerely hope you enjoyed your visit and that  you were able to come away with new knowledge in mind.",
             "indique_opinion" : "What did you think of your visit ?",
             "indique_opinion" : "You want more ?",
-            "boutton_" : "I'M GOING TO THE VILLAGE !"  
+            "bouton_" : "I'M GOING TO THE VILLAGE !"  
         },
 
         "général" : {
@@ -260,9 +260,9 @@ lang = {
             "indique_incendie_4" : "Extremo",
             "txt_frisby" : "¡Antes de empezar, preparemos la visita!",
             "txt_carte" : "Pulse en el mapa para comenzar la visita de Sillans-la-Cascade",
-            "boutton_consignes" : "INSTRUCCIONES",
-            "boutton_préparer" : "PREPARAR",
-            "boutton_infos" : "INFORMACIÓN PRÁCTICA"
+            "bouton_consignes" : "INSTRUCCIONES",
+            "bouton_préparer" : "PREPARAR",
+            "bouton_infos" : "INFORMACIÓN PRÁCTICA"
         },
 
         "carte.html" : {
@@ -273,7 +273,7 @@ lang = {
             "indique_fin_B" : "LA VISITA",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["Oficina de turismo","El campo","El mirador","La cascada","La escuela de la estación","El pueblo"],
-            "boutton_espèces" : "ESPECIES"
+            "bouton_espèces" : "ESPECIES"
         },
 
         "bibliothèqe.html" : {
@@ -304,13 +304,13 @@ lang = {
             "indique_téléphone" : "Teléfono",
             "txt_téléphone" : "Para la mejor experiencia durante la visita, ¡cárguelo y llévelo consigo!",
 
-            "boutton_consignes" : "INSTRUCCIONES",
-            "boutton_infos" : "INFORMACIÓN PRÁCTICA"
+            "bouton_consignes" : "INSTRUCCIONES",
+            "bouton_infos" : "INFORMACIÓN PRÁCTICA"
         },
 
         "consignes.html" : {
             "titre" : "INSTRUCCIONES",
-            "indique_frisby_1" : "¡Eh! Antes de venir, tenga en cuenta lo siguiente:",
+            "indique_frisby" : "¡Eh! Antes de venir, tenga en cuenta lo siguiente:",
 
             "txt_consigne_1" : "Por el bienestar de la naturaleza, otros visitantes y su propia salud, deje el cigarrillo aparte durante la visita al sitio.",
             "txt_consigne_2" : "Para evitar causar el mayor incendio del verano y dañar el sitio, espere a llegar a casa para hacer una barbacoa con amigos. ¡Incluso hay restaurantes en el pueblo!",
@@ -364,7 +364,7 @@ lang = {
             "txt_conclusion" : "Esperamos sinceramente que haya disfrutado de la visita y que se lleve nuevos conocimientos.",
             "indique_opinion" : "¿Qué le pareció?",
             "indique_plus" : "¿Quiere más?",
-            "boutton_" : "¡VOY AL PUEBLO!"
+            "bouton_" : "¡VOY AL PUEBLO!"
         },
 
         "général" : {
@@ -382,9 +382,9 @@ lang = {
             "indique_incendie_4" : "Estremo",
             "txt_frisby" : "Prima di iniziare, prepariamo la visita!",
             "txt_carte" : "Premi sulla mappa per iniziare la visita di Sillans-la-Cascade",
-            "boutton_consignes" : "ISTRUZIONI",
-            "boutton_préparer" : "PREPARARSI",
-            "boutton_infos" : "INFORMAZIONI PRATICHE"
+            "bouton_consignes" : "ISTRUZIONI",
+            "bouton_préparer" : "PREPARARSI",
+            "bouton_infos" : "INFORMAZIONI PRATICHE"
         },
 
         "carte.html" : {
@@ -395,7 +395,7 @@ lang = {
             "indique_fin_B" : "LA VISITA",
             "indique_boussole" : ["N","S","E","O"],
             "indique_points-interet" : ["Ufficio turistico","Il campo","Il panorama","La cascata","La scuola della stazione","Il villaggio"],
-            "boutton_espèces" : "SPECIE"
+            "bouton_espèces" : "SPECIE"
         },
 
         "bibliothèqe.html" : {
@@ -426,13 +426,13 @@ lang = {
             "indique_téléphone" : "Telefono",
             "txt_téléphone" : "Per la migliore esperienza durante la visita, caricalo e tienilo con te!",
 
-            "boutton_consignes" : "ISTRUZIONI",
-            "boutton_infos" : "INFORMAZIONI PRATICHE"
+            "bouton_consignes" : "ISTRUZIONI",
+            "bouton_infos" : "INFORMAZIONI PRATICHE"
         },
 
         "consignes.html" : {
             "titre" : "ISTRUZIONI",
-            "indique_frisby_1" : "Ehi! Prima di venire, prendi in considerazione i seguenti punti:",
+            "indique_frisby" : "Ehi! Prima di venire, prendi in considerazione i seguenti punti:",
 
             "txt_consigne_1" : "Per il benessere della natura, degli altri visitatori e della tua salute, lascia da parte la sigaretta durante la visita al sito.",
             "txt_consigne_2" : "Per evitare di causare il più grande incendio dell'estate e danneggiare il sito, aspetta di essere a casa per fare un barbecue con gli amici. Ci sono anche ristoranti nel villaggio!",
@@ -486,7 +486,7 @@ lang = {
             "txt_conclusion" : "Speriamo sinceramente che la visita ti sia piaciuta e che tu possa portarti a casa nuove conoscenze.",
             "indique_opinion" : "Cosa ne pensi?",
             "indique_plus" : "Vuoi di più?",
-            "boutton_" : "VA DOPO AL VILLAGGIO!"
+            "bouton_" : "VA DOPO AL VILLAGGIO!"
         },
 
         "général" : {
